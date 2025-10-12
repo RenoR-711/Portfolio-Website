@@ -1,0 +1,320 @@
+:root {
+  /* Colors */
+  --gold: rgb(218, 197, 168);
+  --orange: rgb(228, 159, 62);
+  --color: var(--gold);
+  --body-color: var(--orange);
+  --body-bg: rgb(228, 159, 62);
+  --emphasis-color: #000;
+  --emphasis-color-rgb: 0, 0, 0;
+  --link-color: #101215;
+  --link-color-rgb: 13, 110, 253;
+  --link-decoration: underline;
+  --link-hover-color: #101215;
+  --link-hover-color-rgb: 10, 88, 202;
+  --code-color: #d63384;
+  --border-color: var(--gold);
+  /* Fonts */
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Box sizing rules in Bootstrap*/
+/* *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  } */
+
+/* GLOBAL STYLES */
+/* Remove default margin */
+body,
+html,
+p {
+  /* height: 100%; */
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--gold);
+}
+
+.bg-image {
+  background-image: url("/assets/images/BG.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#logo {
+  width: 100px;
+}
+
+/* Position text in the middle of the page/image */
+#portriat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  width: 300px;
+  opacity: 25%;
+}
+
+/* Navbar container */
+
+/* Links inside the navbar */
+.navbar a {
+  color: var(--gold);
+}
+
+/* Add a orange background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  border-radius: 5px;
+  /* color: var(--link-color); */
+  font-weight: 600;
+}
+
+.nav-item {
+  /* padding-left: 100px; */
+  margin-left: 100px;
+}
+
+.nav-link {
+  color: var(--gold);
+}
+
+.nav-link.active {
+  border-radius: 5px;
+  background-color: var(--orange);
+  box-shadow: 2px 2px 20px #fc894d;
+}
+
+.nav-link:hover {
+  background-color: var(--gold);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown .dropdown-menu {
+  background-color: #101215;
+  /* opacity: 0.3; */
+  margin: 0;
+  font-family: inherit;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-menu a:hover {
+  background-color: #495057;
+  color: var(--orange);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.wrapper {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.wrapper li {
+  color: var(--gold);
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Verwendung von Media Queries */
+@media (width <=768px) {
+
+  h1,
+  .h1 {
+    font-size: 12px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 10px;
+  }
+
+  #logo {
+    width: 50px;
+  }
+
+  #portriat {
+    width: 50%;
+  }
+
+  /* Links inside the navbar */
+  .navbar a {
+    color: var(--gold);
+    float: right;
+    margin-right: 10px;
+    font-size: small;
+    padding: 5px 5px 5px 5px;
+
+  }
+
+  /* Add a background color to navbar links on hover */
+  /* not required */
+
+  /* Dropdown content (hidden by default) */
+  .dropdown {
+    /* margin-right: 100px; */
+  }
+
+  /* Links inside the dropdown */
+  .dropdown .dropdown-menu {
+    float: right;
+    background-color: #101215;
+    text-align: right;
+  }
+
+  .dropdown-menu a {
+    font-size: x-small;
+    color: var(--gold);
+    margin-right: 20px;
+    width: 10em;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .wrapper {
+    width: auto;
+  }
+
+  /* Place the container to the right */
+  .right {
+    left: 0;
+  }
+}
+
+@media (hover: hover) {
+  /* targets only devices that can hover */
+
+}
+
+@media (hover: none) {
+  /* targets only devices that don't hover */
+
+}
+
+/* Timeline */
+
+/***********************************/
+.mouse-cursor {
+  position: relative;
+  /* muss overflow muss hidden sein, sonst funktionieren die Buttons nicht */
+  /* overflow: hidden; */
+}
+
+.mouse-cursor span {
+  position: relative;
+  pointer-events: none;
+}
+
+.mouse-cursor::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle farthest-side,#1a1a1a,#111111, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.mouse-cursor:hover::before {
+  --size: 300px;
+}
+
+/* Verwendung von Media Queries */
+@media (width <=768px) {
+  .mouse-cursor {
+    margin-left: auto;
+    padding: 0 50px 0 50px;
+  }
+}
+/***********************************/
+
+.typewriter-effect {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 3s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-effect::after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+}
+
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+/***********************************/
+.isometric-card {
+  margin: 0 auto;
+  transform: rotateX(51deg) rotateZ(43deg);
+  transform-style: preserve-3d;
+  background-color: #101215;
+  will-change: transform;
+  width: 240px;
+  height: 320px;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 0 1px #d2d2d3, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
+}
+
+.isometric-card:hover {
+  transform: translate3d(0px, -40px, 0px) rotateX(51deg) rotateZ(43deg);
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
