@@ -9,7 +9,7 @@ html {
 h2 {
   margin: 5%;
   text-align: center;
-  font-size: 4rem;
+   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 100;
 }
 
