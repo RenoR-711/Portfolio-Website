@@ -326,3 +326,240 @@ p {
   box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
     54px 54px 28px -10px rgba(34, 33, 81, 0.15);
 }
+
+/* #######################################################################
+/* mein style CSS kann ich nach dem deployen nicht einbinden, deshalb füge datei hier an diese Stelle */
+/*@import './style.css';*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+h2 {
+  margin: 5%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+h1 {
+  margin: 4%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 10;
+  top: 0;
+}
+
+/* mittig darstellen */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  position: relative;
+}
+.tL_event {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 6px;
+  align-self: center;
+  width: 50vw;
+}
+.tL_event:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+
+.tL_event:nth-child(2n+1) .tL_event_date {
+  border-radius: 0 60px 60px 0;
+}
+.tL_event:nth-child(2n+1) .tL_event_content {
+  border-radius: 6px 0 0 6px;
+}
+/* icon auf der linken Seite, Strich nach unten */
+.tL_event:nth-child(2n+1) .tL_event_icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--orange);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  right: auto;
+  z-index: -1;
+  transform: translateX(-50%);
+  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+          animation: fillTop 2s forwards 4s ease-in-out;
+}
+/* icon auf der linken Seite, Strich nach rechts */
+.tL_event:nth-child(2n+1) .tL_event_icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--orange);
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 50%;
+  left: auto;
+  transform: translateY(-50%);
+  -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
+          animation: fillLeft 2s forwards 4s ease-in-out;
+}
+.tL_event_title {
+  font-size: 1.2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 1.5px;
+}
+.tL_event_content {
+  padding: 10px 20px 0px 20px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  background: #fff;
+  width: calc(40vw - 84px);
+  border-radius: 0 6px 6px 0;
+}
+.tL_event_date {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 20px;
+  border-radius: 60px 0 0 60px;
+}
+.tL_event_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  padding: 20px;
+  align-self: center;
+  margin: 0 20px;
+  background: var(--orange);
+  border-radius: 100%;
+  width: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  padding: 40px;
+  height: 40px;
+  position: relative;
+}
+.tL_event_icon i {
+  font-size: 32px;
+}
+/* icon auf der rechten Seite, Strich nach unten */
+.tL_event_icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: var(--orange);
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+          animation: fillTop 2s forwards 4s ease-in-out;
+}
+.tL_event_icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--orange);
+  position: absolute;
+  left: 0%;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
+          animation: fillLeftOdd 2s forwards 4s ease-in-out;
+}
+.tL_event_description {
+  flex-basis: 100%;
+  line-height: 1;
+  font-size: smaller;
+}
+
+.tL_event:last-child .tL_event_icon:before {
+  content: none;
+}
+
+@media (max-width: 786px) {
+  h1 {
+    font-size:smaller;
+  }
+  .tL_event {
+    flex-direction: column;
+    align-self: center;
+  }
+  .tL_event_title {
+    font-size: 0.9rem;
+  }
+  .tL_event_content {
+    width: 100%;
+  }
+  .tL_event_icon {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .tL_event_icon:before, .tL_event_icon:after {
+    display: none;
+  }
+  .tL_event_date {
+    border-radius: 0;
+    padding: 5px;
+  }
+  .tL_event:nth-child(2n+1) {
+    flex-direction: column;
+    align-self: center;
+  }
+  .tL_event:nth-child(2n+1) .tL_event_date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .tL_event:nth-child(2n+1) .tL_event_icon {
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+  }
+}
+@-webkit-keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+@keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+@-webkit-keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+@keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}
+@keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}
