@@ -21,7 +21,7 @@ Dieses Projekt ist eine persönliche Portfolio-Website, die im Rahmen meiner Ful
 
 ## 📸 Screenshots
 
-![Vorschau](/_site/assets/images/Abi.png)
+![Vorschau](/assets/images/Abi.png)
 
 ## 🚀 Live-Demo
 
