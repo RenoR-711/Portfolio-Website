@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* mein eigenes CSS */
-@import './style.css';
-
 :root {
   /* Colors */
   --gold: rgb(218, 197, 168);
