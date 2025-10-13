@@ -37,6 +37,9 @@ btn.addEventListener('mousemove', e => {
 const typeWriter = document.getElementById('typewriter-text');
 const text = 'Lorem ipsum dolor sit amet.';
 
-typeWriter.innerHTML = text;
-typeWriter.style.setProperty('--characters', text.length);
+if (typeWriter) {
+  typeWriter.innerHTML = text;
+  typeWriter.style.setProperty('--characters', text.length);
+}
 // -----------------------------------------------------
+
