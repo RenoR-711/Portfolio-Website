@@ -42,7 +42,7 @@ p {
 }
 
 .bg-image {
-  background-image: url("../images/BG.png");
+  background-image: url("/Portfolio-Website/assets/images/BG.png");
 
   /* Center and scale the image nicely */
   background-position: center;
