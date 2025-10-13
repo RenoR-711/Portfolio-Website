@@ -238,7 +238,7 @@ p {
 
 .mouse-cursor span {
   position: relative;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .mouse-cursor::before {
