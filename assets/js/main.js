@@ -1,6 +1,5 @@
 // Add your javascript here
 
-// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top
 // Get the button
 // Button referenzieren
 const mybutton = document.getElementById("myTop");
