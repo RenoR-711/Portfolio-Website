@@ -21,6 +21,8 @@ h1 {
   top: 0;
 }
 
+.text-gold { color: var(--gold); }
+
 /* mittig darstellen */
 .timeline {
   display: flex;

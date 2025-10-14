@@ -508,6 +508,12 @@ h1 {
     content: none;
 }
 
+@media (max-width: 576px) {
+    h1.display-1 {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 786px) {
     h1 {
         font-size: smaller;
