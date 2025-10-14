@@ -136,7 +136,7 @@ p {
 
 /* Place the container to the left */
 .left {
-    left: 0;
+    right: 0;
 }
 
 /* Place the container to the right */
