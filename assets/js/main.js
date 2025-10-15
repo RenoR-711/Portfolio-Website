@@ -57,4 +57,3 @@ if (typeWriter) {
     typeWriter.style.setProperty('--characters', text.length);
 }
 // -----------------------------------------------------
-
