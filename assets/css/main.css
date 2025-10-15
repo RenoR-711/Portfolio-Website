@@ -151,8 +151,8 @@ p {
     height: 400px;
     /* gewünschte Höhe */
     margin: 0 auto;
-    overflow: hidden;
-    /* Verhindert Überlauf bei zu großem Inhalt */
+max-height: none !important;
+    overflow: visible !important;
 }
 @media (max-width: 768px) {
     #profilCarousel {
