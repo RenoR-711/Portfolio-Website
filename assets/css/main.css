@@ -27,6 +27,8 @@
 body,
 html,
 p {
+    height: auto;
+        overflow-y: auto;
     margin: 0;
     font-family: var(--font-family);
     color: var(--gold);
