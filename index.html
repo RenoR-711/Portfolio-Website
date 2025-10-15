@@ -18,7 +18,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
   <style>
     #myTop {
       display: none;
@@ -40,17 +39,14 @@
       background-color: rgb(218, 197, 168);
     }
   </style>
-
   <script>window.toc = JSON.parse('[{"content":"Hallo Welt 👋","slug":"hallo-welt-👋","lvl":1,"i":0,"seen":0}]'); window.frontmatter = JSON.parse('{"title":"Willkommen","description":"Dies ist meine Portfolio-Seite","layout":"default"}');</script>
-
   <!-- Popover aktivieren -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const popoverTrigger = document.getElementById('portrait');
-      new bootstrap.Popover(popoverTrigger);
+      const portrait = document.getElementById('portrait');
+      new bootstrap.Popover(portrait);
     });
   </script>
-
 </head>
 
 <body class="bg-image mouse-cursor ">
@@ -63,14 +59,12 @@
       <div class="row">
         <a href="/">
           <div class="position-relative">
-
             <!-- ========== Nav Start Section ========== -->
             <nav class="navbar navbar-expand-lg d-flex">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                   <img id="logo" src="./assets/images/Logo.png" alt="" srcset="">
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                   aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -80,15 +74,14 @@
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
-
                     <!-- About Me -->
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      <a class="nav-link dropdown-toggle" href="./aboutme/index.html" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Über mich
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="./aboutme/index.html">Mein Profil</a></li>
+                        <li><a id="profil" class="dropdown-item" href="./aboutme/index.html">Mein Profil</a></li>
                         <li><a class="dropdown-item" href="./career/index.html">Karriere </a></li>
                         <li><a class="dropdown-item" href="./education/index.html">Bildungsweg</a></li>
                         <li><a class="dropdown-item" href="./zertifikate/index.html">Qualifikation</a></li>
@@ -96,10 +89,10 @@
                         <li>
                           <hr class="dropdown-divider">
                         </li>
-                        <a class="dropdown-item disabled" href="#">Lebenslauf (in Kürze verfügbar)</a>
+                        <li><a class="dropdown-item disabled" href="#">Lebenslauf (in Kürze verfügbar)</a></li>
+
                       </ul>
                     </li>
-
                     <!-- Gallery -->
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -111,90 +104,116 @@
                         <li><a class="dropdown-item" href="#">1996</a></li>
                       </ul>
                     </li>
-
                     <li class="nav-item">
                       <a class="nav-link" href="./aboutme/index.html">Contact</a>
                     </li>
-
                   </ul>
-
                 </div>
             </nav>
             <!-- ========== Nav End Section ========== -->
           </div>
-
         </a>
       </div>
     </div>
   </nav>
-
-
   <main>
     <!-- Hauptinhalt -->
     <section>
-
-
       <div class="text-center">
         <a href="./aboutme/index.html">
           <img id="portrait" src="./assets/images/Avatar1.png" alt="Porträt von Renumol Reinhardt" width="200" class=""
-            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="text-top"
+            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top"
             data-bs-content="Ich bin Renumol Reinhardt – bereit für den Einstieg als Fullstack-Entwicklerin.">
         </a>
       </div>
-
-
       <div class="container">
         <div class="row">
           <div class="col-sm-6 mb-5 mb-sm-2">
-            <div class="card rounded text-body-emphasis bg-body-secondary bg-opacity-10">
-                <div class="card-body">
-                  <br>
-                  <br>
-                  <br>
-                  <h2 class="pt-2 my-3 display-4 fst-italic text-gold"><span>Renumol Reinhardt</span></h2>
-                  <h1 class="pt-2 my-3 display-4 fst-italic text-gold"><strong font-size:80px;">- Web Portfolio -</strong></h1>
-                  <br>
-                  <br>
-                  <br>
-                </div>
+            <div class="card rounded bg-body-secondary bg-opacity-10">
+              <div class="card-body p-4 my-3 fst-italic text-center">
+                <br>
+                <br>
+                <br>
+                <h2 class="display-4 text-gold"><span>Renumol Reinhardt</span></h2><br>
+                <h1 class="display-4 text-gold fw-semibold">Web Portfolio</h1>
+                <br>
+                <br>
+                <br>
+              </div>
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="card rounded text-body-emphasis bg-body-secondary bg-opacity-10 text-gold">
-               <div class="card-body">
-                  <p class="lead p-2 m-3" style="font-size: small;">
-                    <!-- <h1>Willkommen auf meiner Portfolio-Seite!</h1> -->
-                    <span style="font-weight: bold;">Schön, dass du hier bist!</span><br>
-                    Ich bin Fullstack-Entwicklerin mit großer Begeisterung für moderne Technologien, sauberen Code und
-                    kreative Problemlösungen im Bereich der Softwareentwicklung.
-                    <br> <br>
-                    Mein Ziel ist der <span style="font-weight: bold;"> berufliche Einstieg als
-                      Fullstack-Entwicklerin</span>, bei dem ich
-                    sowohl meine technischen Kenntnisse als auch meine Motivation für kontinuierliches Lernen aktiv
-                    einbringen kann. Besonders im Bereich der Softwareentwicklung sehe ich die Chance, innovative
-                    Anwendungen mitzugestalten und stetig über mich hinauszuwachsen.
-                    <br> <br>
-                    Auf dieser Seite findest du eine Auswahl meiner bisherigen Projekte, meiner Fähigkeiten sowie meiner
-                    persönlichen Schwerpunkte. <br> <span style="font-weight: bold;">Viel Spaß beim Stöbern!</span>
-                  </p>
-
-                  <a href="./aboutme/index.html" class="ms-3 btn btn-secondary">mehr erfahren</a>
-                </div>
+            <div class="card rounded bg-body-secondary bg-opacity-10 text-gold">
+              <div class="card-body">
+                <p class="lead p-2 m-3 fs-6">
+                  <!-- <h1>Willkommen auf meiner Portfolio-Seite!</h1> -->
+                  <span class="fs-4 fw-bold">Schön, dass du hier bist!</span><br>
+                  Ich bin Fullstack-Entwicklerin mit großer Begeisterung für moderne Technologien, sauberen Code und
+                  kreative Problemlösungen im Bereich der Softwareentwicklung.
+                  <br> <br>
+                  Mein Ziel ist der <span class="fs-5 fw-semibold"> berufliche Einstieg als
+                    Fullstack-Entwicklerin</span>, bei dem ich
+                  sowohl meine technischen Kenntnisse als auch meine Motivation für kontinuierliches Lernen aktiv
+                  einbringen kann. Besonders im Bereich der Softwareentwicklung sehe ich die Chance, innovative
+                  Anwendungen mitzugestalten und stetig über mich hinauszuwachsen.
+                  <br> <br>
+                  Auf dieser Seite findest du eine Auswahl meiner bisherigen Projekte, meiner Fähigkeiten sowie meiner
+                  persönlichen Schwerpunkte. <br> <span style="font-weight: bold;">Viel Spaß beim Stöbern!</span>
+                </p>
+                <a href="./aboutme/index.html" class="ms-3 btn btn-secondary">mehr erfahren</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- ========== README ========== -->
+      <div class="container">
+        <h1>Meine <em>Bewerbungswebsite</em> ist aktuell im Aufbau.</h1>
+        <p>Einige Seiten und Funktionen sind noch Fragmente und nicht vollständig. Ich arbeite daran, alles bald
+          fertigzustellen. Vielen Dank für dein Verständnis.</p>
+
+        <p>My <em>application website</em> is currently under construction. Some pages and features are still fragmented
+          and
+          incomplete. I'm working on completing everything soon. Thank you for your understanding.</p>
+
+        <hr />
+
+        <h2>Mein Portfolio-Projekt – HTML/CSS/JavaScript</h2>
+        <p>Dieses Projekt ist eine persönliche Portfolio-Website, die im Rahmen meiner Fullstack-Weiterbildung
+          entstanden
+          ist.
+          Ziel war es, moderne Webtechnologien anzuwenden und eine responsive Website zu erstellen.</p>
+
+        <h3>🔧 Verwendete Technologien</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 (Flexbox, Grid)</li>
+          <li>JavaScript (Formularvalidierung, interaktive Elemente)</li>
+        </ul>
+
+        <h3>🖥️ Funktionen</h3>
+        <ul>
+          <li>Responsive Layout für Mobil, Tablet und Desktop</li>
+          <li>Kontaktformular mit JavaScript-Validierung</li>
+          <li>Galerie mit Lightbox-Effekt</li>
+        </ul>
+
+        <h3>📸 Screenshots</h3>
+        <img src="screenshot.png" alt="Vorschau Screenshot" />
+
+        <h3>🚀 Live-Demo</h3>
+        <p>👉 <a href="https://dein-github-name.github.io/dein-projekt" target="_blank"
+            rel="noopener noreferrer">Live-Version
+            auf GitHub Pages</a></p>
+      </div>
+      <!-- ========== README Ende========== -->
 
     </section>
   </main>
   <footer>
-
   </footer>
-
   <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
-
-
   <script src="./assets/js/main.js"></script>
 
 </html>
