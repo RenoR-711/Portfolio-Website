@@ -18,24 +18,25 @@
     --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Box sizing rules in Bootstrap*/
-/* *,
-  *::before,
-  *::after {
+/* 2. Global Box Sizing */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  } */
+}
 
-/* GLOBAL STYLES */
-/* Remove default margin */
+/* 3. GLOBAL STYLES */
 body,
 html,
 p {
-    /* height: 100%; */
     margin: 0;
     font-family: var(--font-family);
     color: var(--gold);
 }
-
+/* 4. Utility Klassen */
+.text-gold {
+    color: var(--gold);
+}
 .bg-image {
     background-image: url("/Portfolio-Website/assets/images/BG.png");
 
@@ -47,6 +48,7 @@ p {
 
 #logo {
     width: 100px;
+    margin-right: 5rem;
 }
 
 /* Position text in the middle of the page/image */
