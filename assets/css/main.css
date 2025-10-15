@@ -229,7 +229,7 @@ max-height: none !important;
 .mouse-cursor {
     position: relative;
     /* muss overflow muss hidden sein, sonst funktionieren die Buttons nicht */
-    overflow: hidden;
+    overflow: visible;
 }
 .mouse-cursor span {
     position: relative;
@@ -267,7 +267,7 @@ max-height: none !important;
     max-width: 0;
     animation: typing 3s steps(var(--characters)) infinite;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: visible;
 }
 .typewriter-effect::after {
     content: " |";
