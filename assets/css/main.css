@@ -27,8 +27,6 @@
 body,
 html,
 p {
-    height: auto;
-        overflow-y: auto;
     margin: 0;
     font-family: var(--font-family);
     color: var(--gold);
@@ -539,4 +537,9 @@ max-height: none !important;
     100% {
         left: 100%;
     }
+}
+html,
+body {
+    height: auto !important;
+    overflow-y: auto !important;
 }
