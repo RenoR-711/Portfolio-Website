@@ -538,8 +538,3 @@ max-height: none !important;
         left: 100%;
     }
 }
-html,
-body {
-    height: auto !important;
-    overflow-y: auto !important;
-}
