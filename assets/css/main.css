@@ -65,6 +65,7 @@ p {
 }
 .navbar a {
     color: var(--gold);
+    text-align: left;
 }
 .nav-item+.nav-item {
     margin-left: 5rem;
@@ -80,7 +81,6 @@ p {
     background-color: var(--orange);
     box-shadow: 2px 2px 20px #fc894d;
 }
-
 /* Links inside the dropdown */
 .dropdown-menu {
     display: none;
@@ -116,11 +116,11 @@ p {
     .navbar a {
         text-align: right;
         /* Text der Links rechtsbündig */
-        
     }
-.nav-item+.nav-item {
-    width: 150px;
-}
+    .nav-item+.nav-item {
+        margin-left: 0;
+            width: 150px;
+    }
     .dropdown-menu {
         right: 0;
         /* Dropdown rechts ausrichten */
