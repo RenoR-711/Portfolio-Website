@@ -162,7 +162,12 @@ p {
         width: 90%;
     }
 }
-
+.profilCarousel-liste {
+    margin-left: 40px;
+    /* verschiebt die Liste nach rechts */
+    margin-top: 20px;
+    /* Abstand nach oben */
+}
 /***********************************/
 /* 7. Verwendung von Media Queries */
 @media (max-width: 768px) {
