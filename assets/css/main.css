@@ -57,35 +57,45 @@ p {
 }
 /* 5. Navbar & Navigation */
 .navbar {
-    display: block;
-    gap: 2rem;
-    padding: 5rem;
-    /* Or whatever spacing looks good */
+    display: flex;
+    flex-direction: row;
+    /* horizontal */
     align-items: center;
+    /* vertikal zentriert */
+    justify-content: flex-start;
+    /* links ausgerichtet */
+    gap: 2rem;
+    padding: 1rem 3rem;
+    /* etwas Padding oben/unten und seitlich */
+    width: 100%;
+    /* volle Breite */
+    position: fixed;
+    /* damit sie immer oben bleibt */
+    top: 0;
+    left: 0;
+    background-color: #101215;
+    /* z.B. dunkel, kannst du anpassen */
+    z-index: 9999;
+    /* über anderen Elementen */
 }
-
 .navbar a {
     color: var(--gold);
     text-align: left;
 }
-
 .nav-item+.nav-item {
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
-
 /* Add a orange background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     border-radius: 0.2rem;
     color: var(--gold);
 }
-
 .nav-link.active {
     border-radius: 5px;
     background-color: var(--orange);
     box-shadow: 2px 2px 20px #fc894d;
 }
-
 /* Links inside the dropdown */
 .dropdown-menu {
     display: none;
@@ -103,12 +113,10 @@ p {
     text-align: right;
     color: var(--gold) !important;
 }
-
 .dropdown.show .dropdown-menu {
     display: block;
     /* sichtbar wenn die Klasse "show" da ist */
 }
-
 /* Add a grey background color to dropdown links on hover */
 .dropdown-item:hover {
     background-color: #2c2c2c !important;
@@ -119,23 +127,17 @@ p {
     .navbar {
         flex-direction: column;
         align-items: flex-end;
+        padding: 1rem;
         gap: 1rem;
-        padding: 0 1rem;
+        position: static;
+        /* nicht fixiert */
         width: auto;
-        /* <- Nur so breit wie der Inhalt */
-        margin-left: auto;
-        /* <- Schiebt die Navbar ganz nach rechts */
-        margin-right: 0;
-        /* <- Sicherstellen, dass sie nicht zentriert ist */
     }
     .navbar a {
-        display: inline-block;
         text-align: right;
         font-size: 0.9rem;
         width: auto;
-        /* <- Nur so breit wie der Text */
         padding: 0.2rem 0.5rem;
-        /* Optional: etwas Padding für bessere Klickfläche */
     }
     .nav-item+.nav-item {
         margin-left: 0;
@@ -147,9 +149,6 @@ p {
         width: 100%;
         text-align: right;
         padding: 0.5rem;
-    }
-    .dropdown.show .dropdown-menu {
-        display: block;
     }
     .dropdown-item {
         display: block;
