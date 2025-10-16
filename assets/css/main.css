@@ -58,18 +58,10 @@ p {
 /* 5. Navbar & Navigation */
 .navbar {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     gap: 2rem;
-    padding: 1rem 3rem;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: transparent !important;
-    /* z.B. dunkel, kannst du anpassen */
-    z-index: 9999;
+    padding: 5rem;
+    /* Or whatever spacing looks good */
+    align-items: center;
 }
 .navbar a {
     color: var(--gold);
