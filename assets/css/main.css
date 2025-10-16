@@ -111,7 +111,7 @@ p {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
         gap: 1rem;
         padding: 2rem;
     }
@@ -125,7 +125,7 @@ p {
         position: static;
         /* Dropdown wird untereinander angezeigt */
         width: 100%;
-        text-align: left;
+        text-align: right;
     }
 
     .dropdown.show .dropdown-menu {
