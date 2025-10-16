@@ -162,18 +162,7 @@ p {
         width: 90%;
     }
 }
-#profilCarousel .carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-    z-index: 15;
-}
+
 /***********************************/
 /* 7. Verwendung von Media Queries */
 @media (max-width: 768px) {
