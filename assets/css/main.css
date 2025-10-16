@@ -362,7 +362,11 @@ p {
     /* font-family: var(--font-family); */
     font-size: 0.9rem;
 }
-
+@media (max-width: 768px) {
+    .popover {
+        display: none !important;
+    }
+}
 /***********************************/
 /* 9. Isometric Card */
 .isometric-card {
