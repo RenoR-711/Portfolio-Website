@@ -110,11 +110,12 @@ p {
 }
 @media (max-width: 768px) {
     .navbar {
+        display: inline-flex;
         flex-direction: column;
         align-items: flex-end;
         gap: 1rem;
         padding: 0 1rem;
-        width: fit-content;
+        width: auto;
         /* <- Nur so breit wie der Inhalt */
         margin-left: auto;
         /* <- Schiebt die Navbar ganz nach rechts */
@@ -122,6 +123,7 @@ p {
         /* <- Sicherstellen, dass sie nicht zentriert ist */
     }
     .navbar a {
+        display: inline-block;
         text-align: right;
         font-size: 0.9rem;
         width: auto;
