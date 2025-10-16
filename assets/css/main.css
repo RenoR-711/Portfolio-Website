@@ -130,7 +130,7 @@ p {
         /* <- Nur so breit wie der Text */
         padding: 0.2rem 0.5rem;
         /* Optional: etwas Padding für bessere Klickfläche */
-        /* border: 1px solid red; */
+     
     }
     .nav-item+.nav-item {
         margin-left: 0;
