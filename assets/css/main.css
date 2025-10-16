@@ -82,6 +82,13 @@ p {
     background-color: var(--orange);
     box-shadow: 2px 2px 20px #fc894d;
 }
+/* Dropdown content (hidden by default) */
+.dropdown {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    /* Referenzpunkt für das Dropdown-Menü */
+}
 /* Links inside the dropdown */
 .dropdown-menu {
     display: none;
