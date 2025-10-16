@@ -17,12 +17,14 @@
     /* Fonts */
     --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* 2. Global Box Sizing */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
 /* 3. GLOBAL STYLES */
 body,
 html,
@@ -31,10 +33,12 @@ p {
     font-family: var(--font-family);
     color: var(--gold);
 }
+
 /* 4. Utility Klassen */
 .text-gold {
     color: var(--gold);
 }
+
 .bg-image {
     background-image: url("/Portfolio-Website/assets/images/BG.png");
     /* Center and scale the image nicely */
@@ -42,10 +46,12 @@ p {
     background-repeat: repeat;
     background-size: cover;
 }
+
 #logo {
     width: 100px;
     margin-right: 5rem;
 }
+
 /* Position text in the middle of the page/image */
 #portrait {
     display: block;
@@ -53,8 +59,9 @@ p {
     margin-right: auto;
     padding-bottom: 50px;
     /* width: 200px; */
-    opacity: 25%;
+    opacity: 0.25;
 }
+
 /* 5. Navbar & Navigation */
 .navbar {
     display: flex;
@@ -63,25 +70,28 @@ p {
     /* Or whatever spacing looks good */
     align-items: center;
 }
+
 .navbar a {
     color: var(--gold);
 }
+
 .nav-item+.nav-item {
     margin-left: 5rem;
 }
+
 /* Add a orange background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     border-radius: 0.2rem;
-    color: var(--link-color);
-    /* font-weight: 400; */
     color: var(--gold);
 }
+
 .nav-link.active {
     border-radius: 5px;
     background-color: var(--orange);
     box-shadow: 2px 2px 20px #fc894d;
 }
+
 /* Dropdown content (hidden by default) */
 .dropdown {
     border-bottom-left-radius: 5px;
@@ -89,6 +99,7 @@ p {
     position: relative;
     /* Referenzpunkt für das Dropdown-Menü */
 }
+
 /* Links inside the dropdown */
 .dropdown-menu {
     display: none;
@@ -106,25 +117,28 @@ p {
     text-align: right;
     color: var(--gold) !important;
 }
+
 /* Add a grey background color to dropdown links on hover */
 .dropdown-menu:hover {
     background-color: #101215 !important;
     /* color: var(--gold) !important; */
 }
+
 .dropdown-item:hover {
     background-color: #2c2c2c !important;
     color: var(--orange) !important;
     font-weight: bold;
 }
+
 .dropdown.show .dropdown-menu {
     display: block;
     /* sichtbar wenn die Klasse "show" da ist */
 }
+
 @media (max-width: 768px) {
     .navbar {
         justify-content: flex-end;
         padding: 2rem;
-        /* Optional: Weniger Padding auf kleineren Screens */
     }
 
     .dropdown-menu {
@@ -147,30 +161,49 @@ p {
         /* Optional: Kleinere Schrift */
     }
 }
+
+@media (hover: hover) {
+
+    /* Nur Geräte mit Maus (also Desktop): Dropdown per Hover */
+    .navbar .dropdown:hover>.dropdown-menu {
+        display: block;
+        margin-top: 0;
+        /* optional, für saubere Ausrichtung */
+    }
+
+    /* Optional: aktives Styling bei Hover */
+    .navbar .dropdown:hover>.nav-link {
+        background-color: var(--orange);
+        color: var(--link-color);
+    }
+}
+
 .wrapper {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
 }
+
 .wrapper li {
     color: var(--gold);
 }
+
 /* Place the container to the right */
 .right {
     left: 0;
 }
-/* .right {
-    left: 50%;
-} */
+
 /* Place the container to the left */
 .left {
     right: 0;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
 }
+
 /***********************************/
 /* 6. Carousel */
 #profilCarousel {
@@ -189,12 +222,14 @@ p {
         width: 90%;
     }
 }
+
 .profilCarousel-liste {
     margin-left: 50px;
     /* verschiebt die Liste nach rechts */
     margin-top: 20px;
     /* Abstand nach oben */
 }
+
 /***********************************/
 /* 7. Verwendung von Media Queries */
 @media (max-width: 768px) {
@@ -202,63 +237,52 @@ p {
         font-size: 14px;
         /* 1rem = 14px */
     }
+
     h1 {
         font-size: 2rem;
     }
+
     /* 28px */
     h2 {
         font-size: 1.75rem;
     }
+
     /* 24.5px */
     h3 {
         font-size: 1.5rem;
     }
+
     /* 21px */
     h4 {
         font-size: 1.25rem;
     }
+
     /* 17.5px */
     h5 {
         font-size: 1.125rem;
     }
+
     /* 15.75px */
     h6 {
         font-size: 1rem;
     }
+
     /* 14px */
     p,
     a {
         font-size: 0.9375rem;
         /* 13.125px */
     }
+
     #logo {
         width: 50px;
     }
+
     #portrait {
         width: 50%;
     }
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .nav-item {
-        margin-left: 0;
-        /* Remove individual spacing */
-    }
 }
-@media (hover: hover) {
-    /* Nur Geräte mit Maus (also Desktop): Dropdown per Hover */
-    .navbar .dropdown:hover>.dropdown-menu {
-        display: block;
-        margin-top: 0;
-        /* optional, für saubere Ausrichtung */
-    }
-    /* Optional: aktives Styling bei Hover */
-    .navbar .dropdown:hover>.nav-link {
-        background-color: var(--orange);
-        color: var(--link-color);
-    }
-}
+
 /***********************************/
 /* 8. Spezial Effekte */
 .mouse-cursor {
@@ -266,10 +290,12 @@ p {
     /* muss overflow muss hidden sein, sonst funktionieren die Buttons nicht */
     overflow: visible;
 }
+
 .mouse-cursor span {
     position: relative;
     pointer-events: none;
 }
+
 .mouse-cursor::before {
     --size: 0;
     content: '';
@@ -282,9 +308,11 @@ p {
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
 }
+
 .mouse-cursor:hover::before {
     --size: 300px;
 }
+
 /* Verwendung von Media Queries */
 @media (max-width: 768px) {
     .mouse-cursor {
@@ -292,34 +320,40 @@ p {
         padding: 0 50px 0 50px;
     }
 }
+
 /***********************************/
 .typewriter-effect {
     display: flex;
     justify-content: center;
     font-family: monospace;
 }
+
 .typewriter-effect>.text {
     max-width: 0;
     animation: typing 3s steps(var(--characters)) infinite;
     white-space: nowrap;
     overflow: visible;
 }
+
 .typewriter-effect::after {
     content: " |";
     animation: blink 1s infinite;
     animation-timing-function: step-end;
 }
+
 .popover {
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
+
 .popover-header {
     background-color: transparent !important;
     border-bottom: none !important;
     color: var(--gold);
     /* optional */
 }
+
 .popover-body {
     background-color: transparent !important;
     color: var(--orange);
@@ -328,6 +362,7 @@ p {
     /* font-family: var(--font-family); */
     font-size: 0.9rem;
 }
+
 /***********************************/
 /* 9. Isometric Card */
 .isometric-card {
@@ -343,11 +378,13 @@ p {
         28px 28px 28px 0 rgba(34, 33, 81, 0.25);
     transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
 }
+
 .isometric-card:hover {
     transform: translate3d(0px, -40px, 0px) rotateX(51deg) rotateZ(43deg);
     box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
         54px 54px 28px -10px rgba(34, 33, 81, 0.15);
 }
+
 /* #######################################################################
 /* mein style CSS kann ich nach dem deployen nicht einbinden, deshalb füge ich die datei hier an dieser Stelle */
 /*@import './style.css';*/
@@ -359,6 +396,7 @@ p {
     margin: 30px auto;
     position: relative;
 }
+
 .tL_event {
     margin-bottom: 20px;
     position: relative;
@@ -368,15 +406,19 @@ p {
     align-self: center;
     width: 50vw;
 }
+
 .tL_event:nth-child(2n+1) {
     flex-direction: row-reverse;
 }
+
 .tL_event:nth-child(2n+1) .tL_event_date {
     border-radius: 0 60px 60px 0;
 }
+
 .tL_event:nth-child(2n+1) .tL_event_content {
     border-radius: 6px 0 0 6px;
 }
+
 /* icon auf der linken Seite, Strich nach unten */
 .tL_event:nth-child(2n+1) .tL_event_icon:before {
     content: "";
@@ -392,6 +434,7 @@ p {
     -webkit-animation: fillTop 2s forwards 4s ease-in-out;
     animation: fillTop 2s forwards 4s ease-in-out;
 }
+
 /* icon auf der linken Seite, Strich nach rechts */
 .tL_event:nth-child(2n+1) .tL_event_icon:after {
     content: "";
@@ -407,6 +450,7 @@ p {
     -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
     animation: fillLeft 2s forwards 4s ease-in-out;
 }
+
 .tL_event_title {
     font-size: 1.2rem;
     line-height: 1;
@@ -415,6 +459,7 @@ p {
     color: var(--orange);
     letter-spacing: 1.5px;
 }
+
 .tL_event_content {
     padding: 10px 20px 0px 20px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -422,6 +467,7 @@ p {
     width: calc(40vw - 84px);
     border-radius: 0 6px 6px 0;
 }
+
 .tL_event_date {
     color: white;
     font-size: 1.5rem;
@@ -434,12 +480,13 @@ p {
     padding: 0 20px;
     border-radius: 60px 0 0 60px;
 }
+
 .tL_event_icon {
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--gold);
-    padding: 20px;
+    /* padding: 20px; */
     align-self: center;
     margin: 0 20px;
     background: var(--orange);
@@ -450,9 +497,11 @@ p {
     height: 40px;
     position: relative;
 }
+
 .tL_event_icon i {
     font-size: 32px;
 }
+
 /* icon auf der rechten Seite, Strich nach unten */
 .tL_event_icon:before {
     content: "";
@@ -467,6 +516,7 @@ p {
     -webkit-animation: fillTop 2s forwards 4s ease-in-out;
     animation: fillTop 2s forwards 4s ease-in-out;
 }
+
 .tL_event_icon:after {
     content: "";
     width: 100%;
@@ -480,97 +530,120 @@ p {
     -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
     animation: fillLeftOdd 2s forwards 4s ease-in-out;
 }
+
 .tL_event_description {
     flex-basis: 100%;
     line-height: 1;
     font-size: smaller;
 }
+
 .tL_event:last-child .tL_event_icon:before {
     content: none;
 }
+
 @media (max-width: 786px) {
     .tL_event {
         flex-direction: column;
         align-self: center;
     }
+
     .tL_event_title {
         font-size: 0.9rem;
     }
+
     .tL_event_content {
         width: 100%;
     }
+
     .tL_event_icon {
         border-radius: 6px 6px 0 0;
         width: 100%;
         margin: 0;
         box-shadow: none;
     }
+
     .tL_event_icon:before,
     .tL_event_icon:after {
         display: none;
     }
+
     .tL_event_date {
         border-radius: 0;
         padding: 5px;
     }
+
     .tL_event:nth-child(2n+1) {
         flex-direction: column;
         align-self: center;
     }
+
     .tL_event:nth-child(2n+1) .tL_event_date {
         border-radius: 0;
         padding: 20px;
     }
+
     .tL_event:nth-child(2n+1) .tL_event_icon {
         border-radius: 6px 6px 0 0;
         margin: 0;
     }
 }
+
 /* 12. Keyframes */
 @keyframes typing {
+
     75%,
     100% {
         max-width: calc(var(--characters) * 1ch);
     }
 }
+
 @keyframes blink {
+
     0%,
     75%,
     100% {
         opacity: 1;
     }
+
     25% {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes fillLeft {
     100% {
         right: 100%;
     }
 }
+
 @keyframes fillLeft {
     100% {
         right: 100%;
     }
 }
+
 @-webkit-keyframes fillTop {
     100% {
         top: 100%;
     }
 }
+
 @keyframes fillTop {
     100% {
         top: 100%;
     }
 }
+
 @-webkit-keyframes fillLeftOdd {
     100% {
         left: 100%;
     }
 }
+
 @keyframes fillLeftOdd {
     100% {
         left: 100%;
     }
 }
+
 /***********************************/
