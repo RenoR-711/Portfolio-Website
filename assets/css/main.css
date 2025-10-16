@@ -115,7 +115,10 @@ p {
         gap: 1rem;
         padding: 2rem;
     }
-
+        .navbar a {
+            font-size: 1rem;
+            /* <-- Etwas kleinere Schrift */
+        }
     .nav-item+.nav-item {
         margin-left: 0;
         margin-top: 1rem;
@@ -131,6 +134,10 @@ p {
     .dropdown.show .dropdown-menu {
         display: block;
     }
+                .dropdown-item {
+                    font-size: 0.95rem;
+                    /* <-- Dropdown kleiner */
+                }
 }
 
 /* Noch kleiner, z. B. Smartphones */
@@ -138,7 +145,13 @@ p {
     .navbar {
         padding: 1rem;
     }
-
+        .navbar a {
+            font-size: 0.9rem;
+            /* <-- Noch kleiner für Smartphones */
+        }
+                        .dropdown-item {
+                            font-size: 0.85rem;
+                        }
     .nav-link.active {
         box-shadow: none;
     }
