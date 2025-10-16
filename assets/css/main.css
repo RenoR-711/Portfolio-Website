@@ -62,6 +62,7 @@ p {
     padding: 5rem;
     /* Or whatever spacing looks good */
     align-items: center;
+    width: 10%;
 }
 .navbar a {
     color: var(--gold);
