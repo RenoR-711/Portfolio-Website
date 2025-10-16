@@ -63,12 +63,12 @@ p {
 }
 .title {
     font-size: 70px;
-    /* text-align: center; */
+    color: var(--orange);
 }
 
 .subtitle {
     font-size: 30px;
-    /* text-align: center; */
+        color: var(--orange);
 }
 /* 5. Navbar & Navigation */
 /* ===============================
