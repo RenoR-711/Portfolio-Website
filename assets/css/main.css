@@ -116,9 +116,11 @@ p {
     .navbar a {
         text-align: right;
         /* Text der Links rechtsbündig */
-        width: 150px;
+        
     }
-
+.nav-item+.nav-item {
+    width: 150px;
+}
     .dropdown-menu {
         right: 0;
         /* Dropdown rechts ausrichten */
