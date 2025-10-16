@@ -109,12 +109,12 @@ p {
     font-weight: bold;
 }
 @media (max-width: 768px) {
-    .navbar {
+    .navbar {border: 1px solid red;
         display: inline-flex;
         flex-direction: column;
         align-items: flex-end;
         gap: 1rem;
-        padding: 2rem;
+        padding: 0 1rem;
         width: auto;
         /* <- Nur so breit wie der Inhalt */
         margin-left: auto;
@@ -123,7 +123,7 @@ p {
         /* <- Sicherstellen, dass sie nicht zentriert ist */
     }
     .navbar a {
-        display: block;
+        display: inline-block;
         text-align: right;
         font-size: 0.9rem;
         width: auto;
