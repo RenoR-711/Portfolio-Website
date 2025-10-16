@@ -57,7 +57,7 @@ p {
 }
 /* 5. Navbar & Navigation */
 .navbar {
-    display: flex;
+    display: block;
     gap: 2rem;
     padding: 5rem;
     /* Or whatever spacing looks good */
