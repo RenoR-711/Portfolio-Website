@@ -43,7 +43,7 @@ p {
     background-size: cover;
 }
 #logo {
-    width: 50px;
+    width: 100px;
     margin-right: 5rem;
 }
 /* Position text in the middle of the page/image */
@@ -52,7 +52,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
-    width: 400px;
+    width: 200px;
     opacity: 25%;
 }
 /* 5. Navbar & Navigation */
