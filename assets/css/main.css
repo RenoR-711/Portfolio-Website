@@ -62,8 +62,6 @@ p {
     padding: 5rem;
     /* Or whatever spacing looks good */
     align-items: center;
-    width: 10%;
-    border-style: 1px dotted #fc894d;
 }
 .navbar a {
     color: var(--gold);
@@ -118,7 +116,9 @@ p {
     .navbar a {
         text-align: right;
         /* Text der Links rechtsbündig */
+        width: 150px;
     }
+
     .dropdown-menu {
         right: 0;
         /* Dropdown rechts ausrichten */
