@@ -61,7 +61,15 @@ p {
     /* width: 200px; */
     opacity: 0.25;
 }
+.title {
+    font-size: 70px;
+    /* text-align: center; */
+}
 
+.subtitle {
+    font-size: 30px;
+    /* text-align: center; */
+}
 /* 5. Navbar & Navigation */
 /* ===============================
    Allgemeine Navbar-Stile
