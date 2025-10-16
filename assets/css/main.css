@@ -121,19 +121,30 @@ p {
     /* sichtbar wenn die Klasse "show" da ist */
 }
 @media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-end;
+        padding: 2rem;
+        /* Optional: Weniger Padding auf kleineren Screens */
+    }
+
     .dropdown-menu {
         right: 0;
         left: auto;
-        width: 200px;
+        width: 150px;
+        /* Kleiner gemacht */
         top: 100%;
         border-radius: 0 0 5px 5px;
         text-align: right;
+        padding: 5px;
+        /* Optional: Weniger Padding für kompakteres Menü */
     }
 
     .dropdown-item {
         text-align: right;
-        padding: 10px;
-        font-size: 1rem;
+        padding: 8px;
+        /* Optional: Weniger Padding */
+        font-size: 0.9rem;
+        /* Optional: Kleinere Schrift */
     }
 }
 .wrapper {
