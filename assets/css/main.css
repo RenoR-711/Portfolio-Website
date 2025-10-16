@@ -114,7 +114,6 @@ p {
         align-items: flex-end;
         gap: 1rem;
         padding: 2rem;
-        width: 80%;
         width: auto;
         /* <- Nur so breit wie der Inhalt */
         margin-left: auto;
