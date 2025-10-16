@@ -110,48 +110,42 @@ p {
 }
 @media (max-width: 768px) {
     .navbar {
-        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
         padding: 2rem;
     }
-    .navbar a {
-        text-align: right;
-        /* Text der Links rechtsbündig */
-    }
+
     .nav-item+.nav-item {
         margin-left: 0;
-            width: 150px;
+        margin-top: 1rem;
     }
+
     .dropdown-menu {
-        right: 0;
-        /* Dropdown rechts ausrichten */
-        left: auto;
-        width: 150px;
-        /* Optional kleinere Breite */
-        text-align: right;
-        /* Text rechtsbündig */
-        padding: 5px;
-        border-radius: 0 0 5px 5px;
-        top: 100%;
+        position: static;
+        /* Dropdown wird untereinander angezeigt */
+        width: 100%;
+        text-align: left;
     }
-    .dropdown-item {
-        text-align: right;
-        padding: 8px;
-        /* Optional: Weniger Padding */
-        font-size: 0.7rem;
-        /* Optional: Kleinere Schrift */
+
+    .dropdown.show .dropdown-menu {
+        display: block;
     }
 }
-@media (hover: hover) {
-    /* Nur Geräte mit Maus (also Desktop): Dropdown per Hover */
-    .navbar .dropdown:hover>.dropdown-menu {
-        display: block;
-        margin-top: 0;
-        /* optional, für saubere Ausrichtung */
+
+/* Noch kleiner, z. B. Smartphones */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
     }
-    /* Optional: aktives Styling bei Hover */
-    .navbar .dropdown:hover>.nav-link {
-        background-color: var(--orange);
-        color: var(--link-color);
+
+    .nav-link.active {
+        box-shadow: none;
+    }
+
+    .dropdown-menu {
+        padding: 0.5rem;
+        font-size: 0.9rem;
     }
 }
 .wrapper {
