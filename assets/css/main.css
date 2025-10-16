@@ -73,7 +73,7 @@ p {
     /* damit sie immer oben bleibt */
     top: 0;
     left: 0;
-    background-color: #101215;
+    /* background-color: #101215; */
     /* z.B. dunkel, kannst du anpassen */
     z-index: 9999;
     /* über anderen Elementen */
