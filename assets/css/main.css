@@ -88,20 +88,24 @@ p {
     top: 100%;
     left: 0;
     z-index: 1000;
-    background-color: #101215 !important;
+    /* background-color: #101215 !important; */
     padding: 10px;
     border-radius: 5px;
     text-align: right;
     color: var(--gold) !important;
 }
-.dropdown.show .dropdown-menu {
-    display: block;
-}
 /* Add a grey background color to dropdown links on hover */
+.dropdown-menu:hover {
+    background-color: #101215 !important;
+    /* color: var(--gold) !important; */
+}
 .dropdown-item:hover {
     background-color: #2c2c2c !important;
     color: var(--orange) !important;
     font-weight: bold;
+}
+.dropdown.show .dropdown-menu {
+    display: block;
 }
 @media (max-width: 768px) {
     .navbar {
