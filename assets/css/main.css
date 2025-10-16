@@ -59,24 +59,17 @@ p {
 .navbar {
     display: flex;
     flex-direction: row;
-    /* horizontal */
     align-items: center;
-    /* vertikal zentriert */
     justify-content: flex-start;
-    /* links ausgerichtet */
     gap: 2rem;
     padding: 1rem 3rem;
-    /* etwas Padding oben/unten und seitlich */
     width: 100%;
-    /* volle Breite */
     position: fixed;
-    /* damit sie immer oben bleibt */
     top: 0;
     left: 0;
     /* background-color: #101215; */
     /* z.B. dunkel, kannst du anpassen */
     z-index: 9999;
-    /* über anderen Elementen */
 }
 .navbar a {
     color: var(--gold);
@@ -99,14 +92,10 @@ p {
 /* Links inside the dropdown */
 .dropdown-menu {
     display: none;
-    /* initial verstecken */
     position: absolute;
-    /* vom .dropdown relativ positioniert */
     top: 100%;
-    /*position direkt unter dem Button */
     left: 0;
     z-index: 1000;
-    /* hoch genug, um andere Inhalte zu überlagern */
     background-color: #101215 !important;
     padding: 10px;
     border-radius: 5px;
@@ -115,7 +104,6 @@ p {
 }
 .dropdown.show .dropdown-menu {
     display: block;
-    /* sichtbar wenn die Klasse "show" da ist */
 }
 /* Add a grey background color to dropdown links on hover */
 .dropdown-item:hover {
