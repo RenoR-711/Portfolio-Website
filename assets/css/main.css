@@ -123,11 +123,11 @@ p {
 @media (max-width: 768px) {
     .dropdown-menu {
         right: 0;
-        left: auto;
+        left: 0;
         width: 100%;
         top: 100%;
         border-radius: 0 0 5px 5px;
-        text-align: left;
+        text-align: right;
     }
 
     .dropdown-item {
