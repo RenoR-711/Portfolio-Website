@@ -130,7 +130,6 @@ p {
         /* <- Nur so breit wie der Text */
         padding: 0.2rem 0.5rem;
         /* Optional: etwas Padding für bessere Klickfläche */
-     
     }
     .nav-item+.nav-item {
         margin-left: 0;
@@ -151,7 +150,6 @@ p {
         text-align: right;
         font-size: 0.7rem;
         width: auto;
-
     }
 }
 /* Noch kleiner, z. B. Smartphones */
