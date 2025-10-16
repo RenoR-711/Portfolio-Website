@@ -172,6 +172,11 @@ p {
         font-size: 0.9rem;
     }
 }
+@media (min-width: 769px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
 .wrapper {
     padding: 10px 40px;
     position: relative;
