@@ -67,7 +67,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    /* background-color: #101215; */
+    background-color: transparent !important;
     /* z.B. dunkel, kannst du anpassen */
     z-index: 9999;
 }
@@ -135,7 +135,7 @@ p {
         position: static;
         /* Dropdown wird untereinander angezeigt */
         width: 100%;
-        text-align: right;
+        /* text-align: right; */
         padding: 0.5rem;
     }
     .dropdown-item {
