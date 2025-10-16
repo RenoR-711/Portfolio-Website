@@ -62,6 +62,7 @@ p {
     padding: 5rem;
     /* Or whatever spacing looks good */
     align-items: center;
+    position: relative;
 }
 .navbar a {
     color: var(--gold);
@@ -88,7 +89,7 @@ p {
     top: 100%;
     left: 0;
     z-index: 1000;
-    /* background-color: #101215 !important; */
+    background-color: #101215 !important;
     padding: 10px;
     border-radius: 5px;
     text-align: right;
