@@ -39,7 +39,7 @@ p {
     color: var(--orange);
 }
 .bg-image {
-    height: 900px;
+    height: 768px;
     background-image: url("/Portfolio-Website/assets/images/BG.png");
     /* Center and scale the image nicely */
     /* background-position: center; */
