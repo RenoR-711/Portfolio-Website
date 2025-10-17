@@ -43,7 +43,7 @@ p {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: repeat;
-    background-size: cover;
+    background-size: auto;
 }
 #logo {
     width: 100px;
