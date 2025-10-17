@@ -64,7 +64,7 @@ p {
 }
 .subtitle {
     font-size: 30px;
-    color: var(--gold);
+        color: var(--gold);
 }
 /* 5. Navbar & Navigation */
 /* ===============================
@@ -247,10 +247,6 @@ p {
     #profilCarousel {
         height: auto;
         font-size: 40%;
-    }
-    .carousel-control-prev,
-    .carousel-control-next {
-        transform: translateY(10%);
     }
 }
 /***********************************/
