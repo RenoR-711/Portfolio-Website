@@ -39,8 +39,8 @@ p {
     color: var(--orange);
 }
 .bg-image {
-    height: 100vh;
-    /* gesamte Bildschirmhöhe */
+ 
+
     background-image: url("/Portfolio-Website/assets/images/BG.png");
     background-repeat: repeat;
     /* Bild wird wiederholt */
