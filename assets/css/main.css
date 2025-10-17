@@ -42,8 +42,8 @@ p {
     background-image: url("/Portfolio-Website/assets/images/BG.png");
     /* Center and scale the image nicely */
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-repeat: repeat;
+    background-size: cover;
 }
 #logo {
     width: 100px;
