@@ -39,12 +39,15 @@ p {
     color: var(--orange);
 }
 .bg-image {
-    /* height: 768px; */
+    height: 100vh;
+    /* gesamte Bildschirmhöhe */
     background-image: url("/Portfolio-Website/assets/images/BG.png");
-    /* Center and scale the image nicely */
-    /* background-position: center; */
     background-repeat: repeat;
+    /* Bild wird wiederholt */
     background-size: auto;
+    /* Bild wird nicht skaliert */
+    background-position: top left;
+    /* Startpunkt des Musters */
 }
 #logo {
     width: 100px;
