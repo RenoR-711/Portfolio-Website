@@ -39,8 +39,6 @@ p {
     color: var(--orange);
 }
 .bg-image {
- 
-
     background-image: url("/Portfolio-Website/assets/images/BG.png");
     background-repeat: repeat;
     /* Bild wird wiederholt */
