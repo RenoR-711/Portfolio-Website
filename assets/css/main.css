@@ -67,12 +67,12 @@ p {
 }
 .title {
     font-size: 70px;
-    color: var(--orange);
+    color: var(--gold);
 }
 
 .subtitle {
     font-size: 30px;
-        color: var(--orange);
+        color: var(--gold);
 }
 /* 5. Navbar & Navigation */
 /* ===============================
@@ -258,7 +258,7 @@ p {
 /* 6. Carousel */
 #profilCarousel {
     position: relative;
-    width: 40%;
+    width: 70%;
     height: 400px;
     /* gewünschte Höhe */
     margin: 0 auto;
@@ -278,6 +278,7 @@ p {
     /* verschiebt die Liste nach rechts */
     margin-top: 20px;
     /* Abstand nach oben */
+    text-align: left;
 }
 
 /***********************************/
