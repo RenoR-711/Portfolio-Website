@@ -2,6 +2,7 @@
     /* Colors */
     --gold: rgb(218, 197, 168);
     --orange: rgb(228, 159, 62);
+    --bg-darkgrey: rgb(14, 14, 14);
     --color: var(--gold);
     --body-color: var(--orange);
     --body-bg: rgb(228, 159, 62);
@@ -17,6 +18,7 @@
     /* Fonts */
     --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* 2. Global Box Sizing */
 *,
 *::before,
@@ -38,14 +40,21 @@ p {
 .text-orange {
     color: var(--orange);
 }
+.bg-darkgrey {
+    color: var(--bg-darkgrey);
+}
 .bg-image {
-    background-image: url("/Portfolio-Website/assets/images/BG.png");
+    background-image: url("../images/BG.png");
     background-repeat: repeat;
     /* Bild wird wiederholt */
     background-size: auto;
     /* Bild wird nicht skaliert */
     background-position: top left;
     /* Startpunkt des Musters */
+    height: 900px;
+}
+.bg-Imagebg {
+    background-color: var(--bg-darkgrey)
 }
 #logo {
     width: 100px;
@@ -234,10 +243,47 @@ p {
 .carousel-indicators {
     bottom: -20% !important;
 }
-.carousel-control-prev,
-.carousel-control-next {
-    transform: translateY(10%);
+section #profilCarousel .carousel-control-prev,
+section #profilCarousel .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+/*#profilCarousel .carousel-control-prev,
+#profilCarousel .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 2;
+}
+ändern
+#profilCarousel .carousel-control-prev {
+    left: -50px;
+    /* je nach Layout anpassen */
+}
+
+#profilCarousel .carousel-control-next {
+    right: -50px;
+    /* je nach Layout anpassen */
+}
+
+@media (max-width: 768px) {
+
+    #profilCarousel .carousel-control-prev,
+    #profilCarousel .carousel-control-next {
+        top: auto;
+        bottom: -40px;
+        transform: none;
+    }
+
+    #profilCarousel .carousel-control-prev {
+        left: 30%;
+    }
+
+    #profilCarousel .carousel-control-next {
+        right: 30%;
+    }
+}*/
 .profilCarousel-liste {
     /* margin-left: 50px; */
     /* verschiebt die Liste nach rechts */
