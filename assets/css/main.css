@@ -25,6 +25,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 /* 3. GLOBAL STYLES */
 body,
 html,
@@ -33,10 +34,12 @@ p {
     font-family: var(--font-family);
     color: var(--gold);
 }
+
 /* 4. Utility Klassen */
 .text-gold {
     color: var(--gold);
 }
+
 .text-orange {
     color: var(--orange);
 }
@@ -44,17 +47,21 @@ p {
 .bg-image {
     background-image: url("../images/BG.png");
 }
+
 .bg-imagehor {
     background-image: url("../images/BGhor.png");
 }
+
 .bg-Imagebg {
     /* background-color: var(--darkgrey); */
     background-color: #101215;
 }
+
 #logo {
     width: 100px;
     margin-right: 5rem;
 }
+
 /* Position text in the middle of the page/image */
 #portrait {
     display: block;
@@ -64,14 +71,17 @@ p {
     /* width: 200px; */
     opacity: 0.25;
 }
+
 .title {
     font-size: 70px;
     color: var(--gold);
 }
+
 .subtitle {
     font-size: 30px;
-        color: var(--gold);
+    color: var(--gold);
 }
+
 /* 5. Navbar & Navigation */
 /* ===============================
    Allgemeine Navbar-Stile
@@ -82,26 +92,31 @@ p {
     padding: 5rem;
     align-items: center;
 }
+
 .navbar a {
     color: var(--gold);
     text-align: left;
 }
+
 /* Abstand zwischen Nav-Items */
 .nav-item+.nav-item {
     margin-left: 5rem;
 }
+
 /* Hover-Effekt für Navbar-Links */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     border-radius: 0.2rem;
     color: var(--gold);
 }
+
 /* Aktiver Link hervorgehoben */
 .nav-link.active {
     border-radius: 5px;
     background-color: var(--orange);
     box-shadow: 2px 2px 20px #fc894d;
 }
+
 /* ===============================
    Dropdown Menü
 ================================= */
@@ -109,6 +124,7 @@ p {
 .dropdown {
     position: relative;
 }
+
 /* Dropdown-Menü standardmäßig verstecken */
 .dropdown-menu {
     display: none;
@@ -122,16 +138,19 @@ p {
     text-align: right;
     color: var(--gold) !important;
 }
+
 /* Dropdown-Menü sichtbar, wenn per JS die Klasse .show gesetzt wird */
 .dropdown.show .dropdown-menu {
     display: block;
 }
+
 /* Hover-Stil für Dropdown-Elemente */
 .dropdown-item:hover {
     background-color: #2c2c2c !important;
     color: var(--orange) !important;
     font-weight: bold;
 }
+
 /* ===============================
    Responsive: max-width 768px
    Tablets und kleine Geräte
@@ -146,6 +165,7 @@ p {
         margin-left: auto;
         margin-right: 0;
     }
+
     .navbar a {
         display: block;
         text-align: right;
@@ -153,19 +173,23 @@ p {
         width: auto;
         padding: 0.2rem 0.5rem;
     }
+
     .nav-item+.nav-item {
         margin-left: 0;
         margin-top: 1rem;
     }
+
     .dropdown-menu {
         position: static;
         width: 100%;
         text-align: right;
         padding: 0.5rem;
     }
+
     .dropdown.show .dropdown-menu {
         display: block;
     }
+
     .dropdown-item {
         display: block;
         text-align: right;
@@ -173,6 +197,7 @@ p {
         width: auto;
     }
 }
+
 /* ===============================
    Responsive: max-width 480px
    Smartphones
@@ -181,20 +206,25 @@ p {
     .navbar {
         padding: 1rem;
     }
+
     .navbar a {
         font-size: 0.9rem;
     }
+
     .dropdown-item {
         font-size: 0.85rem;
     }
+
     .nav-link.active {
         box-shadow: none;
     }
+
     .dropdown-menu {
         padding: 0.5rem;
         font-size: 0.9rem;
     }
 }
+
 /* ===============================
    Dropdown per Hover aktivieren
    Nur auf größeren Bildschirmen
@@ -204,6 +234,7 @@ p {
         display: block;
     }
 }
+
 /***********************************/
 .wrapper {
     padding: 10px 40px;
@@ -211,87 +242,102 @@ p {
     background-color: inherit;
     width: 50%;
 }
+
 .wrapper li {
     color: var(--gold);
 }
+
 /* Place the container to the right */
 .right {
     left: 0;
 }
+
 /* Place the container to the left */
 .left {
     right: 0;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
 }
+
 /***********************************/
 /* 6. Carousel */
 #profilCarousel {
     position: relative;
     margin: 0 auto;
     max-height: none !important;
-    overflow: visible !important;
+    overflow: visible;
     /* border: 1px solid red; */
 }
+
 .carousel-indicators {
     bottom: -20% !important;
 }
-section #profilCarousel .carousel-control-prev,
-section #profilCarousel .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-/*#profilCarousel .carousel-control-prev,
+#profilCarousel .carousel-control-prev,
 #profilCarousel .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 2;
+    background: none;
+    border: none;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    opacity: 0.8;
+    /* optional */
 }
-ändern
+
 #profilCarousel .carousel-control-prev {
-    left: -50px;
-    /* je nach Layout anpassen */
+    left: 0;
+    /* direkt am linken Rand des Karussells */
 }
 
 #profilCarousel .carousel-control-next {
-    right: -50px;
-    /* je nach Layout anpassen */
+    right: 0;
+    /* direkt am rechten Rand des Karussells */
 }
 
-@media (max-width: 768px) {
-
-    #profilCarousel .carousel-control-prev,
-    #profilCarousel .carousel-control-next {
-        top: auto;
-        bottom: -40px;
-        transform: none;
-    }
-
-    #profilCarousel .carousel-control-prev {
-        left: 30%;
-    }
-
-    #profilCarousel .carousel-control-next {
-        right: 30%;
-    }
-}*/
-.profilCarousel-liste {
-    /* margin-left: 50px; */
-    /* verschiebt die Liste nach rechts */
+.profilCarousel-wrapper {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-    /* Abstand nach oben */
-    text-align: left;
 }
+
+.profilCarousel-liste {
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+
 @media (max-width: 768px) {
+
     #profilCarousel {
         height: auto;
         font-size: 40%;
     }
+
+    #profilCarousel .carousel-control-prev,
+    #profilCarousel .carousel-control-next {
+        top: auto;
+        bottom: 10px;
+        transform: none;
+    }
+
+    #profilCarousel .carousel-control-prev {
+        left: 20%;
+    }
+
+    #profilCarousel .carousel-control-next {
+        right: 20%;
+    }
 }
+
 /***********************************/
 /* 7. Verwendung von Media Queries */
 @media (max-width: 768px) {
@@ -299,42 +345,52 @@ section #profilCarousel .carousel-control-next {
         font-size: 14px;
         /* 1rem = 14px */
     }
+
     h1 {
         font-size: 2rem;
     }
+
     /* 28px */
     h2 {
         font-size: 1.75rem;
     }
+
     /* 24.5px */
     h3 {
         font-size: 1.5rem;
     }
+
     /* 21px */
     h4 {
         font-size: 1.25rem;
     }
+
     /* 17.5px */
     h5 {
         font-size: 1.125rem;
     }
+
     /* 15.75px */
     h6 {
         font-size: 1rem;
     }
+
     /* 14px */
     p,
     a {
         font-size: 0.9375rem;
         /* 13.125px */
     }
+
     #logo {
         width: 50px;
     }
+
     #portrait {
         width: 50%;
     }
 }
+
 /***********************************/
 /* 8. Spezial Effekte */
 .mouse-cursor {
@@ -342,10 +398,12 @@ section #profilCarousel .carousel-control-next {
     /* muss overflow muss hidden sein, sonst funktionieren die Buttons nicht */
     overflow: visible;
 }
+
 .mouse-cursor span {
     position: relative;
     pointer-events: none;
 }
+
 .mouse-cursor::before {
     --size: 0;
     content: '';
@@ -358,9 +416,11 @@ section #profilCarousel .carousel-control-next {
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
 }
+
 .mouse-cursor:hover::before {
     --size: 300px;
 }
+
 /* Verwendung von Media Queries */
 @media (max-width: 768px) {
     .mouse-cursor {
@@ -368,34 +428,40 @@ section #profilCarousel .carousel-control-next {
         padding: 0 50px 0 50px;
     }
 }
+
 /***********************************/
 .typewriter-effect {
     display: flex;
     justify-content: center;
     font-family: monospace;
 }
+
 .typewriter-effect>.text {
     max-width: 0;
     animation: typing 3s steps(var(--characters)) infinite;
     white-space: nowrap;
     overflow: visible;
 }
+
 .typewriter-effect::after {
     content: " |";
     animation: blink 1s infinite;
     animation-timing-function: step-end;
 }
+
 .popover {
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
+
 .popover-header {
     background-color: transparent !important;
     border-bottom: none !important;
     color: var(--gold);
     /* optional */
 }
+
 .popover-body {
     background-color: transparent !important;
     color: var(--orange);
@@ -404,11 +470,13 @@ section #profilCarousel .carousel-control-next {
     /* font-family: var(--font-family); */
     font-size: 0.9rem;
 }
+
 @media (max-width: 768px) {
     .popover {
         display: none !important;
     }
 }
+
 /***********************************/
 /* 9. Isometric Card */
 .isometric-card {
@@ -424,11 +492,13 @@ section #profilCarousel .carousel-control-next {
         28px 28px 28px 0 rgba(34, 33, 81, 0.25);
     transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
 }
+
 .isometric-card:hover {
     transform: translate3d(0px, -40px, 0px) rotateX(51deg) rotateZ(43deg);
     box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
         54px 54px 28px -10px rgba(34, 33, 81, 0.15);
 }
+
 /* #######################################################################
 /* mein style CSS kann ich nach dem deployen nicht einbinden, deshalb füge ich die datei hier an dieser Stelle */
 /*@import './style.css';*/
@@ -440,6 +510,7 @@ section #profilCarousel .carousel-control-next {
     margin: 30px auto;
     position: relative;
 }
+
 .tL_event {
     margin-bottom: 20px;
     position: relative;
@@ -449,15 +520,19 @@ section #profilCarousel .carousel-control-next {
     align-self: center;
     width: 50vw;
 }
+
 .tL_event:nth-child(2n+1) {
     flex-direction: row-reverse;
 }
+
 .tL_event:nth-child(2n+1) .tL_event_date {
     border-radius: 0 60px 60px 0;
 }
+
 .tL_event:nth-child(2n+1) .tL_event_content {
     border-radius: 6px 0 0 6px;
 }
+
 /* icon auf der linken Seite, Strich nach unten */
 .tL_event:nth-child(2n+1) .tL_event_icon:before {
     content: "";
@@ -473,6 +548,7 @@ section #profilCarousel .carousel-control-next {
     -webkit-animation: fillTop 2s forwards 4s ease-in-out;
     animation: fillTop 2s forwards 4s ease-in-out;
 }
+
 /* icon auf der linken Seite, Strich nach rechts */
 .tL_event:nth-child(2n+1) .tL_event_icon:after {
     content: "";
@@ -488,6 +564,7 @@ section #profilCarousel .carousel-control-next {
     -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
     animation: fillLeft 2s forwards 4s ease-in-out;
 }
+
 .tL_event_title {
     font-size: 1.2rem;
     line-height: 1;
@@ -496,6 +573,7 @@ section #profilCarousel .carousel-control-next {
     color: var(--orange);
     letter-spacing: 1.5px;
 }
+
 .tL_event_content {
     padding: 10px 20px 0px 20px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -503,6 +581,7 @@ section #profilCarousel .carousel-control-next {
     width: calc(40vw - 84px);
     border-radius: 0 6px 6px 0;
 }
+
 .tL_event_date {
     color: white;
     font-size: 1.5rem;
@@ -515,6 +594,7 @@ section #profilCarousel .carousel-control-next {
     padding: 0 20px;
     border-radius: 60px 0 0 60px;
 }
+
 .tL_event_icon {
     display: flex;
     align-items: center;
@@ -531,9 +611,11 @@ section #profilCarousel .carousel-control-next {
     height: 40px;
     position: relative;
 }
+
 .tL_event_icon i {
     font-size: 32px;
 }
+
 /* icon auf der rechten Seite, Strich nach unten */
 .tL_event_icon:before {
     content: "";
@@ -548,6 +630,7 @@ section #profilCarousel .carousel-control-next {
     -webkit-animation: fillTop 2s forwards 4s ease-in-out;
     animation: fillTop 2s forwards 4s ease-in-out;
 }
+
 .tL_event_icon:after {
     content: "";
     width: 100%;
@@ -561,97 +644,120 @@ section #profilCarousel .carousel-control-next {
     -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
     animation: fillLeftOdd 2s forwards 4s ease-in-out;
 }
+
 .tL_event_description {
     flex-basis: 100%;
     line-height: 1;
     font-size: smaller;
 }
+
 .tL_event:last-child .tL_event_icon:before {
     content: none;
 }
+
 @media (max-width: 786px) {
     .tL_event {
         flex-direction: column;
         align-self: center;
     }
+
     .tL_event_title {
         font-size: 0.9rem;
     }
+
     .tL_event_content {
         width: 100%;
     }
+
     .tL_event_icon {
         border-radius: 6px 6px 0 0;
         width: 100%;
         margin: 0;
         box-shadow: none;
     }
+
     .tL_event_icon:before,
     .tL_event_icon:after {
         display: none;
     }
+
     .tL_event_date {
         border-radius: 0;
         padding: 5px;
     }
+
     .tL_event:nth-child(2n+1) {
         flex-direction: column;
         align-self: center;
     }
+
     .tL_event:nth-child(2n+1) .tL_event_date {
         border-radius: 0;
         padding: 20px;
     }
+
     .tL_event:nth-child(2n+1) .tL_event_icon {
         border-radius: 6px 6px 0 0;
         margin: 0;
     }
 }
+
 /* 12. Keyframes */
 @keyframes typing {
+
     75%,
     100% {
         max-width: calc(var(--characters) * 1ch);
     }
 }
+
 @keyframes blink {
+
     0%,
     75%,
     100% {
         opacity: 1;
     }
+
     25% {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes fillLeft {
     100% {
         right: 100%;
     }
 }
+
 @keyframes fillLeft {
     100% {
         right: 100%;
     }
 }
+
 @-webkit-keyframes fillTop {
     100% {
         top: 100%;
     }
 }
+
 @keyframes fillTop {
     100% {
         top: 100%;
     }
 }
+
 @-webkit-keyframes fillLeftOdd {
     100% {
         left: 100%;
     }
 }
+
 @keyframes fillLeftOdd {
     100% {
         left: 100%;
     }
 }
+
 /***********************************/
