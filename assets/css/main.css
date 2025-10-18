@@ -2,7 +2,7 @@
     /* Colors */
     --gold: rgb(218, 197, 168);
     --orange: rgb(228, 159, 62);
-    --bg-darkgrey: rgb(14, 14, 14);
+    --darkgrey: rgb(14, 14, 14);
     --color: var(--gold);
     --body-color: var(--orange);
     --body-bg: rgb(228, 159, 62);
@@ -40,21 +40,16 @@ p {
 .text-orange {
     color: var(--orange);
 }
-.bg-darkgrey {
-    color: var(--bg-darkgrey);
-}
+
 .bg-image {
     background-image: url("../images/BG.png");
-    background-repeat: repeat;
-    /* Bild wird wiederholt */
-    background-size: auto;
-    /* Bild wird nicht skaliert */
-    background-position: top left;
-    /* Startpunkt des Musters */
-    /* height: 900px; */
+}
+.bg-imagehor {
+    background-image: url("../images/BGhor.png");
 }
 .bg-Imagebg {
-    background-color: var(--bg-darkgrey)
+    /* background-color: var(--darkgrey); */
+    background-color: #101215;
 }
 #logo {
     width: 100px;
