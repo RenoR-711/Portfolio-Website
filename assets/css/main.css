@@ -266,17 +266,23 @@ p {
 /* 6. Carousel */
 #profilCarousel {
     position: relative !important;
-    /* margin: 0 auto; */
-    /* max-height: none !important; */
-    overflow: visible !important;
+
+    overflow: hidden !important;
     /* border: 1px solid red; */
 }
 
 #profilCarousel .carousel-control-prev,
 #profilCarousel .carousel-control-next {
-    width: 5%;
+    /* width: 5%;
     opacity: 0.7;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s; */
+    position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
 }
 
 @media (max-width: 768px) {
