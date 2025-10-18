@@ -265,30 +265,22 @@ p {
 /***********************************/
 /* 6. Carousel */
 #profilCarousel {
-    position: relative;
-    margin: 0 auto;
-    max-height: none !important;
-    overflow: visible;
+    position: relative !important;
+    /* margin: 0 auto; */
+    /* max-height: none !important; */
+    overflow: visible !important;
     /* border: 1px solid red; */
 }
 
 .carousel-indicators {
-    bottom: -20% !important;
+    bottom: 40px;
 }
 
 #profilCarousel .carousel-control-prev,
 #profilCarousel .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    background: none;
-    border: none;
-    padding: 1rem;
-    width: auto;
-    height: auto;
-    opacity: 0.8;
-    /* optional */
+    width: 5%;
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
 
 #profilCarousel .carousel-control-prev {
@@ -307,19 +299,15 @@ p {
     margin-top: 20px;
 }
 
-.profilCarousel-liste {
-    display: inline-block;
-    text-align: left;
-    padding-left: 20px;
-    list-style-position: inside;
-}
-
-
 @media (max-width: 768px) {
 
     #profilCarousel {
         height: auto;
         font-size: 40%;
+    }
+
+    .carousel-indicators {
+        bottom: 0.5rem;
     }
 
     #profilCarousel .carousel-control-prev,

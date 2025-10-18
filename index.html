@@ -114,7 +114,7 @@
   <main>
     <!-- ========== Hauptinhalt ========== -->
     <section class="bg-image" style="height: 900px; ">
-      <div class="container text-center">
+      <div class="container text-center pt-5">
         <a href="./aboutme/index.html">
           <img id="portrait" src="./assets/images/Avatar1.png" alt="Porträt von Renumol Reinhardt" width="200" class=""
             title="" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="right"
@@ -159,94 +159,82 @@
             <h1 class="display-1 fst-italic text-center" id="profil"><strong>Mein Profil</strong></h1>
           </div>
 
+
           <!-- Carousel wrapper -->
-          <div id="profilCarousel" class="carousel slide pt-5" data-bs-ride="carousel">
+          <div id="profilCarousel" class="carousel slide" data-bs-ride="carousel">
+
             <!-- Indicators -->
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Über mich"></button>
-              <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="1"
-                aria-label="Soft Skills"></button>
-              <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="2" aria-label="Stärken"></button>
-            </div><!-- Indicators ende -->
-            <!-- Slides -->
-            <div class="carousel-inner text-gold">
-              <!-- Slide 1 -->
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
               <div class="carousel-item active">
+                <!-- Inhalt Slide 1 -->
                 <h2 class="display-5 text-center"><strong>Soft Skills</strong></h2>
                 <hr style="border: 2px solid var(--orange);">
-                <div class="mx-auto d-inline-block">
-                  <div class="profilCarousel-wrapper">
-                    <ul class="profilCarousel-liste">
-                      <li>Analytisches Denkvermögen</li>
-                      <li>Selbstständige und strukturierte Arbeitsweise</li>
-                      <li>Hohes Maß an Eigeninitiative und Lernbereitschaft</li>
-                      <li>Kreativität und Problemlösungskompetenz</li>
-                      <li>Teamfähigkeit und Kommunikationsstärke</li>
-                      <li>Zuverlässigkeit und Gewissenhaftigkeit</li>
-                      <li>Anpassungsfähigkeit und Durchhaltevermögen</li>
-                      <li>Digitale Affinität und schnelle Auffassungsgabe</li>
-                    </ul>
-                  </div>
-                </div>
-              </div><!-- Slide 1 ende -->
-              <!-- Slide 2 -->
+                <ul class="d-inline-block">
+                  <li>Analytisches Denkvermögen</li>
+                  <li>Selbstständige und strukturierte Arbeitsweise</li>
+                  <li>Hohes Maß an Eigeninitiative und Lernbereitschaft</li>
+                  <li>Kreativität und Problemlösungskompetenz</li>
+                  <li>Teamfähigkeit und Kommunikationsstärke</li>
+                  <li>Zuverlässigkeit und Gewissenhaftigkeit</li>
+                  <li>Anpassungsfähigkeit und Durchhaltevermögen</li>
+                  <li>Digitale Affinität und schnelle Auffassungsgabe</li>
+
+                </ul>
+              </div>
               <div class="carousel-item">
+                <!-- Inhalt Slide 2 -->
                 <h2 class="display-5 text-center"><strong>Meine Stärken</strong><br><span
                     class="fs-4 fw-light">Fachliche
                     Qualifikationen & IT-Kenntnisse</span></h2>
-                <hr style="border: 2px solid var(--orange); ">
-                <div class="mx-auto d-inline-block">
-                  <div class="profilCarousel-wrapper">
-                    <ul class="profilCarousel-liste">
-                      <li>Programmiersprachen & Webentwicklung: <span class="fs-6 fw-lighter">Java, Kotlin, PHP,
-                          JavaScript,
-                          HTML, CSS, jQuery</span></li>
-                      <li>Frameworks & Libraries: <span class="fs-6 fw-lighter">Bootstrap, Laravel, Cordova,
-                          React</span>
-                      </li>
-                      <li>Android- & Mobile-Entwicklung: <span class="fs-6 fw-lighter">Android SDK, Android Studio, XML,
-                          Cordova (Cross-Plattform), Entwicklung mit Java und Kotlin</span>
-                      </li>
-                      <li>Tools & IDEs: <span class="fs-6 fw-lighter">IntelliJ IDEA, Android Studio, Visual Studio Code,
-                          Git, GitHub</span></li>
-                      <li>Design & Office: <span class="fs-6 fw-lighter">Adobe Creative Suite (Photoshop, Illustrator,
-                          InDesign), Microsoft Office (PowerPoint, Excel, Word etc.)</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div><!-- Slide 2 ende -->
-              <!-- Slide 3 -->
+                <hr style="border: 2px solid var(--orange);">
+                <ul class="d-inline-block">
+                  <li>Programmiersprachen & Webentwicklung: <span class="fs-6 fw-lighter">Java, Kotlin, PHP,
+                      JavaScript,
+                      HTML, CSS, jQuery</span></li>
+                  <li>Frameworks & Libraries: <span class="fs-6 fw-lighter">Bootstrap, Laravel, Cordova,
+                      React</span>
+                  </li>
+                  <li>Android- & Mobile-Entwicklung: <span class="fs-6 fw-lighter">Android SDK, Android Studio, XML,
+                      Cordova (Cross-Plattform), Entwicklung mit Java und Kotlin</span>
+                  </li>
+                  <li>Tools & IDEs: <span class="fs-6 fw-lighter">IntelliJ IDEA, Android Studio, Visual Studio Code,
+                      Git, GitHub</span></li>
+                  <li>Design & Office: <span class="fs-6 fw-lighter">Adobe Creative Suite (Photoshop, Illustrator,
+                      InDesign), Microsoft Office (PowerPoint, Excel, Word etc.)</span></li>
+                </ul>
+              </div>
               <div class="carousel-item">
+                <!-- Inhalt Slide 3 -->
                 <h2 class="display-5 text-center"><strong>Interessen</strong></h2>
                 <hr style="border: 2px solid var(--orange);">
-                <div class="profilCarousel-wrapper">
-                  <ul class="profilCarousel-liste">
-                    <li>Technik & Softwareentwicklung</li>
-                    <li>UI/UX-Design</li>
-                    <li>Digitale Kreativität</li>
-                    <li>PowerPoint & visuelle Gestaltung</li>
-                    <li>Datenanalyse mit Excel</li>
-                  </ul>
-                </div>
-              </div><!-- Slide 3 ende -->
-            </div><!-- Slides ende -->
-          </div><!-- Carousel wrapper ende-->
-          <!-- Controls (Pfeile) -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#profilCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Zurück</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#profilCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Weiter</span>
-          </button>
+                <ul class="d-inline-block ">
+                  <li>Technik & Softwareentwicklung</li>
+                  <li>UI/UX-Design</li>
+                  <li>Digitale Kreativität</li>
+                  <li>PowerPoint & visuelle Gestaltung</li>
+                  <li>Datenanalyse mit Excel</li>
+                </ul>
+              </div>
+            </div>
 
-
-
-
-
-
+            <!-- Controls (Pfeile) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#profilCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Zurück</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#profilCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Weiter</span>
+            </button>
+          </div>
 
 
 
