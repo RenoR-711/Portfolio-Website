@@ -51,7 +51,7 @@ p {
     /* Bild wird nicht skaliert */
     background-position: top left;
     /* Startpunkt des Musters */
-    height: 900px;
+    /* height: 900px; */
 }
 .bg-Imagebg {
     background-color: var(--bg-darkgrey)
