@@ -253,8 +253,8 @@ body {
 /* 8. Spezial Effekte */
 .mouse-cursor {
     position: relative;
-    /* muss overflow muss hidden sein, sonst funktionieren die Buttons nicht */
     overflow: visible;
+
 }
 .mouse-cursor span {
     position: relative;
@@ -268,12 +268,19 @@ body {
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(circle farthest-side, #1a1a1a, #111111, transparent);
+    border-radius: 50%;
+    /* Rund machen */
+    background: radial-gradient(circle,
+            rgba(76, 76, 76, 0.3) 20%,
+            rgb(34, 34, 34, 0.3) 50%,
+            rgba(0, 0, 0, 0.5) 100%);
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
+    z-index: 5;
+    pointer-events: none;
 }
 .mouse-cursor:hover::before {
-    --size: 300px;
+    --size: 150px;
 }
 /* Verwendung von Media Queries */
 @media (max-width: 768px) {
