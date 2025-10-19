@@ -260,8 +260,7 @@ body {
     border-radius: 6px;
     align-self: center;
     width: 50vw;
-    /* Default flex-direction für gerade Elemente */
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 .tL_event--reverse {
