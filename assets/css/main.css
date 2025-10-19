@@ -349,7 +349,6 @@ body {
 .tL_event_icon:before {
     width: 0;
     height: 100%;
-/* height: calc(100% + 20px); */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -358,8 +357,7 @@ body {
 
 /* Horizontale Linie für normale Events */
 .tL_event_icon:after {
-    /* width: 100%; */
-    width: calc(40vw + 40px);
+    width: 100%;
     height: 0;
     top: 50%;
     left: 0;
