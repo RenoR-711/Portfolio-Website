@@ -225,24 +225,6 @@ body {
     --size: 150px;
 }
 
-.typewriter-effect {
-    display: flex;
-    justify-content: center;
-    font-family: monospace;
-}
-
-.typewriter-effect>.text {
-    max-width: 0;
-    animation: typing 3s steps(var(--characters)) infinite;
-    white-space: nowrap;
-    overflow: visible;
-}
-
-.typewriter-effect::after {
-    content: " |";
-    animation: blink 1s infinite step-end;
-}
-
 /* ============================================================
 7. Timeline
 ============================================================ */
