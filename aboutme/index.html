@@ -15,7 +15,6 @@
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="manifest" href="site.webmanifest">
   <meta name="msapplication-TileImage" content="mstile-144x144.png">
-
   <style>
     #myTop {
       display: none;
@@ -40,9 +39,9 @@
 </head>
 
 <body class="bg-image mouse-cursor ">
-    <div class="site-banner">
-      ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
-    </div>
+  <div class="site-banner">
+    ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
+  </div>
   <header>
     <!-- Inhalte des Seitenkopfes -->
   </header>
@@ -74,7 +73,7 @@
                         Über mich
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/index.html">Mein Profil</a></li>
+                        <li><a class="dropdown-item" href="/index.html#profil">Mein Profil</a></li>
                         <li><a class="dropdown-item" href="../career/index.html">Karriere </a>
                         </li>
                         <li><a class="dropdown-item" href="../education/index.html">Bildungsweg</a></li>
@@ -115,10 +114,8 @@
     <!-- Hauptinhalt -->
     <section id="profil">
       <h1 class="display-1 fst-italic text-gold text-center pb-4"><strong>Mein Profil</strong></h1>
-
       <!-- Carousel wrapper -->
       <div id="profilCarousel" class="carousel slide" data-bs-ride="carousel">
-
         <!-- Indicators -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -127,23 +124,22 @@
           <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="2" aria-label="Stärken"></button>
           <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="3" aria-label="Interessen"></button>
         </div>
-
         <!-- Slides -->
         <div class="carousel-inner text-gold">
-
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="container py-4">
               <div class="p-4 rounded bg-body-secondary bg-opacity-10">
                 <h2 class="carousel-caption-top display-5 text-center"><strong>Über Mich</strong></h2>
-                <p class="p-4 m-4">Motivierte Quereinsteigerin mit über 22 Jahren Erfahrung im kreativen und organisatorischen Bereich. Leidenschaftlich an Technik interessiert, mit Weiterbildung in Fullstack Web Development und Android App-Entwicklung.</p>
+                <p class="p-4 m-4">Motivierte Quereinsteigerin mit über 22 Jahren Erfahrung im kreativen und
+                  organisatorischen Bereich. Leidenschaftlich an Technik interessiert, mit Weiterbildung in Fullstack
+                  Web Development und Android App-Entwicklung.</p>
                 <div class="text-center">
                   <a href="./aboutme/index.html" class="btn btn-secondary">mehr erfahren</a>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Slide 2 -->
           <div class="carousel-item">
             <div class="container py-4">
@@ -161,10 +157,9 @@
                   <li>Digitale Affinität und schnelle Auffassungsgabe</li>
                 </ul>
                 </p>
-                </div>
-                </div>
-                </div>
-
+              </div>
+            </div>
+          </div>
           <!-- Slide 3 -->
           <div class="carousel-item">
             <div class="container py-4">
@@ -184,7 +179,6 @@
               </div>
             </div>
           </div>
-
           <!-- Slide 4 -->
           <div class="carousel-item">
             <div class="container py-4">
@@ -202,9 +196,7 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <!-- Controls (Pfeile) -->
         <button class="carousel-control-prev" type="button" data-bs-target="#profilCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -214,20 +206,27 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Weiter</span>
         </button>
-
       </div>
     </section>
-
-
   </main>
-  <footer>
+  <footer class="pt-5 text-gold"
+    style="background-color:#101215; text-align: center; padding: 1rem 0; font-size: 0.9rem;">
+    <p>
+      <hr style="border: 1px solid var(--color-orange);">
+      &copy; 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;
+      <a href="/impressum.html" class="text-orange" style="text-decoration: none;" target="_blank"
+        rel="noopner noreferrer">Impressum</a> &nbsp;|&nbsp;
+      <a href="/datenschutz.html" class="text-orange" style="text-decoration: none;" target="_blank"
+        rel="noopner noreferrer">Datenschutzerklärung</a>
+    </p>
   </footer>
   <!-- Scroll-to-top Funktion -->
   <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
   <!-- Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <script src="../assets/js/main.js"></script>
-  
-  </body>  
-  </html>
+</body>
+
+</html>
