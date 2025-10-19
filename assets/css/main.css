@@ -25,7 +25,7 @@
     box-sizing: border-box;
 }
 * {
-    color: var(--gold) !important;
+    /* color: var(--gold) !important; */
 }
 /* 3. GLOBAL STYLES */
 html {
@@ -37,9 +37,13 @@ body {
     /* color: var(--gold); */
 }
 /* 4. Utility Klassen */
+.text-gold {
+    color: var(--gold) !important;
+}
 .text-orange {
     color: var(--orange) !important;
 }
+
 .bg-image {
     background-image: url("../images/BG.png");
 }
