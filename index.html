@@ -36,16 +36,10 @@
       background-color: rgb(218, 197, 168);
     }
   </style>
-  <!-- Popover aktivieren -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const popoverTrigger = document.getElementById('portrait');
-      new bootstrap.Popover(popoverTrigger);
-    });
-  </script>
+
 </head>
 
-<body class="bg-Imagebg mouse-cursor">
+<body class="bg-imagebg mouse-cursor">
   <div class="site-banner">
     ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
   </div>
@@ -117,7 +111,7 @@
   </nav>
   <main>
     <!-- ========== Hauptinhalt ========== -->
-    <section class="bg-image" style="height: 900px; ">
+    <section class="bg-image section-fixheight">
       <div class="container text-center pt-5">
         <a href="./aboutme/index.html">
           <img id="portrait" src="./assets/images/Avatar1.png" alt="Porträt von Renumol Reinhardt" width="200" class=""
@@ -134,7 +128,7 @@
       </div>
     </section>
     <!-- ==========  ========== -->
-    <section class="bg-Imagebg" style="height: 900px;">
+    <section id="about" class="bg-imagebg section-fixheight">
       <div class="container subtitle text-center">
         <div class="pt-5">
           <p><br><span style="font-weight: bold;">Schön, dass du hier bist!</span><br>
@@ -156,11 +150,11 @@
       </div>
     </section>
     <!-- ========== Carousel ========== -->
-    <section class="bg-imagehor" style="height: 900px;">
+    <section id="profil" class="bg-imagehor section-fixheight">
       <div class="container subtitle">
         <div>
           <div class="pt-5">
-            <h1 class="display-1 fst-italic text-center" id="profil"><strong>Mein Profil</strong></h1>
+            <h1 class="display-1 fst-italic text-center"><strong>Mein Profil</strong></h1>
           </div>
           <!-- Carousel wrapper -->
           <div id="profilCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -239,7 +233,7 @@
     </section>
     <!-- ========== Carousel ende ========== -->
     <!-- ==========  ========== -->
-    <section">
+    <section id="info">
       <div class="pt-5 container">
         <div class="row">
           <div class="col-sm-2">
@@ -303,7 +297,7 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
   </main>
   <footer class="pt-5"
     style="background-color:#101215; color: var(--gold); text-align: center; padding: 1rem 0; font-size: 0.9rem;">
@@ -321,6 +315,13 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="./assets/js/main.js"></script>
+  <!-- Popover aktivieren -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const popoverTrigger = document.getElementById('portrait');
+      new bootstrap.Popover(popoverTrigger);
+    });
+  </script>
+</body>
 
 </html>
-</body>

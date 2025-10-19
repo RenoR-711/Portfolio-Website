@@ -24,9 +24,7 @@
 *::after {
     box-sizing: border-box;
 }
-* {
-    /* color: var(--gold) !important; */
-}
+
 /* 3. GLOBAL STYLES */
 html {
     font-family: var(--font-family);
@@ -34,7 +32,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* color: var(--gold); */
 }
 /* 4. Utility Klassen */
 .text-gold {
@@ -50,8 +47,7 @@ body {
 .bg-imagehor {
     background-image: url("../images/BGhor.png");
 }
-.bg-Imagebg {
-    /* background-color: var(--darkgrey); */
+.bg-imagebg {
     background-color: #101215;
 }
 #logo {
@@ -84,6 +80,9 @@ body {
     position: sticky;
     top: 0;
     z-index: 9999;
+}
+.section-fixheight {
+    height: 900px;
 }
 /***********************************/
 /* 7. Verwendung von Media Queries */
