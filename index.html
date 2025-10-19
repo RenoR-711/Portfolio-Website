@@ -26,7 +26,7 @@
       border: none;
       outline: none;
       background-color: rgb(228, 159, 62);
-      color: black;
+      color: black !important;
       cursor: pointer;
       padding: 5px;
       border-radius: 5px;
@@ -120,8 +120,8 @@
             title="" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="right"
             data-bs-content="">
         </a>
-        <h1 class="title"><i>Ich bin Renumol Reinhardt</i></h1>
-        <h2 class="subtitle">Motivierte Quereinsteigerin mit über 22 Jahren Erfahrung im kreativen <br> und
+        <h1 class="display-2 fw-semibold"><i>Ich bin Renumol Reinhardt</i></h1>
+        <h2 class="display-6">Motivierte Quereinsteigerin mit über 22 Jahren Erfahrung im kreativen <br> und
           organisatorischen Bereich. Leidenschaftlich an Technik interessiert, <br> mit Weiterbildung in Fullstack Web
           Development und <br>Android App-Entwicklung.
         </h2>
@@ -158,11 +158,8 @@
           <div class="pt-5">
             <h1 class="display-1 fst-italic text-center" id="profil"><strong>Mein Profil</strong></h1>
           </div>
-
-
           <!-- Carousel wrapper -->
           <div id="profilCarousel" class="carousel slide" data-bs-ride="carousel">
-
             <!-- Indicators -->
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="0" class="active"
@@ -170,15 +167,13 @@
               <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-
             <!-- Carousel Items -->
             <div class="carousel-inner">
-
               <div class="carousel-item active">
                 <!-- Inhalt Slide 1 -->
                 <h2 class="pt-5 display-5 text-center"><strong>Soft Skills</strong></h2>
                 <hr style="border: 2px solid var(--orange);">
-                <ul class="pb-5 align-content-center mx-auto" style="max-width: 60%;">
+                <ul class="mx-auto pb-5" style="max-width: 900px;">
                   <li>Analytisches Denkvermögen</li>
                   <li>Selbstständige und strukturierte Arbeitsweise</li>
                   <li>Hohes Maß an Eigeninitiative und Lernbereitschaft</li>
@@ -187,8 +182,8 @@
                   <li>Zuverlässigkeit und Gewissenhaftigkeit</li>
                   <li>Anpassungsfähigkeit und Durchhaltevermögen</li>
                   <li>Digitale Affinität und schnelle Auffassungsgabe</li>
-
                 </ul>
+
               </div>
               <div class="carousel-item">
                 <!-- Inhalt Slide 2 -->
@@ -196,7 +191,7 @@
                     class="fs-4 fw-light">Fachliche
                     Qualifikationen & IT-Kenntnisse</span></h2>
                 <hr style="border: 2px solid var(--orange);">
-                <ul class="pb-5 align-content-center mx-auto" style="max-width: 90%;">
+                <ul class="mx-auto ms-5 pb-5">
                   <li>Programmiersprachen & Webentwicklung: <span class="fs-6 fw-lighter">Java, Kotlin, PHP,
                       JavaScript,
                       HTML, CSS, jQuery</span></li>
@@ -216,7 +211,7 @@
                 <!-- Inhalt Slide 3 -->
                 <h2 class="pt-5 display-5 text-center "><strong>Interessen</strong></h2>
                 <hr style="border: 2px solid var(--orange);">
-                <ul class="pb-5 align-content-center mx-auto" style="max-width: 50%;">
+                <ul class="mx-auto pb-5" style="max-width: 600px;">
                   <li>Technik & Softwareentwicklung</li>
                   <li>UI/UX-Design</li>
                   <li>Digitale Kreativität</li>
@@ -224,10 +219,7 @@
                   <li>Datenanalyse mit Excel</li>
                 </ul>
               </div>
-
-
             </div>
-
             <!-- Controls (Pfeile) -->
             <button class="carousel-control-prev" type="button" data-bs-target="#profilCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -238,16 +230,13 @@
               <span class="visually-hidden">Weiter</span>
             </button>
           </div>
-
-
-
         </div>
       </div>
     </section>
     <!-- ========== Carousel ende ========== -->
     <!-- ==========  ========== -->
-    <section style="height: 900px;">
-      <div class="container">
+    <section">
+      <div class="pt-5 container">
         <div class="row">
           <div class="col-sm-2">
             <div class="border rounded" style="border-color: var(--border-color);">
@@ -277,14 +266,13 @@
           </div>
           <div class="col-sm-2">
             <div class="border rounded" style="border-color: var(--border-color);">
-              <div class="ms-2 mb-sm-2 text-gold">🔧 Verwendete Technologien
-                <p class="lead fs-md-4 fs-lg-2 p-1" style="font-size: smaller;">
+              <div class="lead fs-md-4 fs-lg-2 p-1" style="font-size: smaller;">
+                <p>🔧 Verwendete Technologien</p>
                 <ul style="font-size: small;">
                   <li>HTML5</li>
                   <li>CSS3 (Flexbox, Grid)</li>
                   <li>JavaScript (Formularvalidierung, interaktive Elemente)</li>
                 </ul>
-                </p>
               </div>
             </div>
           </div>
@@ -312,9 +300,16 @@
           </div>
         </div>
       </div>
-    </section>
+      </section>
   </main>
-  <footer>
+  <footer class="pt-5"
+    style="background-color:#101215; color: var(--gold); text-align: center; padding: 1rem 0; font-size: 0.9rem;">
+    <p>
+      <hr style="border: 1px solid var(--orange);">
+      &copy; 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;
+      <a href="impressum.html" class="text-orange" style="text-decoration: none;">Impressum</a> &nbsp;|&nbsp;
+      <a href="datenschutz.html" class="text-orange" style="text-decoration: none;">Datenschutzerklärung</a>
+    </p>
   </footer>
   <!-- Scroll-to-top Funktion -->
   <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
