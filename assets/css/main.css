@@ -38,10 +38,10 @@ body {
 }
 /* 4. Utility Klassen */
 .text-gold {
-    color: var(--gold) !important;
+    color: var(--gold);
 }
 .text-orange {
-    color: var(--orange) !important;
+    color: var(--orange);
 }
 
 .bg-image {
@@ -70,6 +70,20 @@ body {
 .subtitle {
     font-size: 30px;
     color: var(--gold);
+}
+.site-banner {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 193, 7, 0.3);
+    font-family: var(--font-family);
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 /***********************************/
 /* 7. Verwendung von Media Queries */
