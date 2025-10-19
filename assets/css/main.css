@@ -1,128 +1,52 @@
-/* assets/css/main.css */
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
+/* ============================================================
+1. Variablen & Basis-Styles
+============================================================ */
 :root {
-    /* Colors */
-    --gold: rgb(218, 197, 168);
-    --orange: rgb(228, 159, 62);
-    --color: var(--gold);
-    --body-color: var(--orange);
-    --body-bg: rgb(228, 159, 62);
-    --emphasis-color: #000;
-    --emphasis-color-rgb: 0, 0, 0;
-    --link-color: #101215;
-    --link-color-rgb: 13, 110, 253;
-    --link-decoration: underline;
-    --link-hover-color: #101215;
-    --link-hover-color-rgb: 10, 88, 202;
-    --code-color: #d63384;
-    --border-color: var(--gold);
-    /* Fonts */
-    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --color-gold: #dac5a8;
+    --color-orange: #e49f3e;
+    --color-dark: #0e0e0e;
+    --color-bg: #101215;
+    --color-light: #fff;
+    --color-link: #d63384;
+    --color-hover: #e49f3e;
+    --color-code: #d63384;
+    --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Box sizing rules in Bootstrap*/
-/* *,
-  *::before,
-  *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  } */
+}
 
-/* GLOBAL STYLES */
-/* Remove default margin */
-body,
 html,
-p {
-    /* height: 100%; */
+body {
+    font-family: var(--font-base);
     margin: 0;
-    font-family: var(--font-family);
-    color: var(--gold);
+    padding: 0;
+    background-color: var(--color-bg);
+    color: var(--color-gold);
 }
 
-.bg-image {
-    background-image: url("/Portfolio-Website/assets/images/BG.png");
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+/* ============================================================
+2. Typografie
+============================================================ */
+.text-gold {
+    color: var(--color-gold);
 }
 
-#logo {
-    width: 100px;
+.text-orange {
+    color: var(--color-orange);
 }
 
-/* Position text in the middle of the page/image */
-#portrait {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
-    width: 300px;
-    opacity: 25%;
+.subtitle {
+    font-size: 30px;
+    color: var(--color-gold);
 }
 
-/* Navbar container */
-
-/* Links inside the navbar */
-.navbar a {
-    color: var(--gold);
-}
-
-/* Add a orange background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    border-radius: 5px;
-    /* color: var(--link-color); */
-    font-weight: 600;
-}
-
-.nav-item {
-    /* padding-left: 100px; */
-    margin-left: 100px;
-}
-
-.nav-link {
-    color: var(--gold);
-}
-
-.nav-link.active {
-    border-radius: 5px;
-    background-color: var(--orange);
-    box-shadow: 2px 2px 20px #fc894d;
-}
-
-.nav-link:hover {
-    background-color: var(--gold);
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-/* Links inside the dropdown */
-.dropdown .dropdown-menu {
-    background-color: #101215;
-    /* opacity: 0.3; */
-    margin: 0;
-    font-family: inherit;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-menu a:hover {
-    background-color: #495057;
-    color: var(--orange);
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
+/* ============================================================
+3. Layout-Elemente (Wrapper, Section, Logos, etc.)
+============================================================ */
 .wrapper {
     padding: 10px 40px;
     position: relative;
@@ -130,115 +54,155 @@ p {
     width: 50%;
 }
 
-.wrapper li {
-    color: var(--gold);
+.section-fixheight {
+    height: 900px;
 }
 
-/* Place the container to the left */
-.left {
-    right: 0;
+#logo {
+    width: 100px;
+    margin-right: 5rem;
 }
 
-/* Place the container to the right */
-.right {
-    left: 50%;
+#portrait {
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+    opacity: 0.25;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+/* ============================================================
+4. Navigation (Navbar & Dropdown)
+============================================================ */
+.navbar {
+    display: flex;
+    gap: 2rem;
+    padding: 5rem;
+    align-items: center;
 }
 
-/* Verwendung von Media Queries */
-@media (width <=768px) {
+.navbar a {
+    color: var(--color-gold);
+    text-align: left;
+}
 
-    h1,
-    .h1 {
-        font-size: 12px;
-    }
+.nav-item+.nav-item {
+    margin-left: 5rem;
+}
 
-    h4,
-    .h4 {
-        font-size: 10px;
-    }
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    border-radius: 0.2rem;
+    color: var(--color-gold);
+}
 
-    #logo {
-        width: 50px;
-    }
+.nav-link.active {
+    border-radius: 5px;
+    background-color: var(--color-orange);
+    box-shadow: 2px 2px 20px #fc894d;
+}
 
-    #portrait {
-        width: 50%;
-    }
+/* Dropdown Menü */
+.dropdown {
+    position: relative;
+}
 
-    /* Links inside the navbar */
-    .navbar a {
-        color: var(--gold);
-        float: right;
-        margin-right: 10px;
-        font-size: small;
-        padding: 5px 5px 5px 5px;
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--color-bg) !important;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    color: var(--color-gold) !important;
+}
 
-    }
+.dropdown.show .dropdown-menu {
+    display: block;
+}
 
-    /* Add a background color to navbar links on hover */
-    /* not required */
+.dropdown-item {
+    display: block;
+    text-align: right;
+    font-size: 0.95rem;
+}
 
-    /* Dropdown content (hidden by default) */
-    .dropdown {
-        /* margin-right: 100px; */
-    }
+.dropdown-item:hover {
+    background-color: #2c2c2c !important;
+    color: var(--color-orange) !important;
+    font-weight: bold;
+}
 
-    /* Links inside the dropdown */
-    .dropdown .dropdown-menu {
-        float: right;
-        background-color: #101215;
-        text-align: right;
-    }
-
-    .dropdown-menu a {
-        font-size: x-small;
-        color: var(--gold);
-        margin-right: 20px;
-        width: 10em;
-    }
-
-    /* Show the dropdown menu on hover */
+@media (min-width: 769px) {
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+}
 
-    .wrapper {
-        width: auto;
+/* ============================================================
+5. Komponenten (Popover, Site-Banner, Carousel, Timeline, etc.)
+============================================================ */
+.site-banner {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 193, 7, 0.3);
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.popover,
+.popover-header,
+.popover-body {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.popover-body {
+    color: var(--color-orange);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .popover {
+        display: none !important;
     }
+}
 
-    /* Place the container to the right */
-    .right {
-        left: 0;
+/* Carousel */
+#profilCarousel .carousel-control-prev,
+#profilCarousel .carousel-control-next {
+    top: auto;
+    transform: none;
+}
+
+@media (max-width: 768px) {
+    #profilCarousel {
+        height: auto;
+        font-size: 40%;
     }
 }
 
-@media (hover: hover) {
-    /* targets only devices that can hover */
-
-}
-
-@media (hover: none) {
-    /* targets only devices that don't hover */
-
-}
-
-/* Timeline */
-
-/***********************************/
+/* ============================================================
+6. Spezialeffekte & Animationen
+============================================================ */
 .mouse-cursor {
     position: relative;
-    /* muss overflow muss hidden sein, sonst funktionieren die Buttons nicht */
-    /* overflow: hidden; */
+    overflow: visible;
 }
 
 .mouse-cursor span {
-    position: relative;
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 
 .mouse-cursor::before {
@@ -249,24 +213,17 @@ p {
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(circle farthest-side, #1a1a1a, #111111, transparent);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(76, 76, 76, 0.3) 20%, rgba(34, 34, 34, 0.3) 50%, rgba(0, 0, 0, 0.5) 100%);
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
+    z-index: 5;
+    pointer-events: none;
 }
 
 .mouse-cursor:hover::before {
-    --size: 300px;
+    --size: 150px;
 }
-
-/* Verwendung von Media Queries */
-@media (width <=768px) {
-    .mouse-cursor {
-        margin-left: auto;
-        padding: 0 50px 0 50px;
-    }
-}
-
-/***********************************/
 
 .typewriter-effect {
     display: flex;
@@ -278,15 +235,336 @@ p {
     max-width: 0;
     animation: typing 3s steps(var(--characters)) infinite;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .typewriter-effect::after {
     content: " |";
-    animation: blink 1s infinite;
-    animation-timing-function: step-end;
+    animation: blink 1s infinite step-end;
 }
 
+/* ============================================================
+7. Timeline
+============================================================ */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    position: relative;
+}
+
+.tL_event {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    border-radius: 6px;
+    align-self: center;
+    width: 50vw;
+    flex-direction: row;
+    /* Default */
+}
+
+/* Reverse-Layout für Events mit Klasse .tL_event--reverse */
+.tL_event--reverse {
+    flex-direction: row-reverse;
+}
+
+/* Datum und Content bei reverse */
+.tL_event--reverse .tL_event_date {
+    border-radius: 0 60px 60px 0;
+}
+
+.tL_event--reverse .tL_event_content {
+    border-radius: 6px 0 0 6px;
+}
+
+.tL_event_title {
+    font-size: 1.2rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-orange);
+    letter-spacing: 1.5px;
+}
+
+.tL_event_content {
+    padding: 10px 20px 0 20px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+        0 18px 36px -18px rgba(0, 0, 0, 0.3),
+        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    background: #fff;
+    width: calc(40vw - 84px);
+    border-radius: 0 6px 6px 0;
+}
+
+.tL_event_date {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: var(--color-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0 20px;
+    border-radius: 60px 0 0 60px;
+}
+
+.tL_event_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
+    align-self: center;
+    margin: 0 20px;
+    background: var(--color-orange);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 40px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+        0 18px 36px -18px rgba(0, 0, 0, 0.3),
+        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    position: relative;
+}
+
+.tL_event_icon i {
+    font-size: 32px;
+}
+
+/* Gemeinsame Styles für Linien vor und nach dem Icon */
+.tL_event_icon:before,
+.tL_event_icon:after {
+    content: "";
+    background: var(--color-orange);
+    position: absolute;
+    z-index: -1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
+}
+
+/* Vertikale Linie */
+.tL_event_icon:before {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: fillTop;
+}
+
+/* Horizontale Linie für normale Events */
+.tL_event_icon:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation-name: fillLeftOdd;
+}
+
+/* Horizontale Linie für reverse Events */
+.tL_event--reverse .tL_event_icon:after {
+    left: auto;
+    right: 0;
+    animation-name: fillLeft;
+}
+
+/* Animationen */
+@keyframes fillTop {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fillLeftOdd {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fillLeft {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.tL_event_description {
+    flex-basis: 100%;
+    line-height: 1;
+    font-size: smaller;
+}
+
+.tL_event:last-child .tL_event_icon:before {
+    content: none;
+}
+
+/* Responsive */
+@media (max-width: 786px) {
+    .tL_event {
+        flex-direction: column;
+        align-self: center;
+        width: 90vw;
+    }
+
+    .tL_event_title {
+        font-size: 0.9rem;
+    }
+
+    .tL_event_content {
+        width: 100%;
+        border-radius: 0 0 6px 6px !important;
+    }
+
+    .tL_event_icon {
+        border-radius: 6px 6px 0 0;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    .tL_event_icon:before,
+    .tL_event_icon:after {
+        display: none;
+    }
+
+    .tL_event_date {
+        border-radius: 0;
+        padding: 5px;
+    }
+
+    /* Bei Mobile alle reversed wieder normal */
+    .tL_event--reverse {
+        flex-direction: column !important;
+    }
+
+    .tL_event--reverse .tL_event_date {
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .tL_event--reverse .tL_event_icon {
+        border-radius: 6px 6px 0 0;
+        margin: 0;
+    }
+}
+
+/* ============================================================
+8. Isometric Card
+============================================================ */
+.isometric-card {
+    margin: 0 auto;
+    transform: rotateX(51deg) rotateZ(43deg);
+    transform-style: preserve-3d;
+    background-color: rgb(16, 18, 21);
+    will-change: transform;
+    width: 240px;
+    height: 320px;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 0 1px rgb(210, 210, 211), -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+        28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
+}
+
+.isometric-card:hover {
+    transform: translate3d(0px, -40px, 0px) rotateX(51deg) rotateZ(43deg);
+    box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+        54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+
+/* ============================================================
+9. Hintergrund-Bilder
+============================================================ */
+.bg-image {
+    background-image: url("../images/BG.png");
+}
+
+.bg-imagehor {
+    background-image: url("../images/BGhor.png");
+}
+
+.bg-imagebg {
+    background-color: var(--color-bg);
+}
+
+.infoborder {
+    border: 2px solid var(--color-gold);
+}
+
+/* ============================================================
+10. Media Queries (global)
+============================================================ */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .navbar a {
+        text-align: right;
+        font-size: 0.9rem;
+    }
+
+    .nav-item+.nav-item {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .dropdown-item {
+        font-size: 0.85rem;
+    }
+
+    #logo {
+        width: 50px;
+    }
+
+    #portrait {
+        width: 50%;
+    }
+
+    p,
+    ul,
+    li {
+        font-size: 0.875rem;
+    }
+
+    .mouse-cursor {
+        padding: 0 50px;
+    }
+}
+
+/* ============================================================
+11. Keyframes
+============================================================ */
 @keyframes typing {
 
     75%,
@@ -308,292 +586,15 @@ p {
     }
 }
 
-/***********************************/
-.isometric-card {
-    margin: 0 auto;
-    transform: rotateX(51deg) rotateZ(43deg);
-    transform-style: preserve-3d;
-    background-color: #101215;
-    will-change: transform;
-    width: 240px;
-    height: 320px;
-    border-radius: 2rem;
-    box-shadow: 1px 1px 0 1px #d2d2d3, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        28px 28px 28px 0 rgba(34, 33, 81, 0.25);
-    transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
-}
-
-.isometric-card:hover {
-    transform: translate3d(0px, -40px, 0px) rotateX(51deg) rotateZ(43deg);
-    box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        54px 54px 28px -10px rgba(34, 33, 81, 0.15);
-}
-
-/* #######################################################################
-/* mein style CSS kann ich nach dem deployen nicht einbinden, deshalb füge ich die datei hier an dieser Stelle */
-/*@import './style.css';*/
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 14px;
-}
-
-h2 {
-    margin: 5%;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 100;
-}
-
-h1 {
-    margin: 4%;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 10;
-    top: 0;
-}
-
-.text-gold { color: var(--gold); }
-
-/* mittig darstellen */
-.timeline {
-    display: flex;
-    flex-direction: column;
-    margin: 30px auto;
-    position: relative;
-}
-
-.tL_event {
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    margin: 20px 0;
-    border-radius: 6px;
-    align-self: center;
-    width: 50vw;
-}
-
-.tL_event:nth-child(2n+1) {
-    flex-direction: row-reverse;
-}
-
-.tL_event:nth-child(2n+1) .tL_event_date {
-    border-radius: 0 60px 60px 0;
-}
-
-.tL_event:nth-child(2n+1) .tL_event_content {
-    border-radius: 6px 0 0 6px;
-}
-
-/* icon auf der linken Seite, Strich nach unten */
-.tL_event:nth-child(2n+1) .tL_event_icon:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: var(--orange);
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    right: auto;
-    z-index: -1;
-    transform: translateX(-50%);
-    -webkit-animation: fillTop 2s forwards 4s ease-in-out;
-    animation: fillTop 2s forwards 4s ease-in-out;
-}
-
-/* icon auf der linken Seite, Strich nach rechts */
-.tL_event:nth-child(2n+1) .tL_event_icon:after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: var(--orange);
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    top: 50%;
-    left: auto;
-    transform: translateY(-50%);
-    -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
-    animation: fillLeft 2s forwards 4s ease-in-out;
-}
-
-.tL_event_title {
-    font-size: 1.2rem;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--orange);
-    letter-spacing: 1.5px;
-}
-
-.tL_event_content {
-    padding: 10px 20px 0px 20px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    background: #fff;
-    width: calc(40vw - 84px);
-    border-radius: 0 6px 6px 0;
-}
-
-.tL_event_date {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    background: var(--gold);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    padding: 0 20px;
-    border-radius: 60px 0 0 60px;
-}
-
-.tL_event_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gold);
-    padding: 20px;
-    align-self: center;
-    margin: 0 20px;
-    background: var(--orange);
-    border-radius: 100%;
-    width: 40px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    padding: 40px;
-    height: 40px;
-    position: relative;
-}
-
-.tL_event_icon i {
-    font-size: 32px;
-}
-
-/* icon auf der rechten Seite, Strich nach unten */
-.tL_event_icon:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: var(--orange);
-    position: absolute;
-    top: 0%;
-    z-index: -1;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-animation: fillTop 2s forwards 4s ease-in-out;
-    animation: fillTop 2s forwards 4s ease-in-out;
-}
-
-.tL_event_icon:after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: var(--orange);
-    position: absolute;
-    left: 0%;
-    z-index: -1;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
-    animation: fillLeftOdd 2s forwards 4s ease-in-out;
-}
-
-.tL_event_description {
-    flex-basis: 100%;
-    line-height: 1;
-    font-size: smaller;
-}
-
-.tL_event:last-child .tL_event_icon:before {
-    content: none;
-}
-
-@media (max-width: 576px) {
-    h1.display-1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 786px) {
-    h1 {
-        font-size: smaller;
-    }
-
-    .tL_event {
-        flex-direction: column;
-        align-self: center;
-    }
-
-    .tL_event_title {
-        font-size: 0.9rem;
-    }
-
-    .tL_event_content {
-        width: 100%;
-    }
-
-    .tL_event_icon {
-        border-radius: 6px 6px 0 0;
-        width: 100%;
-        margin: 0;
-        box-shadow: none;
-    }
-
-    .tL_event_icon:before,
-    .tL_event_icon:after {
-        display: none;
-    }
-
-    .tL_event_date {
-        border-radius: 0;
-        padding: 5px;
-    }
-
-    .tL_event:nth-child(2n+1) {
-        flex-direction: column;
-        align-self: center;
-    }
-
-    .tL_event:nth-child(2n+1) .tL_event_date {
-        border-radius: 0;
-        padding: 20px;
-    }
-
-    .tL_event:nth-child(2n+1) .tL_event_icon {
-        border-radius: 6px 6px 0 0;
-        margin: 0;
-    }
-}
-
-@-webkit-keyframes fillLeft {
-    100% {
-        right: 100%;
-    }
-}
-
 @keyframes fillLeft {
     100% {
         right: 100%;
     }
 }
 
-@-webkit-keyframes fillTop {
-    100% {
-        top: 100%;
-    }
-}
-
 @keyframes fillTop {
     100% {
         top: 100%;
-    }
-}
-
-@-webkit-keyframes fillLeftOdd {
-    100% {
-        left: 100%;
     }
 }
 
