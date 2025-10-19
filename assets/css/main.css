@@ -260,14 +260,16 @@ body {
     border-radius: 6px;
     align-self: center;
     width: 50vw;
-    /* flex-direction: row; */
+    flex-direction: row;
+    /* Default */
 }
 
+/* Reverse-Layout für Events mit Klasse .tL_event--reverse */
 .tL_event--reverse {
     flex-direction: row-reverse;
 }
 
-/* Datum und Inhalt für "reverse"-Events */
+/* Datum und Content bei reverse */
 .tL_event--reverse .tL_event_date {
     border-radius: 0 60px 60px 0;
 }
@@ -276,7 +278,25 @@ body {
     border-radius: 6px 0 0 6px;
 }
 
-/* Gemeinsame Styles für Datum */
+.tL_event_title {
+    font-size: 1.2rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-orange);
+    letter-spacing: 1.5px;
+}
+
+.tL_event_content {
+    padding: 10px 20px 0 20px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+        0 18px 36px -18px rgba(0, 0, 0, 0.3),
+        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    background: #fff;
+    width: calc(40vw - 84px);
+    border-radius: 0 6px 6px 0;
+}
+
 .tL_event_date {
     color: white;
     font-size: 1.5rem;
@@ -290,28 +310,6 @@ body {
     border-radius: 60px 0 0 60px;
 }
 
-/* Gemeinsame Styles für Inhalt */
-.tL_event_content {
-    padding: 10px 20px 0 20px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-        0 18px 36px -18px rgba(0, 0, 0, 0.3),
-        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    background: #fff;
-    width: calc(40vw - 84px);
-    border-radius: 0 6px 6px 0;
-}
-
-/* Event Titel */
-.tL_event_title {
-    font-size: 1.2rem;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--color-orange);
-    letter-spacing: 1.5px;
-}
-
-/* Icon Container */
 .tL_event_icon {
     display: flex;
     align-items: center;
@@ -324,58 +322,92 @@ body {
     width: 40px;
     height: 40px;
     padding: 40px;
-    position: relative;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
         0 18px 36px -18px rgba(0, 0, 0, 0.3),
         0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    position: relative;
 }
 
 .tL_event_icon i {
     font-size: 32px;
 }
 
-/* Gemeinsame Styles für die Linien bei Icon (vorne und hinten) */
+/* Gemeinsame Styles für Linien vor und nach dem Icon */
 .tL_event_icon:before,
 .tL_event_icon:after {
     content: "";
     background: var(--color-orange);
     position: absolute;
     z-index: -1;
-    -webkit-animation: fillTop 2s forwards 4s ease-in-out;
-    animation: fillTop 2s forwards 4s ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
 }
 
 /* Vertikale Linie */
 .tL_event_icon:before {
     width: 2px;
-    height: 100%;
+    /* height: 100%; */
+height: calc(100% + 20px);
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    animation-name: fillTop;
 }
 
-/* Horizontale Linie - Standard (für gerade Events) */
+/* Horizontale Linie für normale Events */
 .tL_event_icon:after {
     width: 100%;
     height: 2px;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    -webkit-animation-name: fillLeftOdd;
     animation-name: fillLeftOdd;
 }
 
-/* Horizontale Linie für "reverse"-Events */
+/* Horizontale Linie für reverse Events */
 .tL_event--reverse .tL_event_icon:after {
     left: auto;
     right: 0;
-    -webkit-animation-name: fillLeft;
     animation-name: fillLeft;
 }
 
-/* Letztes Event: keine vertikale Linie */
-.tL_event:last-child .tL_event_icon:before {
-    content: none;
+/* Animationen */
+@keyframes fillTop {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fillLeftOdd {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fillLeft {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
 }
 
 .tL_event_description {
@@ -384,13 +416,16 @@ body {
     font-size: smaller;
 }
 
-/* Responsive Styles */
-@media (max-width: 786px) {
+.tL_event:last-child .tL_event_icon:before {
+    content: none;
+}
 
-    .tL_event,
-    .tL_event--reverse {
+/* Responsive */
+@media (max-width: 786px) {
+    .tL_event {
         flex-direction: column;
         align-self: center;
+        width: 90vw;
     }
 
     .tL_event_title {
@@ -399,7 +434,7 @@ body {
 
     .tL_event_content {
         width: 100%;
-        border-radius: 0 0 6px 6px;
+        border-radius: 0 0 6px 6px !important;
     }
 
     .tL_event_icon {
@@ -407,11 +442,9 @@ body {
         width: 100%;
         margin: 0;
         box-shadow: none;
-        padding: 20px 0;
-        /* etwas Padding reduziert */
+        padding: 20px;
     }
 
-    /* Linien bei kleinen Bildschirmen ausblenden */
     .tL_event_icon:before,
     .tL_event_icon:after {
         display: none;
@@ -419,7 +452,22 @@ body {
 
     .tL_event_date {
         border-radius: 0;
+        padding: 5px;
+    }
+
+    /* Bei Mobile alle reversed wieder normal */
+    .tL_event--reverse {
+        flex-direction: column !important;
+    }
+
+    .tL_event--reverse .tL_event_date {
+        border-radius: 0;
         padding: 20px;
+    }
+
+    .tL_event--reverse .tL_event_icon {
+        border-radius: 6px 6px 0 0;
+        margin: 0;
     }
 }
 
