@@ -348,8 +348,8 @@ body {
 /* Vertikale Linie */
 .tL_event_icon:before {
     width: 2px;
-    /* height: 100%; */
-height: calc(100% + 20px);
+    height: 100%;
+/* height: calc(100% + 20px); */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -358,7 +358,8 @@ height: calc(100% + 20px);
 
 /* Horizontale Linie für normale Events */
 .tL_event_icon:after {
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% + 20px);
     height: 2px;
     top: 50%;
     left: 0;
