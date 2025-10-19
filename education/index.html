@@ -15,7 +15,6 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
-
     <style>
         #myTop {
             display: none;
@@ -40,6 +39,9 @@
 </head>
 
 <body class="bg-image mouse-cursor ">
+    <div class="site-banner">
+        ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
+    </div>
     <header>
         <!-- Inhalte des Seitenkopfes -->
     </header>
@@ -49,14 +51,12 @@
             <div class="row">
                 <a href="/">
                     <div class="position-relative">
-
                         <!-- ========== Nav Start Section ========== -->
                         <nav class="navbar navbar-expand-lg d-flex">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="#">
                                     <img id="logo" src="../assets/images/Logo.png" alt="" srcset="">
                                 </a>
-
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true"
                                     aria-label="Toggle navigation">
@@ -67,7 +67,6 @@
                                         <li class="nav-item">
                                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                                         </li>
-
                                         <!-- About Me -->
                                         <li class="nav-item dropdown">
                                             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown"
@@ -83,7 +82,8 @@
                                                         href="../education/index.html">Bildungsweg</a></li>
                                                 <li><a class="dropdown-item"
                                                         href="../zertifikate/index.html">Qualifikation</a></li>
-<li><a class="dropdown-item" href="../projekte/index.html">Projekt</a></li>                                                        
+                                                <li><a class="dropdown-item" href="../projekte/index.html">Projekt</a>
+                                                </li>
                                                 <li>
                                                     <hr class="dropdown-divider">
                                                 </li>
@@ -91,7 +91,6 @@
                                                     verfügbar)</a>
                                             </ul>
                                         </li>
-
                                         <!-- Gallery -->
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -103,37 +102,26 @@
                                                 <li><a class="dropdown-item" href="#">1996</a></li>
                                             </ul>
                                         </li>
-
                                         <li class="nav-item">
                                             <a class="nav-link" href="../aboutme/index.html">Contact</a>
                                         </li>
-
                                     </ul>
-
                                 </div>
                         </nav>
                         <!-- ========== Nav End Section ========== -->
                     </div>
-
                 </a>
             </div>
         </div>
     </nav>
-
-
     <main>
         <!-- Hauptinhalt -->
         <section>
-
-
-
             <h1 class="text-center text-gold" style="font-size:80px;">Bildungsweg</h1>
-
             <!--  -->
             <div class="timeline">
-
                 <!--first-->
-                <div class="tL_event  animated fadeInUp delay-3s tL_event--type1">
+                <div class="tL_event tL_event--reverse animated fadeInUp delay-3s tL_event--type1">
                     <div class="tL_event_icon ">
                         <img src="../assets/images/Fullstack.png" alt="" srcset="" width="50px">
                     </div>
@@ -141,9 +129,9 @@
                         09/2023 - 05/2024
                     </div>
                     <div class="tL_event_content ">
-                        <div class="tL_event_title">
+                        <div class="tL_event_title pb-2">
                             Fullstack Web Development + Android App-Entwicklung Mit Java Und Kotlin <br>
-                            - Weiterqualifizierung an der WBS Training AG -
+                            <span style="font-size: small;">- Weiterqualifizierung an der WBS Training AG -</span>
                         </div>
                         <div class="tL_event_description">
                             <p><b>Softwareentwicklung mit –</b>
@@ -163,9 +151,7 @@
                         </div>
                     </div>
                 </div>
-
                 <!--second-->
-
                 <div class="tL_event animated fadeInUp delay-2s tL_event--type1">
                     <div class="tL_event_icon">
                         <img src="../assets/images/GrafikDesign.png" alt="" srcset="" width="50px">
@@ -174,7 +160,7 @@
                         10/2007 – 04/2010
                     </div>
                     <div class="tL_event_content">
-                        <div class="tL_event_title">
+                        <div class="tL_event_title pb-2">
                             Grafik-Design <br>
                             Berufsbegleitende Weiterqualifizierung an der HTK
                         </div>
@@ -185,10 +171,8 @@
                         </div>
                     </div>
                 </div>
-
                 <!--third-->
-
-                <div class="tL_event animated fadeInUp delay-1s tL_event--type1">
+                <div class="tL_event tL_event--reverse animated fadeInUp delay-1s tL_event--type1">
                     <div class="tL_event_icon">
                         <img src="../assets/images/ModeDesign.png" alt="" srcset="" width="50px">
                     </div>
@@ -205,12 +189,9 @@
                                 / Marketing, BWL/ Recht)
                             </p>
                         </div>
-
                     </div>
                 </div>
-
                 <!--forth-->
-
                 <div class="tL_event animated fadeInUp delay-1s tL_event--type1">
                     <div class="tL_event_icon">
                         <img src="../assets/images/Abi.png" alt="" srcset="" width="50px">
@@ -221,32 +202,26 @@
                     <div class="tL_event_content">
                         <div class="tL_event_title">
                             <span style="line-height: 1.5;">Abitur <br> Gesamtschule Alterteichweg</span>
-
                         </div>
                         <div class="tL_event_description">
                             <p>
-
                             </p>
                         </div>
-
                     </div>
                 </div>
-
-
             </div>
             <!-- timeline End -->
-
         </section>
     </main>
-<footer>
-</footer>
-<!-- Scroll-to-top Funktion -->
-<button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
-<!-- Script -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="../assets/js/main.js"></script>
+    <footer>
+    </footer>
+    <!-- Scroll-to-top Funktion -->
+    <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
 
 </html>
 </body>
