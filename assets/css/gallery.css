@@ -1,0 +1,103 @@
+.imagebox {
+    padding: 20px 16px;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    gap: 5px;
+}
+
+.gallery-fixheight {
+    height: 700px;
+}
+
+.image {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+    border-radius: 12px;
+}
+
+.image:hover {
+    flex: 4;
+}
+
+/*Bilder 2008*/
+.image08-1 {
+    background-image: url('/projekte/2008/image1.png');
+}
+
+.image08-2 {
+    background-image: url('/projekte/2008/image2.png');
+}
+
+.image08-3 {
+    background-image: url('/projekte/2008/image3.png');
+}
+
+.image08-4 {
+    background-image: url('/projekte/2008/image4.png');
+}
+
+.image08-5 {
+    background-image: url('/projekte/2008/image5.png');
+}
+
+.image08-6 {
+    background-image: url('/projekte/2008/image6.png');
+}
+
+.image08-7 {
+    background-image: url('/projekte/2008/image7.png');
+}
+
+.image08-8 {
+    background-image: url('/projekte/2008/image8.png');
+}
+
+.image08-9 {
+    background-image: url('/projekte/2008/image9.png');
+}
+
+.image08-10 {
+    background-image: url('/projekte/2008/image10.png');
+}
+
+.image08-11 {
+    background-image: url('/projekte/2008/image11.png');
+}
+
+/* ✅ Responsive Anpassung */
+@media (max-width: 768px) {
+    .gallery-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3px;
+        height: auto;
+    }
+
+    .image {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        transition: transform 0.4s ease;
+    }
+
+.image.active {
+transform: scale(1.08) rotate(-2deg) translateY(-5px);
+    transition: transform 0.4s ease;
+}
+}
