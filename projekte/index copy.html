@@ -103,9 +103,9 @@
                                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Portfolio</a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Fullstack-Entwicklerin</a></li>
-                        <li><a class="dropdown-item" href="#">Grafikdesign</a></li>
-                        <li><a class="dropdown-item" href="#">Modedesign</a></li>
+                                                <li><a class="dropdown-item" href="#">Fullstack-Entwicklerin</a></li>
+                                                <li><a class="dropdown-item" href="#">Grafikdesign</a></li>
+                                                <li><a class="dropdown-item" href="#">Modedesign</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
@@ -164,7 +164,7 @@
         </section>
         <section class="bg-image gallery-fixheight">
             <div class="imagebox display-2 subtitle text-center">
-                <p class="fs-1">1996-1997</p>
+                <p class="fs-1">Figürliches Zeichnen/ Modeillustration 1996-1997</p>
                 <div class="gallery-wrap">
                     <div class="image image96-1"> </div>
                     <div class="image image96-2"></div>
@@ -173,18 +173,24 @@
                     <div class="image image97-1"> </div>
                     <div class="image image97-2"></div>
                     <div class="image image97-3"></div>
+
                 </div>
             </div>
         </section>
         <section class="bg-image gallery-fixheight">
             <div class="imagebox display-2 subtitle text-center">
-                <p class="fs-1">Grafik-Design Grundlagen</p>
+                <p class="fs-1">Grundlagen Zeichnen/ Malen 1994-1995</p>
                 <div class="gallery-wrap">
-                    <div class="image image1-1"> </div>
-                    <div class="image image1-2"></div>
-                    <div class="image image1-3"></div>
-                    <div class="image image1-4"></div>
-                    <div class="image image1-5"></div>
+                    <div class="image image95-1"></div>
+                    <div class="image image95-2"></div>
+                    <div class="image image95-3"></div>
+                    <div class="image image95-4"></div>
+                    <div class="image image95-5"></div>
+                    <div class="image image95-6"></div>
+                    <div class="image image95-7"></div>
+                    <div class="image image95-8"></div>
+                    <div class="image image95-9"></div>
+                    <div class="image image95-10"></div>
                 </div>
             </div>
         </section>
@@ -210,18 +216,20 @@
             crossorigin="anonymous"></script>
         <script src="../assets/js/main.js"></script>
         <script>
-        if (window.innerWidth <= 768) {
-                document.addEventListener("DOMContentLoaded", function () {
-                    const images = document.querySelectorAll(".image");
-
-                    images.forEach((img) => {
-                        img.addEventListener("click", () => {
-                            img.classList.toggle("active");
+            if (window.innerWidth <= 768) {
+                document.querySelectorAll('.image').forEach(image => {
+                    image.addEventListener('click', () => {
+                        // Nur ein Bild aktiv – andere wieder zurücksetzen:
+                        document.querySelectorAll('.image.active').forEach(activeImg => {
+                            activeImg.classList.remove('active');
                         });
+
+                        // Dieses Bild aktivieren:
+                        image.classList.add('active');
                     });
                 });
             }
-</script>
+        </script>
 </body>
 
 </html>

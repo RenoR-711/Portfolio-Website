@@ -77,26 +77,167 @@
     background-image: url('/projekte/2008/image11.png');
 }
 
+/*Bilder 1998*/
+.image98-1 {
+    background-image: url('/projekte/1998/image1.jpg');
+}
+
+.image98-2 {
+    background-image: url('/projekte/1998/image2.jpg');
+}
+
+.image98-3 {
+    background-image: url('/projekte/1998/image3.jpg');
+}
+
+.image98-4 {
+    background-image: url('/projekte/1998/image4.jpg');
+}
+
+.image98-5 {
+    background-image: url('/projekte/1998/image5.jpg');
+}
+
+.image98-6 {
+    background-image: url('/projekte/1998/image6.jpg');
+}
+
+.image98-7 {
+    background-image: url('/projekte/1998/image7.jpg');
+}
+
+.image98-8 {
+    background-image: url('/projekte/1998/image8.jpg');
+}
+
+.image98-9 {
+    background-image: url('/projekte/1998/image9.jpg');
+}
+
+.image98-10 {
+    background-image: url('/projekte/1998/image10.jpg');
+}
+
+.image98-11 {
+    background-image: url('/projekte/1998/image11.jpg');
+}
+
+.image98-12 {
+    background-image: url('/projekte/1998/image12.jpg');
+}
+
+.image98-13 {
+    background-image: url('/projekte/1998/image13.jpg');
+}
+
+.image98-14 {
+    background-image: url('/projekte/1998/image14.jpg');
+}
+
+.image98-15 {
+    background-image: url('/projekte/1998/image15.jpg');
+}
+
+/*Bilder 1996-1997*/
+.image96-1 {
+    background-image: url('/projekte/1996/image1.png');
+}
+
+.image96-2 {
+    background-image: url('/projekte/1996/image2.png');
+}
+
+.image96-3 {
+    background-image: url('/projekte/1996/image3.png');
+}
+
+.image96-4 {
+    background-image: url('/projekte/1996/image4.png');
+}
+
+.image97-1 {
+    background-image: url('/projekte/1997/image1.png');
+}
+
+.image97-2 {
+    background-image: url('/projekte/1997/image2.png');
+}
+
+.image97-3 {
+    background-image: url('/projekte/1997/image3.png');
+}
+
+/*Bilder 1994*/
+.image95-1 {
+    background-image: url('/projekte/1995/image1.png');
+}
+
+.image95-2 {
+    background-image: url('/projekte/1995/image2.png');
+}
+
+.image95-3 {
+    background-image: url('/projekte/1995/image3.png');
+}
+
+.image95-4 {
+    background-image: url('/projekte/1995/image4.png');
+}
+
+.image95-5 {
+    background-image: url('/projekte/1995/image5.png');
+}
+
+.image95-6 {
+    background-image: url('/projekte/1995/image6.png');
+}
+
+.image95-7 {
+    background-image: url('/projekte/1995/image7.png');
+}
+
+.image95-8 {
+    background-image: url('/projekte/1995/image8.png');
+}
+
+.image95-9 {
+    background-image: url('/projekte/1995/image9.png');
+}
+
+.image95-10 {
+    background-image: url('/projekte/1995/image10.png');
+}
+
+
 /* ✅ Responsive Anpassung */
 @media (max-width: 768px) {
     .gallery-wrap {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2px;
         height: auto;
+        overflow: visible;
+        position: relative;
     }
 
     .image {
         width: 100%;
         aspect-ratio: 1 / 1;
         background-position: center;
-        background-size: cover;
+        background-size:contain;
         background-repeat: no-repeat;
         border-radius: 8px;
+        overflow: hidden;
         transition: transform 0.4s ease;
+        transform-origin: center center;
+        position: relative;
+        z-index: 1;
     }
 
-.image.active {
-transform: scale(1.08) rotate(-2deg) translateY(-5px);
-}
+    .image.active {
+        position: relative;
+        width: 150%;
+        transform: scale(1.08) rotate(-2deg) translateY(-5px);
+    z-index: 10;
+    }
 }
