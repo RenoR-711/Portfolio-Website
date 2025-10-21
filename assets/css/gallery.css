@@ -23,7 +23,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: flex 0.8s ease;
 }
 .image:hover {
