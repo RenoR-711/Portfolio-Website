@@ -21,11 +21,13 @@
 
 html,
 body {
-    font-family: var(--font-base);
     margin: 0;
     padding: 0;
+}
+body {
     background-color: var(--color-bg);
-    color: var(--color-gold);
+    color: var(--color-light);
+    font-family: var(--font-base);
 }
 
 /* ============================================================
@@ -43,7 +45,20 @@ body {
     font-size: 30px;
     color: var(--color-gold);
 }
+a {
+    color: var(--color-link);
+}
 
+a:hover {
+    color: var(--color-hover);
+}
+
+code {
+    color: var(--color-code);
+    background-color: var(--color-dark);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
 /* ============================================================
 3. Layout-Elemente (Wrapper, Section, Logos, etc.)
 ============================================================ */
