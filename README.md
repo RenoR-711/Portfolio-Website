@@ -1,6 +1,6 @@
-# Meine *Bewerbungswebsite* ist aktuell im Aufbau. Einige Seiten und Funktionen sind noch Fragmente und nicht vollständig. Ich arbeite daran, alles bald fertigzustellen. Vielen Dank für dein Verständnis.
+# ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
 
-My *application website* is currently under construction. Some pages and features are still fragmented and incomplete. I'm working on completing everything soon. Thank you for your understanding.
+This website is still under construction and will be continuously updated. Thank you for your understanding.
 ===============
 
 # Mein Portfolio-Projekt – HTML/CSS/JavaScript
