@@ -21,9 +21,9 @@ Dieses Projekt ist eine persönliche Portfolio-Website, die im Rahmen meiner Ful
 
 ## 📸 Screenshots
 
-![Vorschau](/assets/images/Abi.png)
+![Vorschau]
 
 ## 🚀 Live-Demo
 
-👉 [Live-Version auf GitHub Pages](https://dein-github-name.github.io/dein-projekt)
+👉 [Live-Version auf GitHub Pages](https://renor-711.github.io/Portfolio-Website/)
 
