@@ -1,13 +1,23 @@
 /* ============================================================
 1. Variablen & Basis-Styles
 ============================================================ */
-:root {
+:root,
+[data-theme=dark] {
     --color-text-base: #dac5a8 !important;
     --color-accent: #e49f3e;
     --color-dark: #0e0e0e;
     --color-background: #101215;
     --color-light: #fff;
     --color-hover: #e49f3e;
+    --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+[data-theme=blue] {
+    --color-text-base: #F1F1F2 !important;
+    --color-accent: #A1D6E2;
+    --color-dark: #000;
+    --color-background: #1995AD;
+    --color-light: #fff;
+    --color-hover: #BCBABE;
     --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
