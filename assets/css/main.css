@@ -3,22 +3,102 @@
 ============================================================ */
 :root,
 [data-theme=dark] {
-    --color-text-base: #dac5a8 !important;
-    --color-accent: #e49f3e;
+    --color-text-base: #F0810F !important;
+    --color-accent: #E6DF44;
     --color-dark: #0e0e0e;
     --color-background: #101215;
     --color-light: #fff;
-    --color-hover: #e49f3e;
+    --color-hover: #dac5a8;
     --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /* ============================================================
+    Hintergrund-Bilder
+    ============================================================ */
+    .bg-image {
+        background-image: url("../images/BG.png");
+    }
+
+    .bg-imagehor {
+        background-image: url("../images/BGhor.png");
+    }
+
+    .bg-imagebg {
+        background-color: var(--color-background);
+    }
+
+    .infoborder {
+        border: 2px solid var(--color-text-base);
+    }
 }
-[data-theme=blue] {
-    --color-text-base: #F1F1F2 !important;
-    --color-accent: #A1D6E2;
-    --color-dark: #000;
-    --color-background: #1995AD;
+
+[data-theme=light] {
+    --color-text-base: #17252A !important;
+    --color-accent: #2B7A78;
+    --color-dark: #17252A;
+    --color-background: #fff;
     --color-light: #fff;
-    --color-hover: #BCBABE;
+    --color-hover: #BD8886;
     --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /* ============================================================
+        Hintergrund-Bilder
+        ============================================================ */
+    .bg-image {
+        background-image: var(--color-background);
+    }
+
+    .bg-imagehor {
+        background-image: var(--color-background);
+    }
+
+    .bg-imagebg {
+        background-image: var(--color-background);
+    }
+}
+
+[data-theme=blue] {
+    --color-text-base: #0582e6 !important;
+    --color-accent: #BD8886;
+    --color-dark: #0C44E3;
+    --color-background: #fff;
+    --color-light: #fff;
+    --color-hover: #0C44E3;
+    --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /* ============================================================
+        Hintergrund-Bilder
+        ============================================================ */
+    .bg-image {
+        background-image: url("../images/BG-2.png");
+    }
+
+    .bg-imagehor {
+        background-image: url("../images/BG-2.png");
+    }
+
+    .bg-imagebg {
+        background-image: url("../images/BG-2.png");
+    }
+}
+
+#myTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--color-accent);
+    color: var(--color-background) !important;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#myTop:hover {
+    background-color: var(--color-hover);
 }
 
 *,
@@ -124,7 +204,7 @@ code {
 .nav-link.active {
     border-radius: 5px;
     background-color: var(--color-accent);
-    box-shadow: 2px 2px 20px #fc894d;
+    box-shadow: 2px 2px 20px var(--color-text-base);
 }
 
 /* Dropdown Menü */
@@ -240,7 +320,7 @@ code {
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(76, 76, 76, 0.3) 20%, rgba(34, 34, 34, 0.3) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background: radial-gradient(circle, rgba(76, 76, 76, 0.3) 20% transparent, rgba(34, 34, 34, 0.3) 50% transparent, rgba(0, 0, 0, 0.5) 100%) transparent;
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
     z-index: 5;
@@ -284,12 +364,13 @@ code {
 .tL_event--reverse .tL_event_content {
     border-radius: 6px 0 0 6px;
 }
+
 .tL_event_title {
     font-size: 1.2rem;
     line-height: 1;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-text-base);
     letter-spacing: 1.5px;
 }
 
@@ -326,7 +407,7 @@ code {
     height: 40px;
     padding: 40px;
     margin: 0 20px;
-    background: var(--color-accent);
+    background: var(--color-text-base);
     color: var(--color-text-base);
     border-radius: 100%;
     box-shadow:
@@ -338,6 +419,7 @@ code {
 .tL_event_icon i {
     font-size: 32px;
 }
+
 /* VERTIKALE LINIE */
 .tL_event_icon:before {
     content: "";
@@ -368,6 +450,7 @@ code {
     animation: fillLeftOdd 2s forwards 4s ease-in-out;
     animation-delay: 0.5s;
 }
+
 /* icon auf der linken Seite, Strich nach unten */
 .tL_event--reverse .tL_event_icon:before {
     content: "";
@@ -399,6 +482,7 @@ code {
     -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
     animation: fillLeft 2s forwards 4s ease-in-out;
 }
+
 .tL_event_description {
     flex-basis: 100%;
     line-height: 1;
@@ -496,47 +580,6 @@ code {
         left: 100%;
     }
 }
-/* ============================================================
-8. Isometric Card
-============================================================ */
-.isometric-card {
-    margin: 0 auto;
-    transform: rotateX(51deg) rotateZ(43deg);
-    transform-style: preserve-3d;
-    background-color: rgb(16, 18, 21);
-    will-change: transform;
-    width: 240px;
-    height: 320px;
-    border-radius: 2rem;
-    box-shadow: 1px 1px 0 1px rgb(210, 210, 211), -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        28px 28px 28px 0 rgba(34, 33, 81, 0.25);
-    transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
-}
-
-.isometric-card:hover {
-    transform: translate3d(0px, -40px, 0px) rotateX(51deg) rotateZ(43deg);
-    box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        54px 54px 28px -10px rgba(34, 33, 81, 0.15);
-}
-
-/* ============================================================
-9. Hintergrund-Bilder
-============================================================ */
-.bg-image {
-    background-image: url("../images/BG.png");
-}
-
-.bg-imagehor {
-    background-image: url("../images/BGhor.png");
-}
-
-.bg-imagebg {
-    background-color: var(--color-background);
-}
-
-.infoborder {
-    border: 2px solid var(--color-text-base);
-}
 
 /* ============================================================
 10. Media Queries (global)
@@ -591,7 +634,6 @@ code {
 /* ============================================================
 10. keyframes
 ============================================================ */
-
 @keyframes typing {
 
     75%,

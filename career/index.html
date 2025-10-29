@@ -15,27 +15,8 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <style>
-        #myTop {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: rgb(228, 159, 62);
-            color: black;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 5px;
-        }
+    <script type="module" src="../assets/js/theme-toggle.js"></script>
 
-        #myTop:hover {
-            background-color: rgb(218, 197, 168);
-        }
-    </style>
 </head>
 
 <body class="bg-image mouse-cursor ">
@@ -67,25 +48,31 @@
                                         <li class="nav-item">
                                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                                         </li>
-                    <!-- About Me -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Über mich
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="./index.html#profil">Mein Profil</a></li>
-                            <li><a class="dropdown-item" href="../career/index.html">Karriere </a></li>
-                            <li><a class="dropdown-item" href="../education/index.html">Bildungsweg</a></li>
-                            <li><a class="dropdown-item" href="../zertifikate/index.html">Qualifikation</a></li>
-                            <li><a class="dropdown-item" href="../projekte/index.html">Portfolio</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <a class="dropdown-item" href="../Renumol_Reinhardt_Lebenslauf.pdf" target="_blank">Lebenslauf als
-                                PDF anzeigen</a>
-                        </ul>
-                    </li>
+                                        <!-- About Me -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Über mich
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="./index.html#profil">Mein Profil</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="../career/index.html">Karriere </a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                        href="../education/index.html">Bildungsweg</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="../zertifikate/index.html">Qualifikation</a></li>
+                                                <li><a class="dropdown-item" href="../projekte/index.html">Portfolio</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <a class="dropdown-item" href="../Renumol_Reinhardt_Lebenslauf.pdf"
+                                                    target="_blank">Lebenslauf als
+                                                    PDF anzeigen</a>
+                                            </ul>
+                                        </li>
                                         <!-- Portfolio -->
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -93,12 +80,26 @@
                                                 Portfolio</a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li><a class="dropdown-item" href="#">Fullstack-Entwicklerin</a></li>
-                                                <li><a class="dropdown-item" href="../projekte#grafikdesign">Grafikdesign</a></li>
-                                                <li><a class="dropdown-item" href="../projekte#modedesign">Modedesign</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="../projekte#grafikdesign">Grafikdesign</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="../projekte#modedesign">Modedesign</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="../../aboutme/index.html">Contact „in Arbeit“</a>
+                                        </li>
+                                        <!-- Icon Theme Toggle -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="themeMenu" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span id="currentThemeIcon">☀️</span></a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeMenu">
+                                                <li><a class="dropdown-item" data-theme="dark">🌙 Dark</a></li>
+                                                <li><a class="dropdown-item" data-theme="light">☀️ Light</a></li>
+                                                <li><a class="dropdown-item" data-theme="blue">🔵 Blue</a></li>
+                                                <!-- <li><a class="dropdown-item" data-theme="green">🟢 Green</a></li> -->
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -111,7 +112,7 @@
     </nav>
     <main>
         <!-- Hauptinhalt -->
-        <section>
+        <section class="bg-image">
             <h1 class="display-2 fw-semibold text-base text-center">Karriere</h1>
             <!--  -->
             <div class="timeline">
@@ -230,8 +231,7 @@
             <!-- timeline End -->
         </section>
     </main>
-    <footer class="pt-5 text-base"
-        style="background-color:#101215; text-align: center; padding: 1rem 0; font-size: 0.9rem;">
+    <footer class="pt-5 text-base" style="text-align: center; padding: 1rem 0; font-size: 0.9rem;">
         <p>
             <hr style="border: 1px solid var(--color-accent);">
             &copy; 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;

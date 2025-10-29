@@ -20,27 +20,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
     <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <style>
-        #myTop {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: rgb(228, 159, 62);
-            color: black !important;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 5px;
-        }
+    <script type="module" src="../assets/js/theme-toggle.js"></script>
 
-        #myTop:hover {
-            background-color: rgb(218, 197, 168);
-        }
-    </style>
 </head>
 
 <body class="bg-imagebg mouse-cursor">
@@ -104,222 +85,248 @@
                                                 Portfolio</a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li><a class="dropdown-item" href="#">Fullstack-Entwicklerin</a></li>
-                                                <li><a class="dropdown-item" href="../projekte#grafikdesign">Grafikdesign</a></li>
-                                                <li><a class="dropdown-item" href="../projekte#modedesign">Modedesign</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="../projekte#grafikdesign">Grafikdesign</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="../projekte#modedesign">Modedesign</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="../aboutme/index.html">Contact „in Arbeit“</a>
                                         </li>
+                                        <!-- Icon Theme Toggle -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="themeMenu" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span id="currentThemeIcon">☀️</span></a>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeMenu">
+                                                <li><a class="dropdown-item" data-theme="dark">🌙 Dark</a></li>
+                                                <li><a class="dropdown-item" data-theme="light">☀️ Light</a></li>
+                                                <li><a class="dropdown-item" data-theme="blue">🔵 Blue</a></li>
+                                                <!-- <li><a class="dropdown-item" data-theme="green">🟢 Green</a></li> -->
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                         </nav>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </nav>
-    <!-- ========== Nav End Section ========== -->
-    <main>
-        <!-- ========== Hauptinhalt Accordion Image Gallery ========== -->
-        <section class="bg-image gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-1">Gestaltung der Bewerbungswebsite<sup>2025</sup> </p>
-                <p class="fs-5"><a class="text-accent" href="https://renor-711.github.io/Portfolio-Website/" target="_blank">Portfolio-Website</a></p>
-<ul class="fs-5 text-start">
-    <li>mit HTML, CSS, SCSS und JavaScript</li>
-</ul>
-            </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-1">Android-App <i>(aus der Weiterbildung)</i><sup>2024</sup> </p>
-                <p class="fs-5"><a class="text-accent" href="https://github.com/RenoR-711/NoteApp.git" target="_blank">NoteApp</a></p>
-<ul class="fs-5 text-start">
-    <li>Eigenständig entwickelte mobilen Android-App mit Kotlin</li>
-    <li>Lokale Datenspeicherung mithilfe von Room (SQLite),</li>
-    <li>Benutzeroberfläche mit XML Layouts,</li>
-    <li>Verwendung von MVVM-Architektur, ViewModel und LiveData zur Trennung von Logik und UI,</li>
-    <li>Fokus auf Clean Code, UI/UX und einfache Bedienbarkeit</li>
-</ul>
-            </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section class="bg-imagehor gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-1">Gestaltung und Pflege der Firmenwebseite<sup>2022</sup> </p>
-                <p class="fs-5"><a class="text-accent" href="https://www.inquest-institut.com" target="_blank">www.inquest-institut.com</a></p>
-<ul class="fs-5 text-start">
-    <li>mit HTML, CSS und Adobe Photoshop</li>
-</ul>
-            </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section id="grafikdesign" class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="display-5 text-center fst-italic text-decoration-underline">Ein Einblick in Arbeiten, die ich während meines Studiums im Mode- und Grafikdesign realisiert habe</p>
-                <p class="fs-2">Grafik-Design: Reinlayout mit Scribbles <sup>2008</sup< /p>
-                        <div class="gallery-wrap ">
-                            <div class="image image08-1"></div>
-                            <div class="image image08-2">
-                                <div class="image-text ">Image-Prospekt, <span class="fs-5 fw-light">der die
-                                        gesundheitlichen und ökologischen Zielsetzungen thematisiert</span></div>
-                            </div>
-                            <div class="image image08-3"></div>
-                            <div class="image image08-4">
-                                <div class="image-text">
-                                    Plakat für eine Aufklärungs-kampagne<span class="fs-5 fw-light"></span>
+                        <!-- ========== Nav End Section ========== -->
+                        <main>
+                            <!-- ========== Hauptinhalt Accordion Image Gallery ========== -->
+                            <section class="bg-image gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-1">Gestaltung der Bewerbungswebsite<sup>2025</sup> </p>
+                                    <p class="fs-5"><a class="text-accent"
+                                            href="https://renor-711.github.io/Portfolio-Website/"
+                                            target="_blank">Portfolio-Website</a></p>
+                                    <ul class="fs-5 text-start">
+                                        <li>mit HTML, CSS, SCSS und JavaScript</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="image image08-5"></div>
-                            <div class="image image08-6">
-                                <div class="image-text">
-                                    <span class="fs-5 fw-light">überarbeitetes DIXI-Logo</span>
+                            </section>
+                            <hr style="border: 2px solid var(--color-accent);">
+                            <section class="gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-1">Android-App <i>(aus der Weiterbildung)</i><sup>2024</sup> </p>
+                                    <p class="fs-5"><a class="text-accent"
+                                            href="https://github.com/RenoR-711/NoteApp.git" target="_blank">NoteApp</a>
+                                    </p>
+                                    <ul class="fs-5 text-start">
+                                        <li>Eigenständig entwickelte mobilen Android-App mit Kotlin</li>
+                                        <li>Lokale Datenspeicherung mithilfe von Room (SQLite),</li>
+                                        <li>Benutzeroberfläche mit XML Layouts,</li>
+                                        <li>Verwendung von MVVM-Architektur, ViewModel und LiveData zur Trennung von
+                                            Logik und UI,</li>
+                                        <li>Fokus auf Clean Code, UI/UX und einfache Bedienbarkeit</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="image image08-7">
-                                <div class="image-text">
-                                    Kampagne zur Imageverbesserung<span class="fs-5 fw-light"></span>
+                            </section>
+                            <hr style="border: 2px solid var(--color-accent);">
+                            <section class="bg-imagehor gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-1">Gestaltung und Pflege der Firmenwebseite<sup>2022</sup> </p>
+                                    <p class="fs-5"><a class="text-accent" href="https://www.inquest-institut.com"
+                                            target="_blank">www.inquest-institut.com</a></p>
+                                    <ul class="fs-5 text-start">
+                                        <li>mit HTML, CSS und Adobe Photoshop</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="image image08-8"></div>
-                            <div class="image image08-9">
-                                <div class="image-text">
-                                    Kampagne zur Imageverbesserung<span class="fs-5 fw-light"></span>
+                            </section>
+                            <hr style="border: 2px solid var(--color-accent);">
+                            <section id="grafikdesign" class="gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="display-5 text-center fst-italic text-decoration-underline">Ein Einblick
+                                        in Arbeiten, die ich
+                                        während meines Studiums im Mode- und Grafikdesign realisiert habe</p>
+                                    <p class="fs-2">Grafik-Design: Reinlayout mit Scribbles <sup>2008</sup< /p>
+                                            <div class="gallery-wrap ">
+                                                <div class="image image08-1"></div>
+                                                <div class="image image08-2">
+                                                    <div class="image-text ">Image-Prospekt, <span
+                                                            class="fs-5 fw-light">der die
+                                                            gesundheitlichen und ökologischen Zielsetzungen
+                                                            thematisiert</span></div>
+                                                </div>
+                                                <div class="image image08-3"></div>
+                                                <div class="image image08-4">
+                                                    <div class="image-text">
+                                                        Plakat für eine Aufklärungs-kampagne<span
+                                                            class="fs-5 fw-light"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="image image08-5"></div>
+                                                <div class="image image08-6">
+                                                    <div class="image-text">
+                                                        <span class="fs-5 fw-light">überarbeitetes DIXI-Logo</span>
+                                                    </div>
+                                                </div>
+                                                <div class="image image08-7">
+                                                    <div class="image-text">
+                                                        Kampagne zur Imageverbesserung<span
+                                                            class="fs-5 fw-light"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="image image08-8"></div>
+                                                <div class="image image08-9">
+                                                    <div class="image-text">
+                                                        Kampagne zur Imageverbesserung<span
+                                                            class="fs-5 fw-light"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="image image08-10"></div>
+                                                <div class="image image08-11">
+                                                    <div class="image-text">
+                                                        SAM Logo entwurf<span class="fs-5 fw-light"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="image image08-12">
+                                                    <div class="image-text">
+                                                        Kampagne zur Image-verbesserung<span class="fs-5 fw-light">
+                                                            Elektrofahrzeug mit zwei
+                                                            Plätzen und drei Rädern</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                 </div>
-                            </div>
-                            <div class="image image08-10"></div>
-                            <div class="image image08-11">
-                                <div class="image-text">
-                                    SAM Logo entwurf<span class="fs-5 fw-light"></span>
+                            </section>
+                            <hr style="border: 2px solid var(--color-accent);">
+                            <section class="bg-image gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-2">Abschlußarbeit: Kali die Göttin <sup>1998</sup></p>
+                                    <div class="gallery-wrap">
+                                        <div class="image image98-1"> </div>
+                                        <div class="image image98-2"></div>
+                                        <div class="image image98-3"></div>
+                                        <div class="image image98-4"></div>
+                                        <div class="image image98-5"></div>
+                                        <div class="image image98-6"> </div>
+                                        <div class="image image98-7"></div>
+                                        <div class="image image98-8"></div>
+                                        <div class="image image98-9"></div>
+                                        <div class="image image98-10"></div>
+                                        <div class="image image98-11"> </div>
+                                        <div class="image image98-12"></div>
+                                        <div class="image image98-13"></div>
+                                        <div class="image image98-14"></div>
+                                        <div class="image image98-15"></div>
+                                        <div class="image image98-16"></div>
+                                        <div class="image image98-17"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="image image08-12">
-                                <div class="image-text">
-                                    Kampagne zur Image-verbesserung<span class="fs-5 fw-light"> Elektrofahrzeug mit zwei
-                                        Plätzen und drei Rädern</span>
+                            </section>
+                            <section class="gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-2">Figürliches Zeichnen/ Skyscraper (Reinzeichnung)
+                                        Bleistift + Kreide Semesterarbeit - 7. Semester <sup>1997</sup> </p>
+                                    <div class="gallery-wrap">
+                                        <div class="image image97-1"> </div>
+                                        <div class="image image97-2"></div>
+                                        <div class="image image97-3"></div>
+                                        <div class="image image97-4"></div>
+                                        <div class="image image97-5"></div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-            </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section class="bg-image gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Abschlußarbeit: Kali die Göttin <sup>1998</sup></p>
-                <div class="gallery-wrap">
-                    <div class="image image98-1"> </div>
-                    <div class="image image98-2"></div>
-                    <div class="image image98-3"></div>
-                    <div class="image image98-4"></div>
-                    <div class="image image98-5"></div>
-                    <div class="image image98-6"> </div>
-                    <div class="image image98-7"></div>
-                    <div class="image image98-8"></div>
-                    <div class="image image98-9"></div>
-                    <div class="image image98-10"></div>
-                    <div class="image image98-11"> </div>
-                    <div class="image image98-12"></div>
-                    <div class="image image98-13"></div>
-                    <div class="image image98-14"></div>
-                    <div class="image image98-15"></div>
-                    <div class="image image98-16"></div>
-                    <div class="image image98-17"></div>
-                </div>
-            </div>
-        </section>
-        <section class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Figürliches Zeichnen/ Skyscraper (Reinzeichnung)
-                    Bleistift + Kreide Semesterarbeit - 7. Semester <sup>1997</sup> </p>
-                <div class="gallery-wrap">
-                    <div class="image image97-1"> </div>
-                    <div class="image image97-2"></div>
-                    <div class="image image97-3"></div>
-                    <div class="image image97-4"></div>
-                    <div class="image image97-5"></div>
-                </div>
-            </div>
-        </section>
-        <section class="bg-imagehor gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Aktzeichnen mit Kreide <sup>1995</sup>/ Modeillustration <sup>1996</sup></p>
-                <div class="gallery-wrap">
-                    <div class="image image96-1"> </div>
-                    <div class="image image96-2"></div>
-                    <div class="image image96-3"></div>
-                    <div class="image image96-4"></div>
-                    <div class="image image96-5"> </div>
-                    <div class="image image96-6"></div>
-                    <div class="image image96-7"></div>
-                    <div class="image image96-8"></div>
-                </div>
-            </div>
-        </section>
-        <section class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Skizzen <sup>1995</sup></p>
-                <div class="gallery-wrap">
-                    <div class="image image95-1"></div>
-                    <div class="image image95-2"></div>
-                    <div class="image image95-3"></div>
-                    <div class="image image95-4"></div>
-                    <div class="image image95-5"></div>
-                    <div class="image image95-6"></div>
-                    <div class="image image95-7"></div>
-                    <div class="image image95-8"></div>
-                </div>
-            </div>
-        </section>
-        <section id="modedesign" class="bg-image gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Grundlagen Zeichnen/ Skizze mit Bleistift <sup>1994</sup></p>
-                <div class="gallery-wrap">
-                    <div class="image image94-1"></div>
-                    <div class="image image94-2"></div>
-                    <div class="image image94-3"></div>
-                    <div class="image image94-4"></div>
-                    <div class="image image94-5"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="pt-5 text-base"
-        style="background-color:#101215; text-align: center; padding: 1rem 0; font-size: 0.9rem;">
-        <p>
-            <hr style="border: 1px solid var(--color-accent);">
-            © 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;
-            <a href="../impressum.html" class="text-accent" style="text-decoration: none;" target="_blank"
-                rel="noopner noreferrer">Impressum</a> &nbsp;|&nbsp;
-            <a href="../datenschutz.html" class="text-accent" style="text-decoration: none;" target="_blank"
-                rel="noopner noreferrer">Datenschutzerklärung</a>&nbsp;|&nbsp;
-            <a href="https://www.linkedin.com/in/renumol-reinhardt-88138a2a5" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/images/LI-In-Bug.png" alt="LinkedIn" style="width: 24px; height: auto;">
-            </a>
-        </p>
-        <!-- Scroll-to-top Funktion -->
-        <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
-        <!-- Script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <script src="../assets/js/main.js"></script>
-        <script>
-            if (window.innerWidth <= 768) {
-                document.querySelectorAll('.image').forEach(image => {
-                    image.addEventListener('click', () => {
-                        // Nur ein Bild aktiv – andere wieder zurücksetzen:
-                        document.querySelectorAll('.image.active').forEach(activeImg => {
-                            activeImg.classList.remove('active');
-                        });
+                            </section>
+                            <section class="bg-imagehor gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-2">Aktzeichnen mit Kreide <sup>1995</sup>/ Modeillustration
+                                        <sup>1996</sup>
+                                    </p>
+                                    <div class="gallery-wrap">
+                                        <div class="image image96-1"> </div>
+                                        <div class="image image96-2"></div>
+                                        <div class="image image96-3"></div>
+                                        <div class="image image96-4"></div>
+                                        <div class="image image96-5"> </div>
+                                        <div class="image image96-6"></div>
+                                        <div class="image image96-7"></div>
+                                        <div class="image image96-8"></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-2">Skizzen <sup>1995</sup></p>
+                                    <div class="gallery-wrap">
+                                        <div class="image image95-1"></div>
+                                        <div class="image image95-2"></div>
+                                        <div class="image image95-3"></div>
+                                        <div class="image image95-4"></div>
+                                        <div class="image image95-5"></div>
+                                        <div class="image image95-6"></div>
+                                        <div class="image image95-7"></div>
+                                        <div class="image image95-8"></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="modedesign" class="bg-image gallery-fixheight">
+                                <div class="imagebox subtitle">
+                                    <p class="fs-2">Grundlagen Zeichnen/ Skizze mit Bleistift <sup>1994</sup></p>
+                                    <div class="gallery-wrap">
+                                        <div class="image image94-1"></div>
+                                        <div class="image image94-2"></div>
+                                        <div class="image image94-3"></div>
+                                        <div class="image image94-4"></div>
+                                        <div class="image image94-5"></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                        <footer class="pt-5 text-base" style="text-align: center; padding: 1rem 0; font-size: 0.9rem;">
+                            <p>
+                                <hr style="border: 1px solid var(--color-accent);">
+                                © 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;
+                                <a href="../impressum.html" class="text-accent" style="text-decoration: none;"
+                                    target="_blank" rel="noopner noreferrer">Impressum</a> &nbsp;|&nbsp;
+                                <a href="../datenschutz.html" class="text-accent" style="text-decoration: none;"
+                                    target="_blank" rel="noopner noreferrer">Datenschutzerklärung</a>&nbsp;|&nbsp;
+                                <a href="https://www.linkedin.com/in/renumol-reinhardt-88138a2a5" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="../assets/images/LI-In-Bug.png" alt="LinkedIn"
+                                        style="width: 24px; height: auto;">
+                                </a>
+                            </p>
+                            <!-- Scroll-to-top Funktion -->
+                            <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
+                            <!-- Script -->
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                                crossorigin="anonymous"></script>
+                            <script src="../assets/js/main.js"></script>
+                            <script>
+                                if (window.innerWidth <= 768) {
+                                    document.querySelectorAll('.image').forEach(image => {
+                                        image.addEventListener('click', () => {
+                                            // Nur ein Bild aktiv – andere wieder zurücksetzen:
+                                            document.querySelectorAll('.image.active').forEach(activeImg => {
+                                                activeImg.classList.remove('active');
+                                            });
 
-                        // Dieses Bild aktivieren:
-                        image.classList.add('active');
-                    });
-                });
-            }
-        </script>
+                                            // Dieses Bild aktivieren:
+                                            image.classList.add('active');
+                                        });
+                                    });
+                                }
+                            </script>
 </body>
 
 </html>
