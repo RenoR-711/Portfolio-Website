@@ -299,6 +299,38 @@ code {
     }
 }
 
+.info-box {
+display: none;
+    margin-top: 10px;
+    padding-left: 0.75em;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.70rem;
+    text-align: left;
+}
+
+/* NUR der Button steuert die Anzeige */
+.info-btn:hover+.info-box {
+    display: block;
+}
+
+@media (max-width: 768px) {
+.info-btn:hover+.info-box {
+        font-size: 60%;
+            }
+}
+
+.btn-theme {
+    color: var(--color-text-base) !important;
+    border-color: var(--color-text-base) !important;
+}
+
+.btn-theme:hover {
+    background-color: var(--color-text-base) !important;
+    color: #fff !important;
+}
+
 /* ============================================================
 6. Spezialeffekte & Animationen
 ============================================================ */
