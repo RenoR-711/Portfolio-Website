@@ -1,16 +1,104 @@
 /* ============================================================
 1. Variablen & Basis-Styles
 ============================================================ */
-:root {
-    --color-gold: #dac5a8;
-    --color-orange: #e49f3e;
+:root,
+[data-theme=dark] {
+    --color-text-base: #F0810F !important;
+    --color-accent: #E6DF44;
     --color-dark: #0e0e0e;
-    --color-bg: #101215;
+    --color-background: #101215;
     --color-light: #fff;
-    --color-link: #d63384;
-    --color-hover: #e49f3e;
-    --color-code: #d63384;
+    --color-hover: #dac5a8;
     --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /* ============================================================
+    Hintergrund-Bilder
+    ============================================================ */
+    .bg-image {
+        background-image: url("../images/BG.png");
+    }
+
+    .bg-imagehor {
+        background-image: url("../images/BGhor.png");
+    }
+
+    .bg-imagebg {
+        background-color: var(--color-background);
+    }
+
+    .infoborder {
+        border: 2px solid var(--color-text-base);
+    }
+}
+
+[data-theme=light] {
+    --color-text-base: #17252A !important;
+    --color-accent: #2B7A78;
+    --color-dark: #17252A;
+    --color-background: #fff;
+    --color-light: #fff;
+    --color-hover: #BD8886;
+    --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /* ============================================================
+        Hintergrund-Bilder
+        ============================================================ */
+    .bg-image {
+        background-image: var(--color-background);
+    }
+
+    .bg-imagehor {
+        background-image: var(--color-background);
+    }
+
+    .bg-imagebg {
+        background-image: var(--color-background);
+    }
+}
+
+[data-theme=blue] {
+    --color-text-base: #0582e6 !important;
+    --color-accent: #BD8886;
+    --color-dark: #0C44E3;
+    --color-background: #fff;
+    --color-light: #fff;
+    --color-hover: #0C44E3;
+    --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /* ============================================================
+        Hintergrund-Bilder
+        ============================================================ */
+    .bg-image {
+        background-image: url("../images/BG-2.png");
+    }
+
+    .bg-imagehor {
+        background-image: url("../images/BG-2.png");
+    }
+
+    .bg-imagebg {
+        background-image: url("../images/BG-2.png");
+    }
+}
+
+#myTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--color-accent);
+    color: var(--color-background) !important;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#myTop:hover {
+    background-color: var(--color-hover);
 }
 
 *,
@@ -21,27 +109,45 @@
 
 html,
 body {
-    font-family: var(--font-base);
     margin: 0;
     padding: 0;
-    background-color: var(--color-bg);
-    color: var(--color-gold);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-light);
+    font-family: var(--font-base);
 }
 
 /* ============================================================
 2. Typografie
 ============================================================ */
-.text-gold {
-    color: var(--color-gold);
+.text-base {
+    color: var(--color-text-base);
 }
 
-.text-orange {
-    color: var(--color-orange);
+.text-accent {
+    color: var(--color-accent);
 }
 
 .subtitle {
     font-size: 30px;
-    color: var(--color-gold);
+    color: var(--color-text-base);
+}
+
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-hover);
+}
+
+code {
+    color: var(--color-code);
+    background-color: var(--color-dark);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
 }
 
 /* ============================================================
@@ -81,7 +187,7 @@ body {
 }
 
 .navbar a {
-    color: var(--color-gold);
+    color: var(--color-text-base);
     text-align: left;
 }
 
@@ -92,13 +198,13 @@ body {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     border-radius: 0.2rem;
-    color: var(--color-gold);
+    color: var(--color-text-base);
 }
 
 .nav-link.active {
     border-radius: 5px;
-    background-color: var(--color-orange);
-    box-shadow: 2px 2px 20px #fc894d;
+    background-color: var(--color-accent);
+    box-shadow: 2px 2px 20px var(--color-text-base);
 }
 
 /* Dropdown Menü */
@@ -112,11 +218,11 @@ body {
     top: 100%;
     left: 0;
     z-index: 1000;
-    background-color: var(--color-bg) !important;
+    background-color: var(--color-background) !important;
     padding: 10px;
     border-radius: 5px;
     text-align: right;
-    color: var(--color-gold) !important;
+    color: var(--color-text-base) !important;
 }
 
 .dropdown.show .dropdown-menu {
@@ -131,7 +237,7 @@ body {
 
 .dropdown-item:hover {
     background-color: #2c2c2c !important;
-    color: var(--color-orange) !important;
+    color: var(--color-accent) !important;
     font-weight: bold;
 }
 
@@ -167,7 +273,7 @@ body {
 }
 
 .popover-body {
-    color: var(--color-orange);
+    color: var(--color-accent);
     text-align: center;
     font-weight: bold;
     font-size: 0.9rem;
@@ -193,6 +299,38 @@ body {
     }
 }
 
+.info-box {
+    display: none;
+    margin-top: 10px;
+    padding-left: 0.75em;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.70rem;
+    text-align: left;
+}
+
+/* NUR der Button steuert die Anzeige */
+.info-btn:hover+.info-box {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .info-btn:hover+.info-box {
+        font-size: 60%;
+    }
+}
+
+.btn-theme {
+    color: var(--color-text-base) !important;
+    border-color: var(--color-text-base) !important;
+}
+
+.btn-theme:hover {
+    background-color: var(--color-text-base) !important;
+    color: #fff !important;
+}
+
 /* ============================================================
 6. Spezialeffekte & Animationen
 ============================================================ */
@@ -214,7 +352,7 @@ body {
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(76, 76, 76, 0.3) 20%, rgba(34, 34, 34, 0.3) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background: radial-gradient(circle, rgba(76, 76, 76, 0.3) 20% transparent, rgba(34, 34, 34, 0.3) 50% transparent, rgba(0, 0, 0, 0.5) 100%) transparent;
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
     z-index: 5;
@@ -223,24 +361,6 @@ body {
 
 .mouse-cursor:hover::before {
     --size: 150px;
-}
-
-.typewriter-effect {
-    display: flex;
-    justify-content: center;
-    font-family: monospace;
-}
-
-.typewriter-effect>.text {
-    max-width: 0;
-    animation: typing 3s steps(var(--characters)) infinite;
-    white-space: nowrap;
-    overflow: visible;
-}
-
-.typewriter-effect::after {
-    content: " |";
-    animation: blink 1s infinite step-end;
 }
 
 /* ============================================================
@@ -261,7 +381,6 @@ body {
     align-self: center;
     width: 50vw;
     flex-direction: row;
-    /* Default */
 }
 
 /* Reverse-Layout für Events mit Klasse .tL_event--reverse */
@@ -283,7 +402,7 @@ body {
     line-height: 1;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--color-orange);
+    color: var(--color-text-base);
     letter-spacing: 1.5px;
 }
 
@@ -301,7 +420,7 @@ body {
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
-    background: var(--color-gold);
+    background: var(--color-text-base);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,102 +430,89 @@ body {
 }
 
 .tL_event_icon {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-gold);
     align-self: center;
-    margin: 0 20px;
-    background: var(--color-orange);
-    border-radius: 100%;
     width: 40px;
     height: 40px;
     padding: 40px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    margin: 0 20px;
+    background: var(--color-text-base);
+    color: var(--color-text-base);
+    border-radius: 100%;
+    box-shadow:
+        0 30px 60px -12px rgba(50, 50, 93, 0.25),
         0 18px 36px -18px rgba(0, 0, 0, 0.3),
         0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    position: relative;
 }
 
 .tL_event_icon i {
     font-size: 32px;
 }
 
-/* Gemeinsame Styles für Linien vor und nach dem Icon */
-.tL_event_icon:before,
-.tL_event_icon:after {
-    content: "";
-    background: var(--color-orange);
-    position: absolute;
-    z-index: -1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-delay: 4s;
-}
-
-/* Vertikale Linie */
+/* VERTIKALE LINIE */
 .tL_event_icon:before {
-    width: 0;
-    height: 100%;
+    content: "";
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    animation-name: fillTop;
+    width: 2px;
+    height: 100%;
+    background: var(--color-accent);
+    z-index: -1;
+    -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+    animation: fillTop 2s forwards 4s ease-in-out;
 }
 
-/* Horizontale Linie für normale Events */
+/* HORIZONTALE LINIE */
 .tL_event_icon:after {
-    width: 100%;
-    height: 0;
+    content: "";
+    position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    animation-name: fillLeftOdd;
+    width: 100%;
+    height: 2px;
+    background: var(--color-accent);
+    z-index: -1;
+    -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
+    animation: fillLeftOdd 2s forwards 4s ease-in-out;
+    animation-delay: 0.5s;
 }
 
-/* Horizontale Linie für reverse Events */
+/* icon auf der linken Seite, Strich nach unten */
+.tL_event--reverse .tL_event_icon:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: var(--color-accent);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: auto;
+    z-index: -1;
+    transform: translateX(-50%);
+    -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+    animation: fillTop 2s forwards 4s ease-in-out;
+}
+
+/* icon auf der linken Seite, Strich nach rechts */
 .tL_event--reverse .tL_event_icon:after {
-    left: auto;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--color-accent);
+    position: absolute;
     right: 0;
-    animation-name: fillLeft;
-}
-
-/* Animationen */
-@keyframes fillTop {
-    from {
-        height: 0;
-        opacity: 0;
-    }
-
-    to {
-        height: 100%;
-        opacity: 1;
-    }
-}
-
-@keyframes fillLeftOdd {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-
-    to {
-        width: 100%;
-        opacity: 1;
-    }
-}
-
-@keyframes fillLeft {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-
-    to {
-        width: 100%;
-        opacity: 1;
-    }
+    z-index: -1;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
+    animation: fillLeft 2s forwards 4s ease-in-out;
 }
 
 .tL_event_description {
@@ -441,7 +547,7 @@ body {
         width: 100%;
         margin: 0;
         box-shadow: none;
-        padding: 20px;
+        padding: 30px;
     }
 
     .tL_event_icon:before,
@@ -461,7 +567,7 @@ body {
 
     .tL_event--reverse .tL_event_date {
         border-radius: 0;
-        padding: 20px;
+        padding: 30px;
     }
 
     .tL_event--reverse .tL_event_icon {
@@ -470,46 +576,41 @@ body {
     }
 }
 
-/* ============================================================
-8. Isometric Card
-============================================================ */
-.isometric-card {
-    margin: 0 auto;
-    transform: rotateX(51deg) rotateZ(43deg);
-    transform-style: preserve-3d;
-    background-color: rgb(16, 18, 21);
-    will-change: transform;
-    width: 240px;
-    height: 320px;
-    border-radius: 2rem;
-    box-shadow: 1px 1px 0 1px rgb(210, 210, 211), -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        28px 28px 28px 0 rgba(34, 33, 81, 0.25);
-    transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
+/* Keyframes - Animation */
+@-webkit-keyframes fillLeft {
+    100% {
+        right: 100%;
+    }
 }
 
-.isometric-card:hover {
-    transform: translate3d(0px, -40px, 0px) rotateX(51deg) rotateZ(43deg);
-    box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+@keyframes fillLeft {
+    100% {
+        right: 100%;
+    }
 }
 
-/* ============================================================
-9. Hintergrund-Bilder
-============================================================ */
-.bg-image {
-    background-image: url("../images/BG.png");
+@-webkit-keyframes fillTop {
+    100% {
+        top: 100%;
+    }
 }
 
-.bg-imagehor {
-    background-image: url("../images/BGhor.png");
+@keyframes fillTop {
+    100% {
+        top: 100%;
+    }
 }
 
-.bg-imagebg {
-    background-color: var(--color-bg);
+@-webkit-keyframes fillLeftOdd {
+    100% {
+        left: 100%;
+    }
 }
 
-.infoborder {
-    border: 2px solid var(--color-gold);
+@keyframes fillLeftOdd {
+    100% {
+        left: 100%;
+    }
 }
 
 /* ============================================================
@@ -563,7 +664,7 @@ body {
 }
 
 /* ============================================================
-11. Keyframes
+10. keyframes
 ============================================================ */
 @keyframes typing {
 
@@ -586,20 +687,6 @@ body {
     }
 }
 
-@keyframes fillLeft {
-    100% {
-        right: 100%;
-    }
-}
-
-@keyframes fillTop {
-    100% {
-        top: 100%;
-    }
-}
-
-@keyframes fillLeftOdd {
-    100% {
-        left: 100%;
-    }
-}
+/* ============================================================
+12. Gallery
+============================================================ */
