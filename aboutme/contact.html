@@ -104,38 +104,37 @@
   </nav>
   <main>
     <!-- Hauptinhalt -->
-    <!-- ========== Carousel ========== -->
-    <section id="contact" class="contact-section"
+    <!-- ========== Kontaktseite ========== -->
+    <section id="contact" class="contact-section text-base"
       style="max-width: 600px; margin: 0 auto; padding: 2rem; font-family: ‘Inter’, sans-serif;">
       <h2 class="section-title">Kontakt</h2>
       <p class="section-subtitle">Lass uns zusammenarbeiten!</p>
-    
-      <p>Wenn du Interesse an einer Zusammenarbeit hast, Fragen stellen möchtest oder einfach nur „Hallo“ sagen willst – ich
+
+      <p>Wenn du Interesse an einer Zusammenarbeit hast, Fragen stellen möchtest oder einfach nur „Hallo“ sagen willst –
+        ich
         freue mich über deine Nachricht.</p>
-    
+
       <p>
         <strong>E-Mail:</strong> <a href="mailto:deinname@example.com">deinname@example.com</a><br>
         <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/deinprofil">linkedin.com/in/deinprofil</a><br>
         <strong>GitHub:</strong> <a href="https://github.com/deinprofil">github.com/deinprofil</a>
       </p>
-    
+
       <form action="send.php" method="POST" class="contact-form">
         <label for="name">Dein Name</label><br>
         <input type="text" id="name" name="name" required placeholder="Ihr Name"
           style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;"><br>
-    
+
         <label for="email">Deine E-Mail</label><br>
         <input type="email" id="email" name="email" required placeholder="you@example.com"
           style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px;"><br>
-    
+
         <label for="message">Nachricht</label><br>
         <textarea id="message" name="message" required placeholder="Deine Nachricht…"
           style="width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:4px; height:140px;"></textarea><br>
-    
-        <button type="submit"
-          style="padding:12px 24px; background-color:#007BFF; color:#fff; border:none; border-radius:4px; cursor:pointer;">
-          Nachricht senden
-        </button>
+
+        <button type="submit" class="btn btn-theme " style="">Nachricht senden</button>
+        <a class="btn btn-theme" type="submit">Nachricht senden</a>
       </form>
     </section>
 
