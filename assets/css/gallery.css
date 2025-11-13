@@ -12,18 +12,13 @@
     height: 40vh;
     gap: 5px;
 }
-/* .gallery-fixheight {
-    height: 700px;
-} */
 .image {
     flex: 1;
-    /* height: 100%; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;
     position: relative;
-    /* overflow: hidden; */
     transition: flex 0.8s ease;
 }
 .image:hover {
