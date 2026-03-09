@@ -12,15 +12,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Renumol Reinhardt | Web Portfolio</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/gallery.css">
-    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <script type="module" src="../assets/js/theme-toggle.js"></script>
+    <script type="module" src="./assets/js/theme-toggle.js"></script>
 
 </head>
 
@@ -41,8 +41,8 @@
                 <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
                     <div class="container-fluid px-lg-4">
                         <!-- Brand / Logo -->
-                        <a href="../index.html" class="navbar-brand d-flex align-items-center gap-2">
-                            <img id="logo" src="../assets/images/Logo.png" alt="Logo"
+                        <a href="./index.html" class="navbar-brand d-flex align-items-center gap-2">
+                            <img id="logo" src="./assets/images/Logo.png" alt="Logo"
                                 title="Renumol Reinhardt Portfolio">
                             <span class="brand-title d-none d-sm-inline">Renumol Reinhardt</span>
                         </a>
@@ -59,7 +59,7 @@
                             <!-- Centered Menu -->
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-4 nav-pills-gap">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -68,10 +68,10 @@
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-animate">
                                         <li><a class="dropdown-item"
-                                                href="../projekte/fullstack.html">Fullstack-Entwicklerin</a></li>
-                                        <li><a class="dropdown-item" href="../projekte#grafikdesign">Grafikdesign</a>
+                                                href="./projekte/fullstack.html">Fullstack-Entwicklerin</a></li>
+                                        <li><a class="dropdown-item" href="./projekte#grafikdesign">Grafikdesign</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="../projekte#modedesign">Modedesign</a></li>
+                                        <li><a class="dropdown-item" href="./projekte#modedesign">Modedesign</a></li>
                                     </ul>
                                 </li>
 
@@ -81,12 +81,12 @@
                                         Über mich
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-animate">
-                                        <li><a class="dropdown-item" href="../index.html#profil">Mein Profil</a></li>
-                                        <li><a class="dropdown-item" href="../career/index.html">Karriere</a></li>
-                                        <li><a class="dropdown-item" href="../education/index.html">Bildungsweg</a></li>
-                                        <li><a class="dropdown-item" href="../zertifikate/index.html">Qualifikation</a>
+                                        <li><a class="dropdown-item" href="./index.html#profil">Mein Profil</a></li>
+                                        <li><a class="dropdown-item" href="./career/index.html">Karriere</a></li>
+                                        <li><a class="dropdown-item" href="./education/index.html">Bildungsweg</a></li>
+                                        <li><a class="dropdown-item" href="./zertifikate/index.html">Qualifikation</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="../projekte/index.html">Portfolio</a></li>
+                                        <li><a class="dropdown-item" href="./projekte/index.html">Portfolio</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -96,7 +96,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="../aboutme/contact.html">Contact</a>
+                                    <a class="nav-link" href="./aboutme/contact.html">Contact</a>
                                 </li>
                             </ul>
 
@@ -127,184 +127,125 @@
     </div>
 
     <main>
-        <!-- ========== Hauptinhalt Accordion Image Gallery ========== -->
-        <section class="bg-image gallery-fixheight">
-            <div class="container mt-5 pt-5">
-                <div class="imagebox subtitle">
-                    <p class="fs-1">Gestaltung der Bewerbungswebsite<sup>2025</sup> </p>
-                    <p class="fs-5"><a class="text-accent" href="https://renor-711.github.io/Portfolio-Website/"
-                            target="_blank">Portfolio-Website</a></p>
-                    <ul class="fs-5 text-start">
-                        <li>mit HTML, CSS, SCSS und JavaScript</li>
-                    </ul>
+        <!-- ========== Hauptinhalt ========== -->
+        <!-- HERO SECTION -->
+        <section class="bg-image p-5 mt-1">
+            <div class="container pt-5 primary">
+                <div class="row py-3 mb-5 text-left">
+                    <h1 class="display-4 fw-bold primary">Willkommen auf meinem Portfolio!</h1>
+                    <p class="lead">Hier findest du eine Auswahl meiner Projekte, Erfahrungen und Qualifikationen als
+                        <span class="display-6 fw-semibold">Backend-orientierte Fullstack Entwicklerin mit
+                            Prozessverständnis</span>.
+                    </p>
                 </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-1">Android-App <i>(aus der Weiterbildung)</i><sup>2024</sup> </p>
-                <p class="fs-5"><a class="text-accent" href="https://github.com/RenoR-711/NoteApp.git"
-                        target="_blank">NoteApp</a>
-                </p>
-                <ul class="fs-5 text-start">
-                    <li>Eigenständig entwickelte mobilen Android-App mit Kotlin</li>
-                    <li>Lokale Datenspeicherung mithilfe von Room (SQLite),</li>
-                    <li>Benutzeroberfläche mit XML Layouts,</li>
-                    <li>Verwendung von MVVM-Architektur, ViewModel und LiveData zur Trennung von
-                        Logik und UI,</li>
-                    <li>Fokus auf Clean Code, UI/UX und einfache Bedienbarkeit</li>
-                </ul>
-            </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section class="bg-imagehor gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-1">Gestaltung und Pflege der Firmenwebseite<sup>2022</sup> </p>
-                <p class="fs-5"><a class="text-accent" href="https://www.inquest-institut.com"
-                        target="_blank">www.inquest-institut.com</a></p>
-                <ul class="fs-5 text-start">
-                    <li>mit HTML, CSS und Adobe Photoshop</li>
-                </ul>
-            </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section id="grafikdesign" class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="display-5 text-center fst-italic text-decoration-underline">Ein Einblick
-                    in Arbeiten, die ich
-                    während meines Studiums im Mode- und Grafikdesign realisiert habe</p>
-                <p class="fs-2">Grafik-Design: Reinlayout mit Scribbles <sup>2008</sup< /p>
-                        <div class="gallery-wrap ">
-                            <div class="image image08-1"></div>
-                            <div class="image image08-2">
-                                <div class="image-text ">Image-Prospekt, <span class="fs-5 fw-light">der die
-                                        gesundheitlichen und ökologischen Zielsetzungen
-                                        thematisiert</span></div>
-                            </div>
-                            <div class="image image08-3"></div>
-                            <div class="image image08-4">
-                                <div class="image-text">
-                                    Plakat für eine Aufklärungs-kampagne<span class="fs-5 fw-light"></span>
-                                </div>
-                            </div>
-                            <div class="image image08-5"></div>
-                            <div class="image image08-6">
-                                <div class="image-text">
-                                    <span class="fs-5 fw-light">überarbeitetes DIXI-Logo</span>
-                                </div>
-                            </div>
-                            <div class="image image08-7">
-                                <div class="image-text">
-                                    Kampagne zur Imageverbesserung<span class="fs-5 fw-light"></span>
-                                </div>
-                            </div>
-                            <div class="image image08-8"></div>
-                            <div class="image image08-9">
-                                <div class="image-text">
-                                    Kampagne zur Imageverbesserung<span class="fs-5 fw-light"></span>
-                                </div>
-                            </div>
-                            <div class="image image08-10"></div>
-                            <div class="image image08-11">
-                                <div class="image-text">
-                                    SAM Logo entwurf<span class="fs-5 fw-light"></span>
-                                </div>
-                            </div>
-                            <div class="image image08-12">
-                                <div class="image-text">
-                                    Kampagne zur Image-verbesserung<span class="fs-5 fw-light">
-                                        Elektrofahrzeug mit zwei
-                                        Plätzen und drei Rädern</span>
-                                </div>
+                <!-- HERO Grid -->
+                <div class="parent pb-5">
+                    <div class="div1 border-hero px-3 pt-2 rounded-2 hover-lift">
+                        <p>Ich entwickle strukturierte Webanwendungen mit Spring Boot, Laravel und relationalen
+                            Datenbanken – und
+                            unterstütze Unternehmen bei der praktischen Umsetzung von Digitalisierungsvorhaben.</p>
+                    </div>
+                    <div class="div2 border-hero px-3 pt-2 rounded-2 hover-lift">
+                        <p><i>20+ Jahre Erfahrung in Organisation & Backoffice · Weiterbildung Fullstack Web & App
+                                Development ·
+                                Fokus auf saubere Architektur, Rollen- & Berechtigungssysteme und wartbare Lösungen.</i>
+                        </p>
+                    </div>
+                    <!-- Profilbild -->
+                    <div class="div3 px-3 pt-2 rounded-2"><a href="./aboutme/index.html">
+                            <img id="portrait" src="./assets/images/Avatar1.png" alt="Porträt von Renumol Reinhardt"
+                                width="200" class="" title="" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-placement="bottom" data-bs-content="Ich bin Renumol Reinhardt">
+                        </a> </div>
+                    <!-- Tech Stack -->
+                    <div class="div4 border-hero px-3 pt-2 rounded-2 hover-lift">
+                        <h4>Tech Stack: </h4>
+                        <p>Spring Boot · Laravel · REST APIs · MySQL · Vue · React</p>
+                    </div>
+                    <!-- Projekt-Highlight (1–2 Projekte) -->
+                    <div class="div5 border-hero px-3 pt-2 rounded-2 hover-lift">
+                        <h4>Mockup: RezeptManager</h4>
+                        <p>REST API + React · UI · CRUD · Auth · MySQL</p>
+                        <p class="lh-1"><small>
+                                Ich habe eine REST-basierte API mit klarer Trennung von Controller, Service und
+                                Repository
+                                implementiert. Die Datenpersistenz erfolgt über Spring Data JPA mit Hibernate.</small>
+                        </p>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <img src="./assets/images/Homescreen.png" alt="Homescreen" srcset="" width="150px">
                             </div>
                         </div>
-            </div>
-        </section>
-        <hr style="border: 2px solid var(--color-accent);">
-        <section class="bg-image gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Abschlußarbeit: Kali die Göttin <sup>1998</sup></p>
-                <div class="gallery-wrap">
-                    <div class="image image98-1"> </div>
-                    <div class="image image98-2"></div>
-                    <div class="image image98-3"></div>
-                    <div class="image image98-4"></div>
-                    <div class="image image98-5"></div>
-                    <div class="image image98-6"> </div>
-                    <div class="image image98-7"></div>
-                    <div class="image image98-8"></div>
-                    <div class="image image98-9"></div>
-                    <div class="image image98-10"></div>
-                    <div class="image image98-11"> </div>
-                    <div class="image image98-12"></div>
-                    <div class="image image98-13"></div>
-                    <div class="image image98-14"></div>
-                    <div class="image image98-15"></div>
-                    <div class="image image98-16"></div>
-                    <div class="image image98-17"></div>
+                        <a id="" class="btn btn-theme mb-2" href="./projekte/fullstack.html">Zur
+                            Projektübersicht</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Figürliches Zeichnen/ Skyscraper (Reinzeichnung)
-                    Bleistift + Kreide Semesterarbeit - 7. Semester <sup>1997</sup> </p>
-                <div class="gallery-wrap">
-                    <div class="image image97-1"> </div>
-                    <div class="image image97-2"></div>
-                    <div class="image image97-3"></div>
-                    <div class="image image97-4"></div>
-                    <div class="image image97-5"></div>
-                </div>
-            </div>
-        </section>
-        <section class="bg-imagehor gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Aktzeichnen mit Kreide <sup>1995</sup>/ Modeillustration
-                    <sup>1996</sup>
-                </p>
-                <div class="gallery-wrap">
-                    <div class="image image96-1"> </div>
-                    <div class="image image96-2"></div>
-                    <div class="image image96-3"></div>
-                    <div class="image image96-4"></div>
-                    <div class="image image96-5"> </div>
-                    <div class="image image96-6"></div>
-                    <div class="image image96-7"></div>
-                    <div class="image image96-8"></div>
-                </div>
-            </div>
-        </section>
-        <section class="gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Skizzen <sup>1995</sup></p>
-                <div class="gallery-wrap">
-                    <div class="image image95-1"></div>
-                    <div class="image image95-2"></div>
-                    <div class="image image95-3"></div>
-                    <div class="image image95-4"></div>
-                    <div class="image image95-5"></div>
-                    <div class="image image95-6"></div>
-                    <div class="image image95-7"></div>
-                    <div class="image image95-8"></div>
-                </div>
-            </div>
-        </section>
-        <section id="modedesign" class="bg-image gallery-fixheight">
-            <div class="imagebox subtitle">
-                <p class="fs-2">Grundlagen Zeichnen/ Skizze mit Bleistift <sup>1994</sup></p>
-                <div class="gallery-wrap">
-                    <div class="image image94-1"></div>
-                    <div class="image image94-2"></div>
-                    <div class="image image94-3"></div>
-                    <div class="image image94-4"></div>
-                    <div class="image image94-5"></div>
-                </div>
-            </div>
-            </div>
-        </section>
-    </main>
 
+        <!-- Kurzprofil / Digitalisierung -->
+        <section class="bg-imagebg primary">
+            <div class="container mt-5 mb-5 display-6 text-center align-content-center">
+                <span id="typed"></span>
+            </div>
+        </section>
+
+
+
+        <!-- Kompetenz-Block -->
+        <section class="bg-imagehor primary kompetenz-section">
+            <div class="container p-5">
+                <h1 class="fw-bold p-5">Kompetenz</h1>
+                <div class="container d-flex justify-content-center align-items-center h-100">
+                    <div class="grid-3 ">
+                        <div class="col px-4 grid-hero px-3 pt-2 rounded-2 hover-lift">
+                            <div class="card-title ">
+                                <h4 class="fw-bold">Backend & Architektur</h4>
+                                <hr>
+                            </div>
+                            <p class="card-text">
+                            <ul>
+                                <li>REST APIs</li>
+                                <li>Rollen- & Berechtigungssysteme</li>
+                                <li>Datenbankmodellierung</li>
+                                <li>Spring Boot / Laravel</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="col px-4 grid-hero px-3 pt-2 rounded-2 hover-lift">
+                            <div class="card-title">
+                                <h4 class="fw-bold">Digitalisierung & Prozesse</h4>
+                                <hr>
+                            </div>
+                            <p class="card-text">
+                            <ul>
+                                <li>Analyse bestehender Abläufe </li>
+                                <li>Strukturierung von Anforderungen </li>
+                                <li>Dokumentation </li>
+                                <li>Schnittstelle IT & Fachbereich</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="col px-4 grid-hero px-3 pt-2 rounded-2 hover-lift">
+                            <div class="card-title">
+                                <h4 class="fw-bold">Arbeitsweise</h4>
+                                <hr>
+                            </div>
+                            <p class="card-text">
+                            <ul>
+                                <li>strukturiert</li>
+                                <li>analytisch</li>
+                                <li>sauber dokumentiert</li>
+                                <li>eigenständige Einarbeitung</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <!-- ========== Hauptinhalt Ende ========== -->
     <!-- Call to Action -->
     <footer class="pt-5 primary" style="text-align: center; padding: 1rem 0; font-size: 0.9rem;">
@@ -313,24 +254,23 @@
             <a href="mailto:renu711@hotmail.de" class="text-accent">Kontakt aufnehmen</a>
             <hr style="border: 1px solid var(--color-accent);">
             &copy; 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;
-            <a href="../impressum.html" class="text-accent" style="text-decoration: none;" target="_blank"
+            <a href="./impressum.html" class="text-accent" style="text-decoration: none;" target="_blank"
                 rel="noopner noreferrer">Impressum</a> &nbsp;|&nbsp;
-            <a href="../datenschutz.html" class="text-accent" style="text-decoration: none;" target="_blank"
+            <a href="./datenschutz.html" class="text-accent" style="text-decoration: none;" target="_blank"
                 rel="noopner noreferrer">Datenschutzerklärung</a>&nbsp;|&nbsp;
             <!-- Sozialmedia  -->
             <a href="https://www.linkedin.com/in/renumol-reinhardt-88138a2a5" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/images/LI-In-Bug.png" alt="LinkedIn" style="width: 24px; height: auto;">
+                <img src="./assets/images/LI-In-Bug.png" alt="LinkedIn" style="width: 24px; height: auto;">
             </a>
         </p>
     </footer>
-
     <!-- Scroll-to-top Funktion -->
     <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
     <!--Scroll-States für Navbar-Transparenz -->
     <script>
@@ -338,8 +278,8 @@
             const nav = document.querySelector(".navbar-glass");
             if (!nav) return;
             nav.classList.toggle("navbar-scrolled", window.scrollY > 80);
-        });</script>
-
+        });
+    </script>
     <!-- Popover aktivieren -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -348,6 +288,7 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Typewriter -->
     <script>
         var typed = new Typed("#typed", {
             strings: [
