@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="Webdesign, Programmierung, HTML, CSS, SCSS, javascript">
+  <meta name="description" content="Ein Web-Projekt mit statischen Inhalten">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <title>Renumol Reinhardt | Web Portfolio</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/gallery.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
+  <script type="module" src="../assets/js/theme-toggle.js"></script>
+</head>
+
+<body class="bg-imagebg mouse-cursor">
+  <!-- Top Info Bar -->
+  <header>
+    <div class="site-banner">
+      Aktuell offen für Backend-Junior & Digitalisierungsrollen im Raum Hamburg / Remote </div>
+
+    <!-- Inhalte des Seitenkopfes -->
+  </header>
+
+  <!-- Navigation -->
+  <div class="container-fluid primary">
+    <div class="row">
+      <div class="position-relative">
+        <!-- ========== Nav Start Section ========== -->
+        <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+          <div class="container-fluid px-lg-4">
+            <!-- Brand / Logo -->
+            <a href="./index.html" class="navbar-brand d-flex align-items-center gap-2">
+              <img id="logo" src="../assets/images/Logo.png" alt="Logo" title="Renumol Reinhardt Portfolio">
+              <span class="brand-title d-none d-sm-inline">Renumol Reinhardt</span>
+            </a>
+
+            <!-- Toggler (mobile) -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+              aria-label="Menü öffnen">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarHeader">
+              <!-- Centered Menu -->
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-4 nav-pills-gap">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="nav-link  dropdown-toggle btn btn-link" href="../index.html" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Portfolio
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-animate">
+                    <li><a class="dropdown-item" href="../projekte/fullstack.html">Fullstack-Entwicklerin</a></li>
+                    <li><a class="dropdown-item" href="../projekte#grafikdesign">Grafikdesign</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../projekte#modedesign">Modedesign</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <button class="nav-link active dropdown-toggle btn btn-link" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Über mich
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-animate">
+                    <li><a class="dropdown-item" href="../index.html#profil">Mein Profil</a></li>
+                    <li><a class="dropdown-item" href="../career/index.html">Karriere</a></li>
+                    <li><a class="dropdown-item" href="../education/index.html">Bildungsweg</a></li>
+                    <li><a class="dropdown-item" href="../zertifikate/index.html">Qualifikation</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../projekte/index.html">Portfolio</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#" target="_blank" rel="noopener">Lebenslauf
+                        als PDF</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../aboutme/contact.html">Contact</a>
+                </li>
+              </ul>
+
+              <!-- Right side (Theme Toggle) -->
+              <div class="d-flex justify-content-center justify-content-lg-end">
+                <div class="dropdown">
+                  <button class="btn theme-btn dropdown-toggle" type="button" id="themeMenu" data-bs-toggle="dropdown"
+                    aria-expanded="false" aria-label="Theme auswählen">
+                    <span id="currentThemeIcon" aria-hidden="true">☀️</span>
+                  </button>
+
+                  <ul class="dropdown-menu dropdown-menu-animate" aria-labelledby="themeMenu">
+                    <li><button class="dropdown-item" type="button" data-theme="dark">🌙 </button>
+                    </li>
+                    <li><button class="dropdown-item" type="button" data-theme="light">☀️ </button>
+                    </li>
+                    <li><button class="dropdown-item" type="button" data-theme="blue">🔵</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- ========== Nav End Section ========== -->
+      </div>
+    </div>
+  </div>
+  <main>
+    <!-- Hauptinhalt -->
+    <!-- ========== Carousel ========== -->
+    <section id="profil" class="bg-imagehor section-fixheight">
+      <div class="container subtitle">
+        <div>
+          <div class="pt-5">
+            <h1 class="display-1 fst-italic text-center"><strong>Mein Profil</strong></h1>
+          </div>
+          <!-- Carousel wrapper -->
+          <div id="profilCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#profilCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- Inhalt Slide 1 -->
+                <h2 class="pt-5 display-5 text-center"><strong>Soft Skills</strong></h2>
+                <hr style="border: 2px solid var(--color-accent);">
+                <ol class="mx-auto pb-5" style="max-width: 800px; list-style: none;">
+                  <li> Analytik & Problemlösung </li>
+                  <ul class="fs-5 px-5 mx-5">
+                    <li> Analytisches Denkvermögen </li>
+                    <li> Kreativität und Problemlösungskompetenz </li>
+                    <li> Digitale Affinität und schnelle Auffassungsgabe </li>
+                  </ul>
+                  <li> Arbeitsweise & Verantwortung </li>
+                  <ul class="fs-5 px-5 mx-5">
+                    <li> Selbstständige und strukturierte Arbeitsweise </li>
+                    <li> Hohes Maß an Eigeninitiative und Lernbereitschaft </li>
+                    <li> Zuverlässigkeit und Gewissenhaftigkeit </li>
+                  </ul>
+                  <li> Sozial- und Teamkompetenz </li>
+                  <ul class="fs-5 px-5 mx-5">
+                    <li> Teamfähigkeit und Kommunikationsstärke </li>
+                    <li> Anpassungsfähigkeit und Durchhaltevermögen </li>
+                  </ul>
+                </ol>
+              </div>
+              <div class="carousel-item">
+                <!-- Inhalt Slide 2 -->
+                <h2 class="pt-5 display-5 text-center"><strong>Meine Stärken</strong><br><span
+                    class="fs-4 fw-light">Fachliche
+                    Qualifikationen & IT-Kenntnisse</span></h2>
+                <hr style="border: 2px solid var(--color-accent);">
+                <ul class="mx-auto ms-5 pb-5">
+                  <li>Programmiersprachen & Webentwicklung: <span class="fs-6 fw-lighter">Java, Kotlin, PHP,
+                      JavaScript,
+                      HTML, CSS, jQuery</span></li>
+                  <li>Frameworks & Libraries: <span class="fs-6 fw-lighter">Bootstrap, Laravel, Cordova,
+                      React</span>
+                  </li>
+                  <li>Android- & Mobile-Entwicklung: <span class="fs-6 fw-lighter">Android SDK, Android Studio, XML,
+                      Cordova (Cross-Plattform), Entwicklung mit Java und Kotlin</span>
+                  </li>
+                  <li>Tools & IDEs: <span class="fs-6 fw-lighter">IntelliJ IDEA, Android Studio, Visual Studio Code,
+                      Git, GitHub</span></li>
+                  <li>Design & Office: <span class="fs-6 fw-lighter">Adobe Creative Suite (Photoshop, Illustrator,
+                      InDesign), Microsoft Office (PowerPoint, Excel, Word etc.)</span></li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <!-- Inhalt Slide 3 -->
+                <h2 class="pt-5 display-5 text-center "><strong>Interessen</strong></h2>
+                <hr style="border: 2px solid var(--color-accent);">
+                <ul class="mx-auto pb-5" style="max-width: 600px;">
+                  <li>Technik & Softwareentwicklung</li>
+                  <li>UI/UX-Design</li>
+                  <li>Digitale Kreativität</li>
+                  <li>PowerPoint & visuelle Gestaltung</li>
+                  <li>Datenanalyse mit Excel</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Controls (Pfeile) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#profilCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Zurück</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#profilCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Weiter</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Carousel ende ========== -->
+  </main>
+  <footer class="pt-5 text-base" style="text-align: center; padding: 1rem 0; font-size: 0.9rem;">
+    <p>
+      <hr style="border: 1px solid var(--color-accent);">
+      &copy; 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;
+      <a href="../impressum.html" class="text-accent" style="text-decoration: none;" target="_blank"
+        rel="noopner noreferrer">Impressum</a> &nbsp;|&nbsp;
+      <a href="./datenschutz.html" class="text-accent" style="text-decoration: none;" target="_blank"
+        rel="noopner noreferrer">Datenschutzerklärung</a>&nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/renumol-reinhardt-88138a2a5" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/images/LI-In-Bug.png" alt="LinkedIn" style="width: 24px; height: auto;">
+      </a>
+    </p>
+  </footer>
+  <!-- Scroll-to-top Funktion -->
+  <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

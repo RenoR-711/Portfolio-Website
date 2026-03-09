@@ -1,0 +1,205 @@
+:root {
+    --banner-h: 45px;
+}
+
+/* =========================================================
+   NAVBAR: Transparent über Hero + Scroll Glass
+========================================================= */
+
+/* Default: transparent über Hero */
+.navbar-glass.fixed-top {
+    top: var(--banner-h);
+    background: transparent;
+    border-bottom: 1px solid rgba(240, 129, 15, 0.0);
+    transition: background 0.25s ease, backdrop-filter 0.25s ease, border-color 0.25s ease;
+
+    z-index: 1090;
+}
+
+/* Wenn gescrollt: glass */
+.navbar-glass.navbar-scrolled {
+    background: var(--color-navglass);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-hover);
+
+}
+
+/* Branding */
+#logo {
+    height: 42px;
+    width: auto;
+}
+
+.brand-title {
+    color: var(--color-primary);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+@media (min-width: 992px) {
+
+    .navbar .dropdown .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(8px);
+        transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+
+        margin-top: 0;
+        /* wichtig: keine Hover-Lücke */
+        pointer-events: none;
+    }
+
+    .navbar .dropdown:hover>.dropdown-menu,
+    .navbar .dropdown.show>.dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
+/* =========================================================
+   NAV LINKS: mehr Abstand + bessere Klickfläche
+========================================================= */
+
+/* Abstand zwischen den einzelnen Menüpunkten (Desktop) */
+@media (min-width: 992px) {
+    .nav-pills-gap .nav-item {
+        margin: 0 14px;
+        /* <- mehr Abstand */
+    }
+}
+
+/* Link-Style */
+.nav-pills-gap .nav-link {
+    padding: 12px 18px;
+    /* <- mehr Luft + bessere Touchfläche */
+    border-radius: 1.2rem;
+    color: var(--color-primary);
+    opacity: 0.92;
+    transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}
+
+.nav-pills-gap .nav-link:hover {
+    background: var(--color-accent);
+    /* statt var(--color-hover) (wirkt oft zu “hart”) */
+    opacity: 1;
+    transform: translateY(-2px);
+    /* -5px ist sehr “springig” */
+}
+
+.nav-pills-gap .nav-link.active,
+.nav-pills-gap .nav-link[aria-current="page"] {
+    background: var(--color-accent);
+    border: 1px solid var(--color-hover);
+    opacity: 1;
+}
+
+/* =========================================================
+   DROPDOWN: Premium Look + Hover öffnen (nur Desktop)
+========================================================= */
+
+.dropdown-menu {
+    background-color: transparent !important;
+    color: var(--color-primary);
+}
+
+.dropdown-menu-animate {
+    --bs-dropdown-bg: transparent;
+    --bs-dropdown-border-color: transparent;
+
+    background: rgba(16, 18, 21, 0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 14px;
+    padding: 10px;
+
+    border: 1px solid var(--color-accent);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    text-align: right;
+}
+
+/* Items */
+.dropdown-item {
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: var(--color-text-muted) !important;
+    background: transparent;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background: var(--color-primary) !important;
+    transform: translateX(-3px);
+}
+
+/* =========================================================
+   THEME BUTTON
+========================================================= */
+
+.theme-btn {
+    height: 42px;
+    width: auto;
+    border-radius: 999px;
+    border: 1px solid var(--color-hover);
+    background: var(--color-accent);
+    color: var(--color-primary);
+    display: grid;
+    place-items: center;
+    padding: 0;
+
+}
+
+.theme-btn:hover {
+    background: var(--color-accent);
+}
+
+/* Focus states (wichtig für UX) */
+.nav-link:focus-visible,
+.dropdown-item:focus-visible,
+.theme-btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* =========================================================
+   MOBILE: collapse spacing
+========================================================= */
+@media (max-width: 991.98px) {
+    .navbar-glass .navbar-collapse {
+        padding: 12px 0 16px;
+    }
+
+    .nav-pills-gap .nav-link {
+        display: inline-block;
+        margin: 6px auto;
+    }
+}
+
+/* ============================================================
+10. Media Queries (global)
+============================================================ */
+@media (max-width: 768px) {
+    .navbar-glass .container-fluid {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .navbar .dropdown-menu {
+        position: static;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .dropdown-item {
+        font-size: 0.85rem;
+    }
+}
