@@ -219,14 +219,19 @@
     </section>
     <!-- ========== Carousel ende ========== -->
   </main>
-  <footer class="pt-5 text-base" style="text-align: center; padding: 1rem 0; font-size: 0.9rem;">
+  <!-- ========== Hauptinhalt Ende ========== -->
+  <!-- Call to Action -->
+  <footer class="pt-5 primary" style="text-align: center; padding: 1rem 0; font-size: 0.9rem;">
     <p>
+      <span>Interesse an einer Zusammenarbeit oder einem Kennenlernen?</span>
+      <a href="mailto:renu711@hotmail.de" class="text-accent">Kontakt aufnehmen</a>
       <hr style="border: 1px solid var(--color-accent);">
       &copy; 2025 Renumol Reinhardt. Alle Rechte vorbehalten. &nbsp;|&nbsp;
       <a href="../impressum.html" class="text-accent" style="text-decoration: none;" target="_blank"
         rel="noopner noreferrer">Impressum</a> &nbsp;|&nbsp;
-      <a href="./datenschutz.html" class="text-accent" style="text-decoration: none;" target="_blank"
+      <a href="../datenschutz.html" class="text-accent" style="text-decoration: none;" target="_blank"
         rel="noopner noreferrer">Datenschutzerklärung</a>&nbsp;|&nbsp;
+      <!-- Sozialmedia  -->
       <a href="https://www.linkedin.com/in/renumol-reinhardt-88138a2a5" target="_blank" rel="noopener noreferrer">
         <img src="../assets/images/LI-In-Bug.png" alt="LinkedIn" style="width: 24px; height: auto;">
       </a>
@@ -236,9 +241,24 @@
   <button onclick="topFunction()" id="myTop" title="Go to top">Top</button>
   <!-- Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="../assets/js/main.js"></script>
-</body>
-
-</html>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js"></script>
+  
+  <!--Scroll-States für Navbar-Transparenz -->
+  <script>
+    document.addEventListener("scroll", () => {
+      const nav = document.querySelector(".navbar-glass");
+      if (!nav) return;
+      nav.classList.toggle("navbar-scrolled", window.scrollY > 80);
+    });
+  </script>
+  <!-- Popover aktivieren -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const portrait = document.getElementById('portrait');
+      new bootstrap.Popover(portrait);
+    });
+  </script>
+  </body>
+  
+  </html>

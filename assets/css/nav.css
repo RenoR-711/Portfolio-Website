@@ -75,26 +75,28 @@
 /* Link-Style */
 .nav-pills-gap .nav-link {
     padding: 12px 18px;
-    /* <- mehr Luft + bessere Touchfläche */
     border-radius: 1.2rem;
+
     color: var(--color-primary);
     opacity: 0.92;
-    transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
     text-decoration: none;
-    background: transparent;
-    border: 0;
+
+    transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+
+    border: 1px solid transparent;
+
+    background:
+        linear-gradient(var(--color-background), var(--color-background)) padding-box,
+        linear-gradient(90deg, var(--color-primary), var(--color-hover)) border-box;
 }
 
 .nav-pills-gap .nav-link:hover {
     background: var(--color-accent);
-    /* statt var(--color-hover) (wirkt oft zu “hart”) */
     opacity: 1;
     transform: translateY(-2px);
-    /* -5px ist sehr “springig” */
 }
 
-.nav-pills-gap .nav-link.active,
-.nav-pills-gap .nav-link[aria-current="page"] {
+.nav-pills-gap .nav-link.active {
     background: var(--color-accent);
     border: 1px solid var(--color-hover);
     opacity: 1;
@@ -110,9 +112,6 @@
 }
 
 .dropdown-menu-animate {
-    --bs-dropdown-bg: transparent;
-    --bs-dropdown-border-color: transparent;
-
     background: rgba(16, 18, 21, 0.72);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -129,15 +128,18 @@
 .dropdown-item {
     border-radius: 10px;
     padding: 10px 12px;
-    color: var(--color-text-muted) !important;
+    color: var(--color-text)!important;
     background: transparent;
     transition: background 0.15s ease, transform 0.15s ease;
+
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background: var(--color-primary) !important;
+    background: var(--color-accent)!important;
+    color: var(--color-background)!important;
     transform: translateX(-3px);
+        font-weight: bold;
 }
 
 /* =========================================================
