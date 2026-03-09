@@ -25,4 +25,4 @@ Dieses Projekt ist eine persönliche Portfolio-Website, die im Rahmen meiner Ful
 
 ## 🚀 Live-Demo
 
-👉 [Live-Version auf GitHub Pages](https://renor-711.github.io/Portfolio-RR/)
+👉 [Live-Version auf GitHub Pages](https://renor-711.github.io/Portfolio-Website/)
