@@ -9,6 +9,7 @@
 ![Laravel](https://img.shields.io/badge/Laravel-Backend-red)
 ![Flask](https://img.shields.io/badge/Flask-Python-black)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+#
 
 ## ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
 This website is still under construction and will be continuously updated. Thank you for your understanding.
@@ -39,11 +40,11 @@ Die Projekte demonstrieren unter anderem den Einsatz von **Spring Boot, Laravel,
 - Galerie mit Lightbox-Effekt
 - Interaktive UI-Elemente (Hover-Effekte, Animationen)
 - Links zu GitHub-Repos und Live-Demos
-- 
-🧠 Ausgewählte Projekte
+  
+## 🧠 Ausgewählte Projekte
 
-| Projekt | Beschreibung | Technologien |
-| --------- | ---------- | ---------- |
+| Projekt         | Beschreibung                                                       | Technologien              |
+| --------------- | ------------------------------------------------------------------ | ------------------------- |
 | Flask Mini API  | REST-API mit CRUD-Endpunkten und Rollenlogik                       | Python, Flask, SQLAlchemy |
 | RezeptManager   | Webanwendung zur Verwaltung von Rezepten mit Upload und PDF-Export | Spring Boot, React, MySQL |
 | SchulApp        | Mobile Schul-App mit Vue-Frontend und Laravel-Backend              | Vue, Capacitor, Laravel   |
@@ -56,3 +57,30 @@ Die Projekte demonstrieren unter anderem den Einsatz von **Spring Boot, Laravel,
 ![Portfolio Startseite](assets/images/portfolio-home.png)
 
 ![Projektübersicht](assets/images/portfolio-projects.png)
+
+## 📂 Projektstruktur
+
+portfolio
+│
+├── assets
+│   ├── css
+│   ├── images
+│   └── js
+│
+├── projekte
+│   ├── fullstack.html
+│
+├── aboutme
+├── career
+├── education
+├── zertifikate
+│
+├── index.html
+└── README.md
+
+## 👩‍💻 Autorin
+
+**Renumol Reinhardt**
+
+*Backend-orientierte Fullstack Entwicklerin* |
+*Schwerpunkt: Webanwendungen, APIs und Digitalisierung*
