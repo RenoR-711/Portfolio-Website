@@ -1,3 +1,6 @@
+![Status](https://img.shields.io/badge/Status-In%20Entwicklung-yellow)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 ## ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
 This website is still under construction and will be continuously updated. Thank you for your understanding.
 
