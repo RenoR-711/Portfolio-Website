@@ -63,21 +63,21 @@ Die Projekte demonstrieren unter anderem den Einsatz von **Spring Boot, Laravel,
 
 portfolio
 │
+├── index.html
+├── README.md
+│
 ├── assets
-│   ├── css
-│   ├── images
-│   └── js
+│ ├── css
+│ ├── images
+│ └── js
 │
 ├── projekte
-│   ├── fullstack.html
+│ └── fullstack.html
 │
 ├── aboutme
 ├── career
 ├── education
-├── zertifikate
-│
-├── index.html
-└── README.md
+└── zertifikate
 
 ## 👩‍💻 Autorin
 
