@@ -2,13 +2,14 @@
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Vue](https://img.shields.io/badge/Vue-3-green)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-Backend-green)
 ![Laravel](https://img.shields.io/badge/Laravel-Backend-red)
-![Flask](https://img.shields.io/badge/Flask-Python-black)
-![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![Flask](https://img.shields.io/badge/Flask-Python-black?logo=Flask)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge)
+
 #
 
 ## ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
