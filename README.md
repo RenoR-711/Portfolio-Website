@@ -1,5 +1,14 @@
 ![Status](https://img.shields.io/badge/Status-In%20Entwicklung-yellow)
-![License](https://img.shields.io/badge/License-MIT-blue)
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
+![React](https://img.shields.io/badge/React-18-blue)
+![Vue](https://img.shields.io/badge/Vue-3-green)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-Backend-green)
+![Laravel](https://img.shields.io/badge/Laravel-Backend-red)
+![Flask](https://img.shields.io/badge/Flask-Python-black)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
 
 ## ⚠️ Diese Website befindet sich noch im Aufbau und wird laufend erweitert. Vielen Dank für dein Verständnis.
 This website is still under construction and will be continuously updated. Thank you for your understanding.
@@ -44,4 +53,6 @@ Die Projekte demonstrieren unter anderem den Einsatz von **Spring Boot, Laravel,
 
 ## 📸 Screenshots
 
-![Vorschau]
+![Portfolio Startseite](assets/images/portfolio-home.png)
+
+![Projektübersicht](assets/images/portfolio-projects.png)
