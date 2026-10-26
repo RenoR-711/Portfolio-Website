@@ -276,7 +276,6 @@ code {
     top: 0;
     z-index: 1100;
 
-    /* Neu */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
