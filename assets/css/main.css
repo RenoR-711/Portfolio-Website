@@ -278,15 +278,6 @@ code {
 
 }
 
-/* Smartphone */
-@media (max-width: 768px) {
-    .site-banner {
-        flex-direction: column;
-        padding: 0.6rem 0.75rem;
-        font-size: 0.8rem;
-        gap: 0.25rem;
-    }
-}
 
 .popover,
 .popover-header,
