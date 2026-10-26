@@ -278,10 +278,6 @@ code {
 
 }
 
-.banner-info {
-    color: var(--color-primary);
-}
-
 /* Smartphone */
 @media (max-width: 768px) {
     .site-banner {
