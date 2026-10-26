@@ -276,21 +276,10 @@ code {
     top: 0;
     z-index: 1100;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.4rem 1rem;
-}
-
-.banner-status {
-    color: var(--color-primary);
-    /* font-weight: 600; */
 }
 
 .banner-info {
     color: var(--color-accent);
-    /* font-weight: 200; */
-    /* font-size: 0.5rem; */
 }
 
 /* Smartphone */
