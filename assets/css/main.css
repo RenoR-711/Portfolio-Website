@@ -275,7 +275,33 @@ code {
     position: sticky;
     top: 0;
     z-index: 1100;
-}
+    /* Neu */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem 1rem;
+    }
+    
+    .banner-status {
+        color: var(--color-primary);
+        font-weight: 600;
+    }
+    
+    .banner-info {
+        color: var(--color-accent);
+        font-weight: 400;
+    }
+    
+    /* Smartphone */
+    @media (max-width: 768px) {
+        .site-banner {
+            flex-direction: column;
+            padding: 0.6rem 0.75rem;
+            font-size: 0.8rem;
+            gap: 0.25rem;
+        }
+    }
 
 .popover,
 .popover-header,
