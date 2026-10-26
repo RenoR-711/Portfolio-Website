@@ -275,22 +275,16 @@ code {
     position: sticky;
     top: 0;
     z-index: 1100;
-    /* Neu */
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 0.4rem 1rem; */
     }
     
     .banner-status {
         color: var(--color-primary);
-        font-weight: 600;
+        font-weight: 500;
     }
     
     .banner-info {
         color: var(--color-accent);
-        font-weight: 400;
+        font-weight: 300;
     }
     
     /* Smartphone */
