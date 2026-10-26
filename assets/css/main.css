@@ -118,7 +118,7 @@
     --color-navglass: rgba(15, 23, 42, 0.72);
     /* Typography */
     --color-text: #f8fafc;
-        --color-text-muted: #94a3b8;
+    --color-text-muted: #94a3b8;
     /* Interactive & Feedback */
     --color-success: #10b981;
     --color-border: #334155;
@@ -277,7 +277,7 @@ code {
     z-index: 1100;
 
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     align-items: center;
     gap: 0.4rem 1rem;
 }
@@ -289,7 +289,7 @@ flex-direction: column;
 
 .banner-info {
     color: var(--color-accent);
-    font-weight: 400;
+    font-weight: 200;
 }
 
 /* Smartphone */
