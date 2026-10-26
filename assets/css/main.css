@@ -285,12 +285,12 @@ code {
 .banner-status {
     color: var(--color-primary);
     font-weight: 600;
-    font-size: 0.5rem;
 }
 
 .banner-info {
     color: var(--color-accent);
     font-weight: 200;
+    font-size: 0.5rem;
 }
 
 /* Smartphone */
