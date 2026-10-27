@@ -283,11 +283,12 @@ code {
 .banner-status {
     color: var(--color-primary);
     font-weight: 500;
-    font-size: 0.95rem;
+
 }
 
 .banner-info {
     color: var(--color-accent);
+    font-size: 0.8rem;
 }
 
 /* Smartphone */
