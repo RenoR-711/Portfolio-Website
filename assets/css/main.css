@@ -282,10 +282,6 @@ code {
     gap: 0.4rem 1rem;
 }
 
-.banner-status {
-    color: var(--color-primary);
-}
-
 .banner-info {
     color: var(--color-accent);
     font-size: 0.8rem;
